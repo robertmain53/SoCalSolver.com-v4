@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "types/express": "latest",
+    "types/cors": "latest",
+    "types/jsonwebtoken":"latest",
+    "types/bcrypt":"latest",
+    "types/node":"latest"
   },
   "devDependencies": {
     "ts-node": "^10.9.1",
