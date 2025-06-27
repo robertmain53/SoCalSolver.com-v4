@@ -1,5 +1,5 @@
 /// <reference types="node" />
-
+import aiRoutes from './routes/ai';
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import jwt from 'jsonwebtoken';
