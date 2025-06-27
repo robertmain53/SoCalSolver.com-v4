@@ -1,0 +1,39 @@
+name: Calchub CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Lint and Build
+      run: |
+        npm run lint || true
+        npm run build
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: calchub-build
+        path: .output/public
+
+    # Example deploy step (to static hosting like Netlify, Vercel, or S3)
+    # - name: Deploy
+    #   run: |
+    #     echo "Deploy step placeholder"

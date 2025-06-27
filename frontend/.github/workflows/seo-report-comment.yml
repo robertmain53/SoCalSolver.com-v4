@@ -1,0 +1,53 @@
+name: 📣 SEO + A11y + Schema Report
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  post-full-seo-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v3
+
+      - name: 🟢 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 Install Tools
+        run: |
+          npm install
+          npm install -g @lhci/cli@0.12.x structured-data-testing-tool
+
+      - name: 🏗️ Build Site
+        run: npm run build
+
+      - name: 🌍 Set Locales
+        run: echo "LOCALES=en,fr,it,es" >> $GITHUB_ENV
+
+      - name: 🧪 Run Audits + Collect Scores
+        id: collect
+        run: |
+          echo '### 🧪 Audit Report (SEO + A11y + FAQ)' > report.md
+          for locale in $(echo $LOCALES | tr "," "\n"); do
+            echo "- **$locale**:" >> report.md
+
+            lhci collect --url=http://localhost:3000/$locale/calculators/compound-interest               --settings.preset=desktop --outputDir=.lighthouse/$locale || echo "❌ LHCI failed"
+
+            SCORE=$(grep -Eo '"seo":[0-9]+(\.[0-9]+)?' .lighthouse/$locale/manifest.json | cut -d: -f2)
+            A11Y=$(grep -Eo '"accessibility":[0-9]+(\.[0-9]+)?' .lighthouse/$locale/manifest.json | cut -d: -f2)
+
+            echo "  - SEO: ${SCORE:-❌}" >> report.md
+            echo "  - A11y: ${A11Y:-❌}" >> report.md
+
+            structured-data-testing-tool .output/public/$locale/calculators/*.html > tmp-sdtt.txt 2>&1
+            SDTT_WARN=$(grep -i "warning\|error" tmp-sdtt.txt | wc -l)
+            echo "  - SDTT: ${SDTT_WARN:-0} issues found" >> report.md
+          done
+
+      - name: 💬 Post PR Comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: report.md

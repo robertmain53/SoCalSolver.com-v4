@@ -1,0 +1,6 @@
+{
+  "explainPrompt": "Explain the compound interest formula A = P(1 + r/n)^(nt) in clear steps for a college-level learner. Use one real example and highlight a mistake to avoid.",
+  "learnPrompt": "Write a short, engaging section on why compound interest is important and where it appears in the real world. Include one interesting historical or economic insight.",
+  "challengePrompt": "Generate a conceptual question that encourages users to modify or apply the formula in a new way, and provide a guided answer.",
+  "styleGuide": "Use a friendly, curious tone. Explain things visually and with metaphors when useful. Use markdown with clear headers and callouts."
+}

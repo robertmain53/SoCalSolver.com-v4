@@ -1,0 +1,3320 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "search": {
+    "placeholder": "Search...",
+    "button": "Search"
+  },
+  "Finance": "Finance",
+  "Mathematics": "Mathematics",
+  "Health & Fitness": "Health & Fitness",
+  "Science & Engineering": "Science & Engineering",
+  "Everyday Live & Utilities": "Everyday Life & Utilities",
+  "Business & Productivity": "Business & Productivity",
+  "Education": "Education",
+  "Environment & Sustainability": "Environment & Sustainability",
+  "Costruction & DIY": "Construction & DIY",
+  "Fun & Miscellaneous": "Fun & Miscellaneous",
+  "app.sr.lang_select": "Select language: ",
+  "pageTitle": "Explore Online Calculators & Tools",
+  "categoryTitle": "{category} Calculators",
+  "categoryDescription": "Explore tools in {category}: quick, accurate, and free.",
+  "categories": {
+    "finance": "Finance",
+    "mathematics": "Mathematics",
+    "health-fitness": "Health & Fitness",
+    "science-engineering": "Science & Engineering",
+    "everyday-life": "Everyday Life Utilities",
+    "business-productivity": "Business & Productivity",
+    "education": "Education",
+    "environment-sustainability": "Environment & Sustainability",
+    "construction-diy": "Construction & DIY",
+    "fun-miscellaneous": "Fun & Miscellaneous"
+     },
+
+   "Alert":{
+      "feature":"Feature Preview",
+      "maintenance":"This page is currently under construction and may look a little different when it's finished.",
+      "view":"View latest version"
+   },
+   "Blog":{
+      "Video":"Video not found",
+      "description":"News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
+      "meta":{
+         "description":"Xanzhu provides helpful articles, guides and tips on all things technology. Focusing on privacy, security and more.",
+         "title":"Latest Posts on Security and Technology News"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Error":{
+      "404":{
+         "code":"Code: 404",
+         "desc":"Sorry, the page you are looking for could not be found.",
+         "title":"Page Not Found"
+      },
+      "500":{
+         "code":"Code: 500",
+         "desc":"Sorry we messed up, please try again..",
+         "title":"Internal Error"
+      },
+      "return":"Return"
+   },
+   "Home":{
+      "Seo":{
+         "description":"Stay safe online with Xanzhu. Get the latest tech trends, security tips, and privacy guides to navigate the digital world.",
+         "title":"News, Guides on Technology, Privacy and Security"
+      },
+      "a11y":{
+         "mouseicon":"Scroll down"
+      },
+      "desc":"At Xanzhu, we help you use technology safely and protect your data online. Learn from our articles, guides, and reviews on topics like VPNs, password managers, two-factor authentication, and more.",
+      "more":"Explore More Articles",
+      "release":"New Releases",
+      "subhead":"Navigating Technology with confidence",
+      "tag":"Leading the future",
+      "title":"Privacy, Security and everything in between.",
+      "weatherLoad":"Loading"
+   },
+   "Links":{
+      "analysis":"Analysis",
+      "blog":"Latest",
+      "home":"Home",
+      "privacy-policy":"Privacy Policy",
+      "resources":"Resources",
+      "reviews":"Reviews"
+   },
+   "PagesCard":{
+      "analysis":"Reports and write-ups on threats",
+      "blog":"Latest News, Guides on Technology",
+      "image":{
+         "building-1":"two teal and white skyscrapers",
+         "building-2":"white concrete building during daytime",
+         "building-3":"tall building"
+      },
+      "resources":"Security tools and links"
+   },
+   "SocialsCard":{
+      "h1":"Follow our Socials"
+   },
+   "StatsCard":{
+      "breach":{
+         "1":"OPTUS - 9.8 MILLION",
+         "2":"LAST PASS - 30 MILLION",
+         "3":"TWITTER - 211.5 MILLION",
+         "4":"LATITUDE - 14 MILLION"
+      },
+      "breaches":{
+         "title":"Recent Breaches"
+      },
+      "check":"Check your accounts",
+      "image":{
+         "badge":"Security Badge",
+         "pwn":"HaveIBeenpwnd Logo"
+      },
+      "threats":{
+         "1":"PHISHING",
+         "2":"RANSOMWARE",
+         "3":"SOCIAL ENGINEERING",
+         "4":"DENIAL OF SERVICE (DoS)",
+         "title":"Top Security Threats"
+      },
+      "title":"Common Threats Observed in 2023",
+      "warn":"These are rough estimates, exact values may slightly differ. Obtained through research gathered in 2023"
+   },
+   "a11y":{
+      "AnalysisPage":"Visit our Analysis Page",
+      "BlogPage":"Visit Blog Page",
+      "Home":"Visit the Home page",
+      "Menu":"Menu",
+      "ResourcePage":"Visit Resources Page",
+      "cMenu":"Close Menu",
+      "langSwitch":"Switch Language",
+      "logo":"Xanzhu Logo",
+      "oMenu":"Open Menu"
+   },
+   "analysis":{
+      "graph":{
+         "advancedPersistentThreat":"Advanced Persistent Threat",
+         "aiIntegration":"AI Integration",
+         "initialThreat":"Initial Threat",
+         "label":"Cyber Threat Sophistication",
+         "peakSophistication":"Peak Sophistication",
+         "targetedAttacks":"Targeted Attacks",
+         "title":"AI-Powered Cyber Threat Progression",
+         "xAxis":"Threat Evolution Stage",
+         "yAxis":"Threat Sophistication (%)"
+      },
+      "hero":{
+         "subhead":"Key Cybersecurity Challenges in AI",
+         "title":"2024 Cybersecurity Trends & Insights"
+      },
+      "keyTrend":{
+         "desc":"Tracking the rise of AI-enhanced cyber threats and their increasing sophistication.",
+         "title":"AI-Powered Threat Evolution"
+      },
+      "meta":{
+         "description":"Cybersecurity analysis from Xanzhu: Expert insights, trending threats, and real-world case studies.",
+         "title":"Cybersecurity Analysis | Trends & Case Studies"
+      }
+   },
+   "app":{
+      "sr":{
+         "lang":"Select Language",
+         "lang_select":"Selected Language: ",
+         "menu":"Open Menu"
+      }
+   },
+   "email":{
+      "share":"Check out this article"
+   },
+   "footer":{
+      "about":"About",
+      "blog":"Blog",
+      "brand":"Brand",
+      "community":"Community",
+      "company":"Company",
+      "copyright":"© Xanzhu 2025. All Rights reserved.",
+      "github":"GitHub",
+      "latest":"Latest",
+      "legal":"Legal",
+      "privacy":"Privacy",
+      "resources":"Resources",
+      "sr":{
+         "blog":"Blog Links",
+         "community":"Community Links",
+         "company":"Company Links",
+         "legal":"Legal Links",
+         "resource":"Resource Links"
+      },
+      "terms":"Terms",
+      "tools":"Tools",
+      "twitter":"Twitter",
+      "version":"Version"
+   },
+   "home":{
+      "hero":{
+         "cta":"Start the Journey",
+         "heading":"Privacy and Security for the Modern Web",
+         "subhead":"Explore trends, tools, and techniques driving technology forward—from safeguarding data to redefining the digital world.",
+         "tagline":"Beyond Code and Innovation"
+      },
+      "latest":"Recent Posts",
+      "features":{
+         "description":"Explore our key articles and featured new content."
+      }
+   },
+   "pageCard":{
+      "article":"Stay updated with our latest articles on security trends and best practices",
+      "caseStudy":"Deep dive into detailed security case studies and technical write-ups",
+      "tools":"Free tools and resources to help improve and protect your security"
+   },
+   "resources":{
+      "explain":{
+         "malware":"Free tools and platforms for analyzing suspicious files, detecting malware, and maintaining system security.",
+         "network":"Essential tools for monitoring network traffic, detecting vulnerabilities, and securing your connections.",
+         "phishing":"Tools and resources to help identify, avoid, and report phishing attempts and suspicious websites."
+      },
+      "hero":{
+         "description":"Comprehensive collection of free security tools, educational resources, and reporting platforms to help protect your digital presence.",
+         "title":"Security Toolkit"
+      },
+      "malware":"Malware Analysis",
+      "meta":{
+         "description":"Stay safe online with our curated list of the best security tools and services. From phishing protection to malware reporting, we've got you covered.",
+         "title":"Security Toolkit: Essential for Online Safety"
+      },
+      "network":"Network Security",
+      "phishing":"Phishing",
+      "quick_links":"Quick Links",
+      "reporting":{
+         "anyrun":"Interactive malware analysis tool for analyzing and sharing results in real time.",
+         "google":"Report suspicious websites to Google Safe Browsing for protection updates",
+         "hybrid":"Free malware analysis platform for analyzing suspicious files and URLs",
+         "microsoft":"Microsoft’s platform for reporting phishing and malicious URLs",
+         "securityheaders":"Analyze a website’s HTTP security headers for vulnerabilities",
+         "shodan":"Search engine for discovering devices and systems exposed to the internet."
+      },
+      "reporting_tools":"Reporting Tools",
+      "search":{
+         "noResults":"Oops, we couldn't find anything, please try again.",
+         "placeholder":"Search security resources"
+      },
+      "tools":{
+         "apwg":"Anti-Phishing Working Group offering resources to combat phishing globally",
+         "clamav":"Open-source antivirus engine for detecting malware and malicious files.",
+         "malwarebytes":"Malware protection and removal software for home and business use.",
+         "openphish":"Automatic phishing detection and intelligence feed service.",
+         "owaspzap":"Open-source penetration testing tool for identifying web application vulnerabilities",
+         "phishtank":"Community-powered database for identifying and reporting phishing websites",
+         "sandboxie":"Tool for running applications in an isolated sandbox environment.",
+         "snort":"Intrusion detection system for real-time traffic analysis and threat prevention.",
+         "urlvoid":"Tool to check a website’s reputation and detect malicious activities.",
+         "virustotal":"Online scanner for analyzing files and URLs for malware and suspicious content.",
+         "wireshark":"Network protocol analyzer for monitoring and troubleshooting network traffic."
+      }
+   },
+   "share":{
+      "email":"Share this page via email",
+      "linkedin":"Share this on LinkedIn",
+      "reddit":"Share this on Reddit",
+      "title":"Share this article!",
+      "twitter":"Share this on Twitter"
+   },
+   "threatCard":{
+      "ariaLabel":"(Read more in new tab)",
+      "recent":{
+         "crowdStrike":"8.5M SYSTEMS CRASHED",
+         "latitude":"14M RECORDS",
+         "optus":"10M CUSTOMERS IMPACTED",
+         "title":"Recent Attacks"
+      },
+      "regional":{
+         "dataBreach":"Data Breaches",
+         "phish":"Phishing Attacks",
+         "ransomware":"Ransomware and Cyber Extortion",
+         "supplyChain":"Supply Chain Vulnerabilities",
+         "takeOver":"Account Compromises",
+         "title":"Top Security Threats"
+      },
+      "source":"Data sourced from public breach notifications and security reports. Numbers represent approximate affected users/records.",
+      "title":"ANZ Cyber Threats 2024"
+   },
+   "v2":{
+      "app":{
+         "sr":{
+            "colorSwitch":"Colour Switcher"
+         }
+      },
+      "blog":{
+         "noPosts":"No posts available."
+      },
+      "blog_iframe":"Youtube Video",
+      "blog_updated":"Last Updated",
+      "home":{
+         "featuredPosts":"Featured Blog Posts"
+      }
+   },
+   "Finance":{
+      "Video":"Video not found",
+      "description":"Navigate your financial journey with Calcolo.online's comprehensive suite of finance calculators. From loans and investments to taxes and budgeting, find essential tools for informed decisions.",
+      "meta":{
+         "description":"Explore powerful financial calculators for loans, mortgages, investments, savings, taxes, and personal finance management on Calcolo.online. Plan your future.",
+         "title":"Financial Calculators | Loans, Investing, Budget | Calcolo.online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Explore Our Finance Calculators",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Loans & Mortgages":{
+      "Video":"Video not found",
+      "description":"Understand your borrowing options with our detailed loan and mortgage calculators. Estimate payments, explore refinancing, and determine affordability for various loan types to secure your financing.",
+      "meta":{
+         "description":"Calcolo.online offers loan and mortgage calculators to manage debt, estimate payments, and plan major purchases. Free, easy, and accurate tools.",
+         "title":"Loan & Mortgage Calculators | Payment & Affordability Tools"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Loans & Mortgages",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Mortgage Payment":{
+      "Video":"Video not found",
+      "description":"Estimate your monthly mortgage payments accurately, considering principal, interest, taxes, and insurance (PITI). Plan your home budget effectively with our user-friendly mortgage payment calculator.",
+      "meta":{
+         "description":"Calculate potential mortgage payments with PITI. An essential tool for homebuyers and homeowners planning their finances on Calcolo.online.",
+         "title":"Mortgage Payment Calculator | Estimate PITI | Calcolo.online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Tools for Mortgage Payment Calculations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Mortgage Refinance":{
+      "Video":"Video not found",
+      "description":"Determine if refinancing your mortgage is the right financial move. Compare current rates, calculate potential savings, and understand the costs involved using our comprehensive refinance calculator.",
+      "meta":{
+         "description":"Explore mortgage refinancing options and potential savings. Make informed decisions on your home loan at Calcolo.online. See if you can save.",
+         "title":"Mortgage Refinance Calculator | Savings & Cost Analysis"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Insights for Mortgage Refinancing",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Loan Affordability":{
+      "Video":"Video not found",
+      "description":"Assess how much loan you can realistically afford based on your income, expenses, and desired loan terms. Make confident borrowing decisions with our insightful loan affordability calculator.",
+      "meta":{
+         "description":"Determine your loan affordability. Understand how much you can borrow for a mortgage, car, or personal loan. Plan wisely on Calcolo.online.",
+         "title":"Loan Affordability Calculator | How Much Can You Borrow?"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Assess Your Loan Affordability",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Loan Amortization":{
+      "Video":"Video not found",
+      "description":"View a detailed loan amortization schedule showing the breakdown of principal and interest payments over your loan's lifetime. Understand how your loan balance reduces with each payment.",
+      "meta":{
+         "description":"Our Loan Amortization Calculator provides a detailed payment schedule for mortgages, auto, or personal loans. See principal & interest breakdown.",
+         "title":"Loan Amortization Schedule Calculator | Calcolo.online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Understand Loan Amortization Details",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Personal Loan":{
+      "Video":"Video not found",
+      "description":"Calculate potential monthly payments, total interest, and the overall cost for a personal loan. Compare different loan offers and plan your repayments effectively and efficiently.",
+      "meta":{
+         "description":"Estimate payments and total interest for personal loans. Make informed borrowing decisions with Calcolo.online's easy personal loan calculator.",
+         "title":"Personal Loan Calculator | Estimate Payments & Interest"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Personal Loan Calculation Tools",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Car Loan":{
+      "Video":"Video not found",
+      "description":"Estimate your car loan payments, see the impact of down payments, interest rates, and loan terms. Find an auto loan that fits your budget using our comprehensive car loan calculator.",
+      "meta":{
+         "description":"Calcolo.online's Car Loan Calculator helps estimate monthly payments and total interest. Plan your next vehicle purchase confidently.",
+         "title":"Car Loan Calculator | Auto Loan Payment Estimations"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Plan Your Car Purchase Loan",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Student Loan":{
+      "Video":"Video not found",
+      "description":"Calculate potential student loan payments and explore various repayment strategies. Understand the long-term costs associated with your education financing options.",
+      "meta":{
+         "description":"Estimate student loan payments and explore repayment options. Manage your education debt effectively with Calcolo.online's helpful tools.",
+         "title":"Student Loan Calculator | Repayment Plan Estimator"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Student Loan Planning Calculators",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Investment & Savings":{
+      "Video":"Video not found",
+      "description":"Grow your wealth with our diverse investment and savings calculators. Analyze compound interest, ROI, retirement plans, and more to strategically achieve your financial goals.",
+      "meta":{
+         "description":"Maximize returns with Calcolo.online's investment and savings calculators. Plan retirement, calculate interest, and analyze various investments.",
+         "title":"Investment & Savings Calculators | Grow Your Wealth Today"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Investment & Savings",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Compound Interest":{
+      "Video":"Video not found",
+      "description":"Discover the remarkable power of compound interest. Calculate how your savings or investments can grow over time with different compounding frequencies and regular contributions.",
+      "meta":{
+         "description":"Use our Compound Interest Calculator to see your investments grow. Factor in contributions, rates, and compounding for future value.",
+         "title":"Compound Interest Calculator | Future Value Estimator Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Harness the Power of Compound Growth",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Simple Interest":{
+      "Video":"Video not found",
+      "description":"Calculate simple interest on loans or investments with ease. Understand basic interest accrual based on principal, rate, and time, without the effects of compounding.",
+      "meta":{
+         "description":"Easily calculate simple interest for loans or investments. Understand basic interest earnings or payments clearly on Calcolo.online.",
+         "title":"Simple Interest Calculator | Quick Interest Calculations"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Understand Simple Interest Dynamics",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Return on Investment (ROI)":{
+      "Video":"Video not found",
+      "description":"Measure the profitability and efficiency of your investments with our ROI calculator. Evaluate a single investment or compare multiple investment opportunities side-by-side.",
+      "meta":{
+         "description":"Calculate your Return on Investment (ROI) to evaluate profitability. An essential tool for all investors on Calcolo.online. Make smarter choices.",
+         "title":"Return on Investment (ROI) Calculator | Assess Profitability"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Measure Your Investment Success (ROI)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Savings Goal":{
+      "Video":"Video not found",
+      "description":"Strategically plan how to reach your specific savings goals. Determine how much you need to save regularly, or how long it will take to achieve your financial target amount.",
+      "meta":{
+         "description":"Achieve your financial targets with our Savings Goal Calculator. Plan contributions and timelines to reach your desired savings amount with ease.",
+         "title":"Savings Goal Calculator | Plan Your Financial Targets Now"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Reach Your Savings Milestones",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Retirement Planning":{
+      "Video":"Video not found",
+      "description":"Secure your financial future with our comprehensive retirement planning calculators. Estimate how much you need to save for a comfortable retirement and check if you are on track.",
+      "meta":{
+         "description":"Plan for a secure retirement. Estimate savings needed, income, and withdrawal strategies with Calcolo.online's retirement tools.",
+         "title":"Retirement Planning Calculators | Secure Your Golden Years"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Plan Your Comfortable Retirement",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Stock Calculators (e.g., Dividend Yield, P/E Ratio)":{
+      "Video":"Video not found",
+      "description":"Analyze stocks effectively with essential calculators like Dividend Yield, P/E Ratio, and more. Make informed investment decisions by understanding key stock valuation metrics.",
+      "meta":{
+         "description":"Utilize stock calculators for Dividend Yield, P/E Ratio, and more. Essential financial tools for stock market analysis on Calcolo.online.",
+         "title":"Stock Analysis Calculators | Dividend Yield, P/E & More"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Essential Stock Analysis Tools",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Mutual Fund/ETF Returns":{
+      "Video":"Video not found",
+      "description":"Estimate potential returns from your mutual fund or ETF investments. Analyze growth based on historical data, expected performance, and associated fees to make informed choices.",
+      "meta":{
+         "description":"Calculate potential returns for Mutual Fund or ETF investments. Analyze performance and growth scenarios with Calcolo.online tools.",
+         "title":"Mutual Fund & ETF Return Calculator | Investment Growth"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Assess Fund Performance & Returns",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Cryptocurrency (e.g., Profit/Loss, Mining)":{
+      "Video":"Video not found",
+      "description":"Navigate the dynamic world of cryptocurrency with specialized calculators. Calculate profit/loss from trades, estimate mining profitability, and analyze your crypto investments.",
+      "meta":{
+         "description":"Cryptocurrency calculators for profit/loss, mining profitability, and investment analysis. Your essential crypto toolkit on Calcolo.online.",
+         "title":"Cryptocurrency Calculators | Profit, Mining, Investment"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Cryptocurrency Calculation Hub",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Budgeting & Personal Finance":{
+      "Video":"Video not found",
+      "description":"Take firm control of your finances with our comprehensive budgeting and personal finance tools. Track expenses, calculate net worth, and manage debt effectively for lasting financial health.",
+      "meta":{
+         "description":"Manage money better with Calcolo.online's budgeting and personal finance calculators. Track spending, net worth, and debt-to-income ratio.",
+         "title":"Budgeting & Personal Finance Calculators | Manage Money"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Budgeting & Personal Finance",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Monthly Budget":{
+      "Video":"Video not found",
+      "description":"Create a detailed monthly budget to effectively track your income and expenses. Identify areas where you can save money and gain better control over your spending habits.",
+      "meta":{
+         "description":"Plan your monthly income and expenses with our easy Monthly Budget Calculator. Take control of your spending today on Calcolo.online.",
+         "title":"Monthly Budget Calculator | Plan Income & Expenses Easily"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Plan Your Monthly Spending Strategy",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Expense Tracker":{
+      "Video":"Video not found",
+      "description":"Keep a meticulous record of your daily, weekly, or monthly expenses. Understand precisely where your money goes and identify key opportunities for significant savings.",
+      "meta":{
+         "description":"Track your spending habits effectively with the Expense Tracker tool on Calcolo.online. Gain valuable insights into your financial outflows.",
+         "title":"Expense Tracker Calculator | Monitor Your Spending Habits"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Keep Tabs on Your Expenses",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Net Worth":{
+      "Video":"Video not found",
+      "description":"Calculate your current net worth by accurately tallying your assets and subtracting your liabilities. Get a clear, concise picture of your financial standing and track progress.",
+      "meta":{
+         "description":"Determine your financial health by calculating net worth. Track assets and liabilities with Calcolo.online's Net Worth Calculator.",
+         "title":"Net Worth Calculator | Assess Your Financial Position Today"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your Financial Snapshot",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Debt-to-Income Ratio":{
+      "Video":"Video not found",
+      "description":"Calculate your debt-to-income ratio (DTI) to assess your financial leverage and borrowing capacity. Understand how lenders evaluate your current debt load.",
+      "meta":{
+         "description":"Our Debt-to-Income Ratio Calculator assesses financial health and borrowing power. An important metric for loans, on Calcolo.online.",
+         "title":"Debt-to-Income (DTI) Ratio Calculator | Financial Health"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Understand Your Debt Load (DTI)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Emergency Fund":{
+      "Video":"Video not found",
+      "description":"Determine the ideal size for your crucial emergency fund. Calculate how much you need to save to cover unexpected expenses and provide robust financial security.",
+      "meta":{
+         "description":"Plan your financial safety net with our Emergency Fund Calculator. Determine how much to save for unexpected life events on Calcolo.online.",
+         "title":"Emergency Fund Calculator | Financial Safety Net Planner"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Build Your Financial Cushion",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Taxes":{
+      "Video":"Video not found",
+      "description":"Simplify complex tax calculations with our versatile range of tax estimators. From income tax to sales tax/VAT, get a clearer understanding of your potential tax obligations.",
+      "meta":{
+         "description":"Estimate tax liabilities with Calcolo.online's tax calculators for income tax, sales tax/VAT, and capital gains. Plan your finances.",
+         "title":"Tax Calculators | Income, Sales Tax & VAT Estimators"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Tax Calculations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Income Tax (general or country-specific if localized)":{
+      "Video":"Video not found",
+      "description":"Estimate your potential income tax liability. Our calculator can be adapted for general understanding or configured for specific regional or national tax rules (if localized).",
+      "meta":{
+         "description":"Calculate your estimated income tax. Provides general or country-specific (if available) estimations. Plan ahead with Calcolo.online.",
+         "title":"Income Tax Calculator | Estimate Your Tax Liability Now"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Your Income Tax Liability",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Sales Tax / VAT":{
+      "Video":"Video not found",
+      "description":"Quickly calculate sales tax or Value Added Tax (VAT) on purchases or sales. Easily determine the precise tax amount and the final price, including all applicable taxes.",
+      "meta":{
+         "description":"Calculate sales tax or VAT with ease. Quick and accurate results for shoppers and businesses alike. Indispensable tool on Calcolo.online.",
+         "title":"Sales Tax / VAT Calculator | Quick Tax Rate Calculation"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Sales Tax and VAT",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Capital Gains Tax":{
+      "Video":"Video not found",
+      "description":"Estimate your potential capital gains tax on the sale of assets such as stocks, bonds, or real estate. Understand the tax implications of your investment profits.",
+      "meta":{
+         "description":"Estimate potential capital gains tax on investments. Understand tax implications on profits before you sell with Calcolo.online.",
+         "title":"Capital Gains Tax Calculator | Estimate Investment Tax Due"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Assess Capital Gains Tax Impact",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Credit Cards":{
+      "Video":"Video not found",
+      "description":"Manage your credit cards more effectively with our suite of specialized calculators. Optimize payoff strategies, analyze balance transfers, and assess the true value of your card rewards.",
+      "meta":{
+         "description":"Calcolo.online provides credit card calculators for payoff planning, balance transfers, and rewards value. Manage your credit smarter.",
+         "title":"Credit Card Calculators | Payoff, Transfer & Rewards Tools"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Smart Credit Card Management",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Credit Card Payoff":{
+      "Video":"Video not found",
+      "description":"Develop a solid strategy to pay off your credit card debt faster. Calculate how long it will take and the interest you'll save by making different payment amounts.",
+      "meta":{
+         "description":"Plan credit card debt repayment with our Payoff Calculator. Save on interest and become debt-free faster using Calcolo.online.",
+         "title":"Credit Card Payoff Calculator | Debt Reduction Planner Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Accelerate Your Credit Card Debt Payoff",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Balance Transfer":{
+      "Video":"Video not found",
+      "description":"Evaluate the potential savings from a credit card balance transfer. Compare fees, promotional interest rates, and ongoing interest to make an informed financial decision.",
+      "meta":{
+         "description":"Analyze savings with a credit card balance transfer. Our calculator helps weigh fees and interest rates on Calcolo.online. Save money now.",
+         "title":"Balance Transfer Calculator | Save on Credit Card Interest"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Evaluate Balance Transfer Options",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Rewards Value":{
+      "Video":"Video not found",
+      "description":"Calculate the actual monetary value of your credit card rewards points or miles. Determine if a particular rewards card is truly beneficial for your specific spending habits.",
+      "meta":{
+         "description":"Determine the real value of your credit card rewards. Make smart choices with our Rewards Value Calculator on Calcolo.online. Maximize perks.",
+         "title":"Credit Card Rewards Value Calculator | Maximize Your Perks"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Understand Your Credit Card Rewards Value",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Inflation":{
+      "Video":"Video not found",
+      "description":"Understand the significant impact of inflation on your money over time. Calculate changes in purchasing power and adjust monetary values for inflation with our easy-to-use tools.",
+      "meta":{
+         "description":"Calcolo.online's inflation calculators show purchasing power and adjust values for inflation. See how money's value changes over time.",
+         "title":"Inflation Calculators | Purchasing Power & Value Adjust"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Understanding Inflation",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Inflation Adjustment":{
+      "Video":"Video not found",
+      "description":"Adjust historical or future monetary values to account for inflation. See how the real value of money changes over different time periods due to economic inflation rates.",
+      "meta":{
+         "description":"Adjust monetary values for inflation. Understand the real value of money—past, present, or future—with Calcolo.online's calculator.",
+         "title":"Inflation Adjustment Calculator | Value Over Time Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Adjust Monetary Values for Inflation",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Purchasing Power":{
+      "Video":"Video not found",
+      "description":"Calculate how inflation directly affects the purchasing power of your money. Understand what a certain amount of money could actually buy in different past, present or future time periods.",
+      "meta":{
+         "description":"See how inflation impacts your money's purchasing power. A key economic indicator, easily calculated on Calcolo.online. Plan better.",
+         "title":"Purchasing Power Calculator | Effect of Inflation on Money"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Assess Your Money's Buying Strength",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Mathematics":{
+      "Video":"Video not found",
+      "description":"Solve complex problems or perform basic calculations with our extensive suite of mathematics calculators. From algebra to calculus, find tools for any mathematical task on Calcolo.online.",
+      "meta":{
+         "description":"Go-to resource for math calculators: basic arithmetic, algebra, geometry, calculus, statistics, and more. Solve problems on Calcolo.online.",
+         "title":"Mathematics Calculators | Algebra, Geometry, Calculus Tools"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Explore Our Mathematics Calculators",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Basic Arithmetic":{
+      "Video":"Video not found",
+      "description":"Perform fundamental arithmetic operations including addition, subtraction, multiplication, and division. Also find calculators for percentages, fractions, ratios, and proportions for daily use.",
+      "meta":{
+         "description":"Access basic arithmetic calculators for addition, subtraction, percentages, fractions, and ratios. Simple, effective tools on Calcolo.online.",
+         "title":"Basic Arithmetic Calculators | Add, Subtract, Percentage"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Basic Arithmetic",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Addition, Subtraction, Multiplication, Division":{
+      "Video":"Video not found",
+      "description":"Use our straightforward calculator for the four basic math operations: addition, subtraction, multiplication, and division. Get quick and accurate results for everyday calculations, instantly.",
+      "meta":{
+         "description":"Perform addition, subtraction, multiplication, and division quickly and accurately with our basic math operator tool on Calcolo.online.",
+         "title":"Basic Math Operations Calc | Add, Subtract, Multiply, Divide"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Core Arithmetic Operation Tools",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Percentage":{
+      "Video":"Video not found",
+      "description":"Calculate percentages with unparalleled ease. Find a percentage of a number, determine percentage change, or convert fractions and decimals to percentages and vice versa, all in one place.",
+      "meta":{
+         "description":"Versatile percentage calculators for various needs: calculate discounts, tips, growth rates, and much more on Calcolo.online. Quick and easy.",
+         "title":"Percentage Calculator | Calculate All Percentages Easily"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"All Things Percentage Calculation",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Fractions":{
+      "Video":"Video not found",
+      "description":"Simplify all your fraction calculations. Add, subtract, multiply, and divide fractions, convert fractions to decimals or percentages, and simplify complex fractions effortlessly.",
+      "meta":{
+         "description":"Our fraction calculators help add, subtract, multiply, divide, and simplify fractions. Convert fractions to decimals on Calcolo.online.",
+         "title":"Fraction Calculator | Add, Subtract, Simplify Fractions Now"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Master Fraction Operations Easily",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Ratios & Proportions":{
+      "Video":"Video not found",
+      "description":"Solve ratio and proportion problems effortlessly with our intuitive tools. Calculate missing values in proportions, simplify ratios to their basic form, and scale quantities with precision.",
+      "meta":{
+         "description":"Use our ratio and proportion calculators to solve for missing values, simplify ratios, and manage proportions on Calcolo.online.",
+         "title":"Ratio & Proportion Calculator | Solve Proportional Math"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Understand Ratios and Proportions",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Algebra":{
+      "Video":"Video not found",
+      "description":"Tackle intricate algebraic expressions and equations head-on. Our algebra calculators assist with solving equations, factoring, logarithms, exponents, and more complex algebraic concepts.",
+      "meta":{
+         "description":"Solve algebraic problems with Calcolo.online's calculators for equations, factoring, logs, and exponents. Simplify your algebra studies.",
+         "title":"Algebra Calculators | Equation Solvers, Factoring, Logs"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Algebra",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Equation Solvers (Linear, Quadratic, etc.)":{
+      "Video":"Video not found",
+      "description":"Solve various types of algebraic equations, including linear, quadratic, cubic, and systems of equations. Get step-by-step solutions and understand the entire solving process clearly.",
+      "meta":{
+         "description":"Our Equation Solvers tackle linear, quadratic, and other equation types. Get solutions and steps for math problems on Calcolo.online.",
+         "title":"Equation Solver | Linear, Quadratic & More | Calcolo.online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Find Solutions to Various Equations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Factoring":{
+      "Video":"Video not found",
+      "description":"Factor algebraic expressions and polynomials efficiently using our factoring calculator. Find the factors of numbers or complex algebraic terms quickly, easily, and accurately.",
+      "meta":{
+         "description":"Factor polynomials and expressions with our online Factoring Calculator. Simplify your algebra tasks efficiently with Calcolo.online.",
+         "title":"Factoring Calculator | Factor Polynomials & Expressions"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Simplify Expressions with Factoring",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Logarithms & Exponents":{
+      "Video":"Video not found",
+      "description":"Calculate logarithms with different bases (e.g., natural log, base 10, base 2) and solve exponential equations. Understand the relationship between logarithms and exponents with our tools.",
+      "meta":{
+         "description":"Compute logarithms and solve exponent problems with our specialized calculators. Easy tools for log & exponential math on Calcolo.online.",
+         "title":"Logarithm & Exponent Calculator | Solve Log & Exp Math"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Explore Logarithms and Exponents",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Geometry":{
+      "Video":"Video not found",
+      "description":"Explore various geometric shapes and their intrinsic properties. Calculate area, volume, perimeter, circumference, angles, and utilize tools like the Pythagorean theorem solver.",
+      "meta":{
+         "description":"Geometric calculators for area, volume, perimeter, Pythagorean theorem, and angle conversions. Solve geometry problems on Calcolo.online.",
+         "title":"Geometry Calculators | Area, Volume, Perimeter & Angles"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Geometry",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Area (Circle, Square, Triangle, etc.)":{
+      "Video":"Video not found",
+      "description":"Calculate the area of various 2D geometric shapes including circles, squares, triangles, rectangles, parallelograms, trapezoids, ellipses, and more common plane figures.",
+      "meta":{
+         "description":"Find the area of circles, squares, triangles, and other shapes with our easy Area Calculator. Quick geometric solutions on Calcolo.online.",
+         "title":"Area Calculator | Circle, Square, Triangle | Calcolo.online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Area of Geometric Shapes",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Volume (Cube, Sphere, Cylinder, etc.)":{
+      "Video":"Video not found",
+      "description":"Determine the volume of various three-dimensional shapes such as cubes, spheres, cylinders, cones, pyramids, rectangular prisms, and other common geometric solids.",
+      "meta":{
+         "description":"Calculate volume of cubes, spheres, cylinders, and more 3D shapes. User-friendly Volume Calculator for quick results on Calcolo.online.",
+         "title":"Volume Calculator | Cube, Sphere, Cylinder | Calcolo.online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Volume of 3D Shapes",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Perimeter/Circumference":{
+      "Video":"Video not found",
+      "description":"Calculate the perimeter of 2D shapes like squares, rectangles, and triangles, or the circumference of circles. Essential for diverse geometric applications and problem-solving.",
+      "meta":{
+         "description":"Easily find the perimeter of shapes and circumference of circles with our calculator. Quick geometric measurements on Calcolo.online.",
+         "title":"Perimeter & Circumference Calculator | Geometric Shapes"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Measure Shape Boundaries Accurately",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Pythagorean Theorem":{
+      "Video":"Video not found",
+      "description":"Solve for any missing side (hypotenuse or a leg) of a right-angled triangle using the fundamental Pythagorean theorem. Enter two known sides to instantly find the third.",
+      "meta":{
+         "description":"Use our Pythagorean Theorem Calculator to find the missing side of a right triangle. Quick and accurate solutions on Calcolo.online.",
+         "title":"Pythagorean Theorem Calculator | Solve Right Triangles"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Right-Angled Triangle Solutions",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Angle Converters":{
+      "Video":"Video not found",
+      "description":"Convert between different units of angular measurement, such as degrees, radians, grads, minutes, seconds, and more. Useful for trigonometry, navigation, and geometric problems.",
+      "meta":{
+         "description":"Convert angles between degrees, radians, and other units with our Angle Converter. Precise conversions for math and science on Calcolo.online.",
+         "title":"Angle Converter | Degrees to Radians & More | Calcolo.online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Between Angular Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Trigonometry":{
+      "Video":"Video not found",
+      "description":"Explore essential trigonometric concepts with our comprehensive calculators. Solve for trigonometric functions (sine, cosine, tangent) and use triangle solvers for detailed analysis.",
+      "meta":{
+         "description":"Trigonometry calculators for sin, cos, tan, and triangle solving. Essential tools for students and professionals on Calcolo.online.",
+         "title":"Trigonometry Calculators | Sin, Cos, Tan, Triangle Solver"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Trigonometry",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Trigonometric Functions (Sin, Cos, Tan)":{
+      "Video":"Video not found",
+      "description":"Calculate sine, cosine, tangent, cosecant, secant, cotangent, and their inverses (arcsin, arccos, arctan) for a given angle in degrees or radians. Essential for various applications.",
+      "meta":{
+         "description":"Find values for trigonometric functions (sin, cos, tan, csc, sec, cot) and their inverses. Accurate trig calculations on Calcolo.online.",
+         "title":"Trigonometric Functions Calculator | Sin, Cos, Tan, etc."
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Trigonometric Functions",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Triangle Solver":{
+      "Video":"Video not found",
+      "description":"Solve any triangle by finding missing sides or angles using known values. Supports various scenarios including SSS (Side-Side-Side), SAS (Side-Angle-Side), ASA, AAS, and SSA.",
+      "meta":{
+         "description":"Our Triangle Solver calculates missing angles and sides of any triangle. Input known values for quick, accurate solutions on Calcolo.online.",
+         "title":"Triangle Solver | Calculate Angles & Sides of Triangles"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Comprehensive Triangle Analysis Tool",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Calculus":{
+      "Video":"Video not found",
+      "description":"Delve into the fundamental concepts of calculus with our user-friendly tools for derivatives, integrals (definite and indefinite), and limits. Simplify complex calculus problems.",
+      "meta":{
+         "description":"Calculus calculators for derivatives, integrals, and limits. Solve calculus problems and enhance your understanding on Calcolo.online.",
+         "title":"Calculus Calculators | Derivatives, Integrals, Limits Tools"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Calculus",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Derivatives":{
+      "Video":"Video not found",
+      "description":"Calculate derivatives of functions with ease. Our derivative calculator provides step-by-step solutions for various differentiation problems, helping you understand the process.",
+      "meta":{
+         "description":"Find derivatives of functions with our online Derivative Calculator. Get step-by-step solutions for calculus homework on Calcolo.online.",
+         "title":"Derivative Calculator | Find Derivatives of Functions Easily"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Function Differentiation Made Simple",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Integrals":{
+      "Video":"Video not found",
+      "description":"Compute definite and indefinite integrals of functions. Our integral calculator provides solutions and can help visualize the area under a curve for definite integrals.",
+      "meta":{
+         "description":"Solve definite and indefinite integrals with our Integral Calculator. Get solutions for your calculus problems quickly on Calcolo.online.",
+         "title":"Integral Calculator | Definite & Indefinite Integrals Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Function Integration Tools Online",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Limits":{
+      "Video":"Video not found",
+      "description":"Evaluate limits of functions as they approach a specific point or infinity. Understand the asymptotic behavior and continuity of functions using our intuitive limit calculator.",
+      "meta":{
+         "description":"Calculate limits of functions with our Limit Calculator. An essential tool for understanding core calculus concepts on Calcolo.online.",
+         "title":"Limit Calculator | Evaluate Function Limits | Calcolo.online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Analyze Function Behavior with Limits",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Statistics & Probability":{
+      "Video":"Video not found",
+      "description":"Analyze data sets and understand likelihood with our statistics and probability calculators. Compute mean, median, mode, standard deviation, variance, probability, permutations, and more.",
+      "meta":{
+         "description":"Comprehensive statistics & probability calculators. Find mean, median, std dev, probability, permutations & more on Calcolo.online.",
+         "title":"Statistics & Probability Calculators | Data Analysis Tools"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Statistics & Probability",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Mean, Median, Mode":{
+      "Video":"Video not found",
+      "description":"Calculate the key measures of central tendency for a dataset: mean (average), median (the middle value), and mode (the most frequent value). Essential for basic statistical analysis.",
+      "meta":{
+         "description":"Find the mean, median, and mode of any dataset with our easy calculator. Key statistical measures for data insights on Calcolo.online.",
+         "title":"Mean, Median, Mode Calculator | Central Tendency Stats"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Dataset Central Measures Calculation",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Standard Deviation, Variance":{
+      "Video":"Video not found",
+      "description":"Measure the dispersion, spread, or variability of a dataset by calculating its standard deviation (for sample or population) and variance. Understand how spread out your data points are.",
+      "meta":{
+         "description":"Calculate standard deviation and variance to measure data spread. Essential statistical tools for data analysis on Calcolo.online.",
+         "title":"Standard Deviation & Variance Calculator | Data Dispersion"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Measure Data Spread and Variability",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Probability":{
+      "Video":"Video not found",
+      "description":"Calculate probabilities of single events, multiple events, and conditional probabilities. Explore concepts like independent events, dependent events, and Bayes' theorem applications.",
+      "meta":{
+         "description":"Our Probability Calculator helps determine the likelihood of events. Solve various probability problems with ease on Calcolo.online.",
+         "title":"Probability Calculator | Calculate Likelihood of Events Now"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Assess Event Likelihood & Probability",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Permutations & Combinations":{
+      "Video":"Video not found",
+      "description":"Calculate permutations (where order matters) and combinations (where order doesn't matter) for a given set of items. Indispensable in probability, statistics, and combinatorics.",
+      "meta":{
+         "description":"Calculate permutations and combinations with our easy P&C calculator. Solve counting and arrangement problems on Calcolo.online.",
+         "title":"Permutation & Combination Calculator | P&C Solver Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Counting Principles: Permutations & Combinations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Regression Analysis":{
+      "Video":"Video not found",
+      "description":"Perform simple linear regression analysis to model the relationship between two continuous variables. Find the regression equation, correlation coefficient (r), and coefficient of determination (R²).",
+      "meta":{
+         "description":"Use our Regression Analysis Calculator to find relationships between variables. Perform linear regression easily on Calcolo.online.",
+         "title":"Regression Analysis Calculator | Linear Regression Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Model Variable Relationships (Regression)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Number Theory":{
+      "Video":"Video not found",
+      "description":"Explore the fascinating properties of numbers with our specialized number theory calculators. Find prime numbers, GCD, LCM, check for divisibility, and perform other number-related computations.",
+      "meta":{
+         "description":"Number theory calculators for prime numbers, GCD, LCM, and more. Explore intriguing properties of numbers on Calcolo.online.",
+         "title":"Number Theory Calculators | Primes, GCD, LCM & More"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Number Theory",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Prime Numbers":{
+      "Video":"Video not found",
+      "description":"Determine if a given number is prime, find the prime factors of any composite number, or generate a list of prime numbers within a specified numerical range.",
+      "meta":{
+         "description":"Check for prime numbers, find prime factorizations, and generate lists of primes with our Prime Number tools on Calcolo.online.",
+         "title":"Prime Number Calculator | Check, Find & List Primes"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"All About Prime Number Calculations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Greatest Common Divisor (GCD)":{
+      "Video":"Video not found",
+      "description":"Find the greatest common divisor (GCD), also known as the highest common factor (HCF), of two or more integers using various methods like Euclidean algorithm.",
+      "meta":{
+         "description":"Calculate the Greatest Common Divisor (GCD) or HCF of numbers. Quick and accurate GCD finder for any integers on Calcolo.online.",
+         "title":"GCD Calculator | Greatest Common Divisor (HCF) Finder"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Find the Greatest Common Divisor (GCD)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Least Common Multiple (LCM)":{
+      "Video":"Video not found",
+      "description":"Determine the least common multiple (LCM) of two or more integers. This is highly useful in various mathematical applications, especially when working with fractions.",
+      "meta":{
+         "description":"Our LCM Calculator finds the Least Common Multiple of two or more numbers. A helpful tool for math problems on Calcolo.online.",
+         "title":"LCM Calculator | Least Common Multiple Finder Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Find the Least Common Multiple (LCM)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Conversions":{
+      "Video":"Video not found",
+      "description":"Perform various mathematical conversions quickly and accurately. This section includes number base conversions (binary, decimal, hexadecimal, octal) and Roman numeral conversions.",
+      "meta":{
+         "description":"Mathematical conversion tools for number bases (binary, hex, decimal) and Roman numerals. Accurate conversions on Calcolo.online.",
+         "title":"Math Conversion Calculators | Number Base, Roman Numerals"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Mathematical Conversions",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Number Base Converter (Binary, Decimal, Hex)":{
+      "Video":"Video not found",
+      "description":"Convert numbers seamlessly between different bases, including binary (base-2), decimal (base-10), hexadecimal (base-16), and octal (base-8). Essential for computer science and digital electronics.",
+      "meta":{
+         "description":"Convert numbers between binary, decimal, hexadecimal, and octal bases with our versatile Number Base Converter on Calcolo.online.",
+         "title":"Number Base Converter | Binary, Decimal, Hex, Octal Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Between Different Number Systems",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Roman Numerals":{
+      "Video":"Video not found",
+      "description":"Convert Arabic numerals (standard decimal numbers) to Roman numerals and vice versa. Understand the ancient system of Roman numbering and its rules with this handy tool.",
+      "meta":{
+         "description":"Convert numbers to and from Roman numerals with our easy Roman Numeral Converter. Explore this ancient system on Calcolo.online.",
+         "title":"Roman Numeral Converter | Decimal to Roman & Vice Versa"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Translate Roman and Arabic Numerals",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Health & Fitness":{
+      "Video":"Video not found",
+      "description":"Take charge of your well-being with Calcolo.online's health and fitness calculators. Monitor body metrics, plan nutrition, track fitness activities, and assess health risks for a healthier lifestyle.",
+      "meta":{
+         "description":"Comprehensive health and fitness calculators for BMI, BMR, calories, macros, pregnancy, and more. Achieve your wellness goals on Calcolo.online.",
+         "title":"Health & Fitness Calculators | BMI, Calories, Nutrition"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Explore Our Health & Fitness Calculators",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Body Metrics":{
+      "Video":"Video not found",
+      "description":"Understand your body better with our range of body metric calculators. Calculate BMI, BMR, TDEE, body fat percentage, ideal weight, and lean body mass for a complete overview.",
+      "meta":{
+         "description":"Calculate key body metrics: BMI, BMR, TDEE, body fat, ideal weight, and lean body mass. Track your progress with Calcolo.online.",
+         "title":"Body Metrics Calculators | BMI, BMR, Body Fat & More"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Body Metrics",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Body Mass Index (BMI)":{
+      "Video":"Video not found",
+      "description":"Calculate your Body Mass Index (BMI) to assess your weight status relative to your height. A common indicator for identifying potential weight problems in adults.",
+      "meta":{
+         "description":"Use our BMI Calculator to check your Body Mass Index. A quick and easy way to assess your weight status on Calcolo.online.",
+         "title":"Body Mass Index (BMI) Calculator | Assess Your Weight"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your Body Mass Index (BMI)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Basal Metabolic Rate (BMR)":{
+      "Video":"Video not found",
+      "description":"Estimate your Basal Metabolic Rate (BMR), the number of calories your body burns at rest to maintain basic life-sustaining functions. Key for diet planning.",
+      "meta":{
+         "description":"Determine your Basal Metabolic Rate (BMR) – calories burned at rest. Essential for weight management planning on Calcolo.online.",
+         "title":"Basal Metabolic Rate (BMR) Calculator | Calories at Rest"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Your Basal Metabolic Rate",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Total Daily Energy Expenditure (TDEE)":{
+      "Video":"Video not found",
+      "description":"Calculate your Total Daily Energy Expenditure (TDEE), which is the total number of calories you burn in a day, including physical activity. Crucial for weight management.",
+      "meta":{
+         "description":"Our TDEE Calculator estimates your total daily calorie needs based on activity level. Plan your diet effectively on Calcolo.online.",
+         "title":"TDEE Calculator | Total Daily Energy Expenditure Estimator"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your Total Daily Calorie Burn",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Body Fat Percentage":{
+      "Video":"Video not found",
+      "description":"Estimate your body fat percentage using various methods (e.g., US Navy formula, BMI method). Monitor your body composition for health and fitness tracking.",
+      "meta":{
+         "description":"Estimate your body fat percentage with our calculator. Track your body composition for better health insights on Calcolo.online.",
+         "title":"Body Fat Percentage Calculator | Estimate Body Composition"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Your Body Fat Levels",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Ideal Weight":{
+      "Video":"Video not found",
+      "description":"Determine your ideal body weight range based on height, gender, and frame size using popular formulas. A helpful guideline for setting weight goals.",
+      "meta":{
+         "description":"Find your ideal weight range with our calculator using various formulas. Set healthy weight goals with Calcolo.online's guidance.",
+         "title":"Ideal Weight Calculator | Healthy Weight Range Estimator"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Determine Your Ideal Weight Range",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Lean Body Mass":{
+      "Video":"Video not found",
+      "description":"Calculate your Lean Body Mass (LBM), which is the weight of your body minus your body fat. Understanding LBM is important for fitness and nutrition planning.",
+      "meta":{
+         "description":"Estimate your Lean Body Mass (LBM) with our calculator. Understand your body composition beyond just weight on Calcolo.online.",
+         "title":"Lean Body Mass (LBM) Calculator | Body Composition Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your Lean Body Mass",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Nutrition & Diet":{
+      "Video":"Video not found",
+      "description":"Optimize your eating habits with our nutrition and diet calculators. Count calories, calculate macronutrient ratios, determine water intake, and use tools for specific diets.",
+      "meta":{
+         "description":"Nutrition and diet calculators for calorie counting, macros (protein, carbs, fat), water intake, and diet points on Calcolo.online.",
+         "title":"Nutrition & Diet Calculators | Calories, Macros & More"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Nutrition & Diet Planning",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Calorie Counter":{
+      "Video":"Video not found",
+      "description":"Estimate your daily calorie needs for weight maintenance, loss, or gain based on your BMR and activity level. Plan your diet effectively to achieve your goals.",
+      "meta":{
+         "description":"Use our Calorie Calculator to estimate daily calorie needs for weight management. Achieve your diet goals with Calcolo.online.",
+         "title":"Calorie Calculator | Estimate Daily Caloric Needs"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Your Daily Calorie Intake",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Macronutrient Calculator (Protein, Carbs, Fat)":{
+      "Video":"Video not found",
+      "description":"Determine your optimal macronutrient ratio (protein, carbohydrates, and fat) based on your calorie goals and dietary preferences (e.g., keto, balanced).",
+      "meta":{
+         "description":"Calculate your ideal macronutrient intake (protein, carbs, fat) for your diet and fitness goals with Calcolo.online's macro tool.",
+         "title":"Macronutrient Calculator | Protein, Carbs, Fat Ratios"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Balance Your Macronutrients",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Water Intake":{
+      "Video":"Video not found",
+      "description":"Estimate your recommended daily water intake based on factors like weight, activity level, and climate. Stay hydrated for optimal health and performance.",
+      "meta":{
+         "description":"Calculate your personalized daily water intake needs for optimal hydration and health. Simple and effective tool on Calcolo.online.",
+         "title":"Water Intake Calculator | Recommended Daily Hydration"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Determine Your Daily Water Needs",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Points Calculators (for specific diets)":{
+      "Video":"Video not found",
+      "description":"Utilize points calculators tailored for specific diet plans (e.g., Weight Watchers). Easily track your food intake and stay aligned with your chosen dietary system.",
+      "meta":{
+         "description":"Points calculators for popular diet plans. Simplify tracking and adherence to your specific dietary system with Calcolo.online.",
+         "title":"Diet Points Calculators | For Specific Diet Plans Tracking"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Tools for Diet-Specific Point Tracking",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Fitness & Exercise":{
+      "Video":"Video not found",
+      "description":"Enhance your workouts with our fitness and exercise calculators. Estimate calories burned, find target heart rates, calculate pace, and determine one-rep max for strength training.",
+      "meta":{
+         "description":"Fitness calculators for calories burned, target heart rate, pace (running/cycling), and one-rep max. Optimize workouts on Calcolo.online.",
+         "title":"Fitness & Exercise Calculators | Optimize Your Workouts"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Fitness & Exercise",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Calories Burned by Activity":{
+      "Video":"Video not found",
+      "description":"Estimate the number of calories burned during various physical activities and exercises based on duration and your body weight. Track your energy expenditure effectively.",
+      "meta":{
+         "description":"Estimate calories burned for various activities and exercises. Track your workout effectiveness with Calcolo.online's calculator.",
+         "title":"Calories Burned by Activity Calculator | Exercise Tracker"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Calories Burned During Activities",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Target Heart Rate":{
+      "Video":"Video not found",
+      "description":"Calculate your target heart rate zones for different exercise intensities (e.g., fat burning, cardio). Optimize your workouts for maximum benefit and safety.",
+      "meta":{
+         "description":"Find your target heart rate zones for effective workouts. Optimize your training intensity with Calcolo.online's HR calculator.",
+         "title":"Target Heart Rate Calculator | Optimize Workout Intensity"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Find Your Optimal Training Heart Rate",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Pace Calculator (Running, Cycling)":{
+      "Video":"Video not found",
+      "description":"Calculate your pace for running, cycling, or other activities given distance and time, or vice versa. Plan your training and race strategies effectively.",
+      "meta":{
+         "description":"Pace calculator for running, cycling, and more. Determine speed, time, or distance for your training and races on Calcolo.online.",
+         "title":"Pace Calculator | Running, Cycling Speed & Distance Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your Activity Pace",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "One-Rep Max (Strength Training)":{
+      "Video":"Video not found",
+      "description":"Estimate your one-repetition maximum (1RM) for strength training exercises like bench press, squat, or deadlift, based on the weight lifted and repetitions performed.",
+      "meta":{
+         "description":"Estimate your One-Rep Max (1RM) for strength training. Gauge your strength and plan workouts effectively with Calcolo.online.",
+         "title":"One-Rep Max (1RM) Calculator | Strength Training Estimator"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Your Strength: One-Rep Max",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Pregnancy & Fertility":{
+      "Video":"Video not found",
+      "description":"Navigate your pregnancy and fertility journey with helpful calculators. Estimate ovulation, due dates, and track healthy pregnancy weight gain.",
+      "meta":{
+         "description":"Pregnancy and fertility calculators for ovulation, due date estimation, and healthy weight gain tracking. Plan and monitor on Calcolo.online.",
+         "title":"Pregnancy & Fertility Calculators | Ovulation, Due Date"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Pregnancy & Fertility",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Ovulation Calculator":{
+      "Video":"Video not found",
+      "description":"Estimate your most fertile days by calculating your ovulation period based on your menstrual cycle length and last period date. Helpful for family planning.",
+      "meta":{
+         "description":"Estimate your fertile window and ovulation days with our Ovulation Calculator. Plan conception effectively with Calcolo.online.",
+         "title":"Ovulation Calculator | Predict Your Most Fertile Days"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Your Ovulation Period",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Due Date Calculator":{
+      "Video":"Video not found",
+      "description":"Estimate your baby's due date based on the first day of your last menstrual period (LMP) or conception date. Get a timeline for your pregnancy journey.",
+      "meta":{
+         "description":"Calculate your estimated pregnancy due date based on LMP or conception. Plan for your baby's arrival with Calcolo.online.",
+         "title":"Pregnancy Due Date Calculator | Estimate Baby's Arrival"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Your Baby's Due Date",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Pregnancy Weight Gain":{
+      "Video":"Video not found",
+      "description":"Track your pregnancy weight gain and compare it against recommended guidelines based on your pre-pregnancy BMI. Monitor for a healthy pregnancy.",
+      "meta":{
+         "description":"Monitor your pregnancy weight gain with our calculator. Ensure healthy progress for you and your baby using Calcolo.online.",
+         "title":"Pregnancy Weight Gain Calculator | Track Healthy Progress"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Monitor Healthy Pregnancy Weight Gain",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Health Risks":{
+      "Video":"Video not found",
+      "description":"Assess potential health risks with our specialized calculators. Estimate Blood Alcohol Content (BAC) and understand the financial cost of smoking.",
+      "meta":{
+         "description":"Health risk assessment tools: BAC calculator and smoking cost calculator. Make informed decisions for your well-being on Calcolo.online.",
+         "title":"Health Risk Calculators | BAC & Smoking Cost Estimators"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Assessing Health Risks",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Blood Alcohol Content (BAC)":{
+      "Video":"Video not found",
+      "description":"Estimate your Blood Alcohol Content (BAC) based on the number of drinks consumed, weight, gender, and time. Promotes responsible alcohol consumption awareness.",
+      "meta":{
+         "description":"Estimate your Blood Alcohol Content (BAC) with our calculator. Understand alcohol's effects and promote safety. For informational use only.",
+         "title":"Blood Alcohol Content (BAC) Calculator | Estimate BAC"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Your Blood Alcohol Content",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Smoking Cost":{
+      "Video":"Video not found",
+      "description":"Calculate the financial cost of smoking over time. See how much money you could save by quitting, considering daily, weekly, monthly, and yearly expenses.",
+      "meta":{
+         "description":"Our Smoking Cost Calculator reveals the financial impact of smoking. See your potential savings by quitting on Calcolo.online.",
+         "title":"Smoking Cost Calculator | See How Much Smoking Costs You"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate the Financial Cost of Smoking",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Sleep":{
+      "Video":"Video not found",
+      "description":"Improve your sleep hygiene with our sleep cycle calculator. Determine the best times to wake up or go to bed based on natural sleep cycles for better rest.",
+      "meta":{
+         "description":"Optimize your rest with our Sleep Cycle Calculator. Find the best times to wake up or go to bed for improved sleep quality on Calcolo.online.",
+         "title":"Sleep Cycle Calculator | Optimize Your Sleep & Wake Times"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Better Sleep",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Sleep Cycle Calculator":{
+      "Video":"Video not found",
+      "description":"Calculate optimal wake-up or bedtime based on natural sleep cycles (typically 90 minutes). Aim to wake up at the end of a cycle to feel more refreshed.",
+      "meta":{
+         "description":"Plan your sleep for optimal rest. Calculate bedtimes or wake-up times based on sleep cycles with Calcolo.online's tool.",
+         "title":"Sleep Cycle Calculator | Wake Up Refreshed, Plan Sleep"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Optimize Your Sleep and Wake Times",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Science & Engineering":{
+      "Video":"Video not found",
+      "description":"Empower your scientific and engineering projects with Calcolo.online's precise calculators. Covering physics, chemistry, electronics, mechanics, astronomy, and fluid dynamics for accurate solutions.",
+      "meta":{
+         "description":"Science and engineering calculators for physics, chemistry, electronics, mechanics, and more. Solve complex problems on Calcolo.online.",
+         "title":"Science & Engineering Calculators | Physics, Chemistry"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Explore Our Science & Engineering Calculators",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Physics":{
+      "Video":"Video not found",
+      "description":"Solve physics problems with our specialized calculators. Apply Ohm's Law, Newton's Laws, calculate energy, speed, distance, time, pressure, density, frequency, and wavelength.",
+      "meta":{
+         "description":"Physics calculators for Ohm's Law, Newton's Laws, energy, speed, pressure, density, and more. Essential tools on Calcolo.online.",
+         "title":"Physics Calculators | Formulas & Problem Solvers Online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Physics Calculations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Ohm's Law":{
+      "Video":"Video not found",
+      "description":"Calculate voltage, current, resistance, or power using Ohm's Law (V=IR, P=VI). An essential tool for electronics enthusiasts and electrical engineering students.",
+      "meta":{
+         "description":"Ohm's Law calculator for voltage, current, resistance, and power. Solve electrical circuit problems easily on Calcolo.online.",
+         "title":"Ohm's Law Calculator | Voltage, Current, Resistance, Power"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Apply Ohm's Law for Circuit Analysis",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Newton's Laws (e.g., Force = Mass x Acceleration)":{
+      "Video":"Video not found",
+      "description":"Apply Newton's Laws of motion. Calculate force, mass, or acceleration using F=ma, and explore other concepts related to classical mechanics and dynamics.",
+      "meta":{
+         "description":"Newton's Laws calculators, including F=ma. Solve problems related to force, mass, and acceleration in classical mechanics on Calcolo.online.",
+         "title":"Newton's Laws Calculator | Force, Mass, Acceleration Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Tools for Newton's Laws of Motion",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Energy (Kinetic, Potential)":{
+      "Video":"Video not found",
+      "description":"Calculate kinetic energy (energy of motion) and potential energy (stored energy, e.g., gravitational). Understand fundamental energy concepts in physics.",
+      "meta":{
+         "description":"Calculate kinetic and potential energy with our physics calculators. Understand energy transformations and conservation on Calcolo.online.",
+         "title":"Energy Calculator | Kinetic & Potential Energy Calculation"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Kinetic and Potential Energy",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Speed, Distance, Time":{
+      "Video":"Video not found",
+      "description":"Calculate speed, distance, or time given the other two variables. A fundamental tool for motion-related problems in physics and everyday life.",
+      "meta":{
+         "description":"Speed, Distance, Time calculator. Solve for any variable in motion problems quickly and accurately with Calcolo.online's tool.",
+         "title":"Speed, Distance, Time Calculator | Motion Calculations"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Solve for Speed, Distance, or Time",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Pressure":{
+      "Video":"Video not found",
+      "description":"Calculate pressure, force, or area using the formula P = F/A. Convert between different units of pressure (e.g., Pascal, Bar, PSI, atm).",
+      "meta":{
+         "description":"Pressure calculator for force, area, and pressure units conversion. Essential for physics and engineering tasks on Calcolo.online.",
+         "title":"Pressure Calculator | Force, Area & Unit Conversions"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Pressure and Related Variables",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Density":{
+      "Video":"Video not found",
+      "description":"Calculate density, mass, or volume using the formula ρ = m/V. An important property of materials in physics, chemistry, and engineering.",
+      "meta":{
+         "description":"Density calculator for mass, volume, and density of substances. A fundamental tool for science and engineering on Calcolo.online.",
+         "title":"Density Calculator | Mass, Volume, Density Relationship"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Density, Mass, or Volume",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Frequency & Wavelength":{
+      "Video":"Video not found",
+      "description":"Calculate frequency or wavelength of electromagnetic waves or sound waves, given the wave speed. Understand the relationship between these wave properties.",
+      "meta":{
+         "description":"Frequency and Wavelength calculator for waves (light, sound). Understand their relationship with wave speed on Calcolo.online.",
+         "title":"Frequency & Wavelength Calculator | Wave Properties Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Explore Wave Frequency and Wavelength",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Chemistry":{
+      "Video":"Video not found",
+      "description":"Facilitate your chemistry calculations with tools for molarity, molar mass, pH, gas laws, and dilutions. Accurate and easy to use for students and professionals.",
+      "meta":{
+         "description":"Chemistry calculators for molarity, molar mass, pH, gas laws, and solution dilutions. Essential lab tools on Calcolo.online.",
+         "title":"Chemistry Calculators | Molarity, pH, Gas Laws & More"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Chemistry Calculations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Molarity / Molar Mass":{
+      "Video":"Video not found",
+      "description":"Calculate molarity of solutions, find molar mass of compounds, or determine moles/mass needed. Fundamental calculations for stoichiometry and solution chemistry.",
+      "meta":{
+         "description":"Molarity and Molar Mass calculator for chemical solutions and compounds. Essential for students and lab work on Calcolo.online.",
+         "title":"Molarity & Molar Mass Calculator | Solution Chemistry Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Molarity and Molar Mass",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "pH Calculator":{
+      "Video":"Video not found",
+      "description":"Calculate pH from hydrogen ion concentration [H+] or pOH, and vice versa. Determine the acidity or alkalinity of aqueous solutions quickly.",
+      "meta":{
+         "description":"pH calculator to determine acidity/alkalinity from [H+] or pOH. Essential for chemistry and biology applications on Calcolo.online.",
+         "title":"pH Calculator | Acidity & Alkalinity of Solutions Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Determine pH and pOH of Solutions",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Gas Laws (Ideal Gas Law)":{
+      "Video":"Video not found",
+      "description":"Apply the Ideal Gas Law (PV=nRT) to calculate pressure, volume, temperature, or moles of a gas. Also explore Boyle's, Charles's, and Gay-Lussac's laws.",
+      "meta":{
+         "description":"Ideal Gas Law calculator (PV=nRT) and other gas laws. Solve for pressure, volume, temperature, or moles of gas on Calcolo.online.",
+         "title":"Gas Law Calculator | Ideal Gas Law (PV=nRT) & More"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Tools for Gas Law Calculations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Dilution":{
+      "Video":"Video not found",
+      "description":"Calculate the concentration or volume needed for solution dilutions using the M1V1 = M2V2 formula. Prepare solutions accurately for lab work.",
+      "meta":{
+         "description":"Solution Dilution calculator (M1V1=M2V2). Prepare solutions of desired concentrations accurately and easily with Calcolo.online.",
+         "title":"Dilution Calculator | M1V1=M2V2 Solution Preparation Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate for Solution Dilutions",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Electronics":{
+      "Video":"Video not found",
+      "description":"Simplify your electronics projects with calculators for resistor color codes, capacitance, inductance, and power calculations (Watts, Volts, Amps). Essential for hobbyists and engineers.",
+      "meta":{
+         "description":"Electronics calculators: resistor color code, capacitance, inductance, and power (Watts, Volts, Amps). Tools for circuits on Calcolo.online.",
+         "title":"Electronics Calculators | Resistor, Capacitor, Power Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Electronics",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Resistor Color Code":{
+      "Video":"Video not found",
+      "description":"Determine the resistance value and tolerance of a resistor based on its color bands (3, 4, 5, or 6 bands). Also, find colors for a given resistance.",
+      "meta":{
+         "description":"Resistor Color Code calculator. Decode resistor bands or find colors for a specific resistance value. Essential for electronics.",
+         "title":"Resistor Color Code Calculator | Decode Resistor Bands"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Decode Resistor Color Bands",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Capacitance":{
+      "Video":"Video not found",
+      "description":"Calculate capacitance, charge, or voltage in capacitors (Q=CV). Understand capacitor behavior in circuits and convert capacitance units.",
+      "meta":{
+         "description":"Capacitance calculator (Q=CV). Calculate charge, voltage, or capacitance for capacitors in electronic circuits on Calcolo.online.",
+         "title":"Capacitance Calculator | Charge, Voltage in Capacitors"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Capacitance and Related Values",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Inductance":{
+      "Video":"Video not found",
+      "description":"Calculate inductance, voltage, or rate of change of current in inductors. Understand inductor properties and behavior in AC/DC circuits.",
+      "meta":{
+         "description":"Inductance calculator for inductors in circuits. Analyze voltage, current change, and energy storage with Calcolo.online.",
+         "title":"Inductance Calculator | Inductor Properties & Circuits"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Analyze Inductor Characteristics",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Power Calculators (Watts, Volts, Amps)":{
+      "Video":"Video not found",
+      "description":"Calculate electrical power (Watts), voltage (Volts), current (Amps), or resistance using formulas like P=VI, P=I²R, P=V²/R. Essential for circuit analysis.",
+      "meta":{
+         "description":"Electrical Power calculator for Watts, Volts, Amps, and Resistance. Solve for any variable in power formulas on Calcolo.online.",
+         "title":"Power Calculator | Watts, Volts, Amps, Resistance Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Electrical Power Variables",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Mechanics":{
+      "Video":"Video not found",
+      "description":"Solve problems in mechanics with calculators for torque, gear ratio, stress, and strain. Essential tools for mechanical engineering and design projects.",
+      "meta":{
+         "description":"Mechanics calculators for torque, gear ratio, stress, and strain. Engineering tools for design and analysis on Calcolo.online.",
+         "title":"Mechanics Calculators | Torque, Gear Ratio, Stress, Strain"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Mechanics",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Torque":{
+      "Video":"Video not found",
+      "description":"Calculate torque (rotational force) given force and lever arm distance. Convert between different units of torque. Crucial for mechanical systems.",
+      "meta":{
+         "description":"Torque calculator for rotational force, lever arm, and angle. Essential for mechanical engineering applications on Calcolo.online.",
+         "title":"Torque Calculator | Rotational Force & Lever Arm Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Torque in Mechanical Systems",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Gear Ratio":{
+      "Video":"Video not found",
+      "description":"Calculate gear ratios, input/output speeds, or number of teeth for gear systems. Optimize mechanical advantage and speed transmission in machinery.",
+      "meta":{
+         "description":"Gear Ratio calculator for speeds, teeth, and mechanical advantage in gear systems. Optimize your designs with Calcolo.online.",
+         "title":"Gear Ratio Calculator | Speeds, Teeth & Mechanical Design"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Analyze Gear Ratios and Speeds",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Stress & Strain":{
+      "Video":"Video not found",
+      "description":"Calculate mechanical stress (force per unit area) and strain (deformation) in materials under load. Fundamental concepts in materials science and structural engineering.",
+      "meta":{
+         "description":"Stress and Strain calculator for materials under load. Analyze material behavior for engineering designs on Calcolo.online.",
+         "title":"Stress & Strain Calculator | Material Mechanics & Analysis"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Material Stress and Strain",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Astronomy":{
+      "Video":"Video not found",
+      "description":"Explore the cosmos with our astronomy calculators. Calculate your weight on different planets or convert vast distances into light years.",
+      "meta":{
+         "description":"Astronomy calculators: find your weight on other planets and convert distances to light years. Explore space with Calcolo.online.",
+         "title":"Astronomy Calculators | Planet Weight & Light Year Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Astronomical Calculations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Planet Weight Calculator":{
+      "Video":"Video not found",
+      "description":"Curious about your weight on Mars or Jupiter? Enter your weight on Earth to find out how much you would weigh on other planets and celestial bodies in our solar system.",
+      "meta":{
+         "description":"Planet Weight Calculator: find out how much you'd weigh on Mars, Jupiter, the Moon, and more celestial bodies. Fun and educational!",
+         "title":"Planet Weight Calculator | Your Weight on Other Planets"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your Weight on Different Planets",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Light Year Converter":{
+      "Video":"Video not found",
+      "description":"Convert astronomical distances between light years and other units like kilometers, miles, parsecs, and astronomical units (AU). Grasp the vastness of space.",
+      "meta":{
+         "description":"Light Year Converter for astronomical distances. Convert light years to km, miles, parsecs, and AU. Explore space on Calcolo.online.",
+         "title":"Light Year Converter | Astronomical Distance Conversion"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Astronomical Distances (Light Years)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Fluid Dynamics":{
+      "Video":"Video not found",
+      "description":"Analyze fluid behavior with calculators for flow rate and Reynolds number. Essential for engineering applications involving liquid or gas movement.",
+      "meta":{
+         "description":"Fluid Dynamics calculators for flow rate and Reynolds number. Essential tools for engineering fluid systems on Calcolo.online.",
+         "title":"Fluid Dynamics Calculators | Flow Rate & Reynolds Number"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Fluid Dynamics",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Flow Rate":{
+      "Video":"Video not found",
+      "description":"Calculate volumetric flow rate (Q = Av) or mass flow rate of fluids through pipes or channels. Convert between different flow rate units.",
+      "meta":{
+         "description":"Flow Rate calculator for liquids and gases (volumetric or mass). Essential for pipe and channel analysis on Calcolo.online.",
+         "title":"Flow Rate Calculator | Volumetric & Mass Flow Analysis"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Fluid Flow Rates",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Reynolds Number":{
+      "Video":"Video not found",
+      "description":"Calculate the Reynolds number to predict flow patterns (laminar or turbulent) in different fluid flow situations. Key for fluid mechanics design.",
+      "meta":{
+         "description":"Reynolds Number calculator to predict fluid flow patterns (laminar/turbulent). Key for fluid dynamics analysis on Calcolo.online.",
+         "title":"Reynolds Number Calculator | Fluid Flow Pattern Analysis"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Determine Reynolds Number for Fluid Flow",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Everyday Life & Utilities":{
+      "Video":"Video not found",
+      "description":"Simplify daily tasks with Calcolo.online's everyday life and utility calculators. Perform unit conversions, time/date calculations, cooking conversions, travel planning, and more.",
+      "meta":{
+         "description":"Useful everyday calculators for unit conversions, time & date, cooking, travel, and more. Make daily tasks easier with Calcolo.online.",
+         "title":"Everyday Life & Utility Calculators | Conversions & More"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Explore Our Everyday Life & Utility Calculators",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Unit Conversions":{
+      "Video":"Video not found",
+      "description":"Convert a wide array of units across different categories: length, weight/mass, temperature, volume, speed, area, pressure, energy, and data storage. Quick and accurate.",
+      "meta":{
+         "description":"Comprehensive unit converters for length, weight, temperature, volume, speed, area, pressure, energy, data. Fast results on Calcolo.online.",
+         "title":"Unit Conversion Calculators | Length, Weight, Temp & More"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Unit Conversions",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Length (Metric/Imperial)":{
+      "Video":"Video not found",
+      "description":"Convert length units between metric (meters, kilometers, centimeters) and imperial systems (miles, feet, inches, yards), and other common length units.",
+      "meta":{
+         "description":"Length converter for metric and imperial units (meters, feet, inches, km, miles, etc.). Quick and accurate length conversions on Calcolo.online.",
+         "title":"Length Converter | Metric & Imperial Unit Conversion Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Various Length Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Weight/Mass (Metric/Imperial)":{
+      "Video":"Video not found",
+      "description":"Convert weight and mass units between metric (kilograms, grams, milligrams) and imperial systems (pounds, ounces, stones), and other common units.",
+      "meta":{
+         "description":"Weight and Mass converter for metric/imperial units (kg, lbs, grams, ounces, etc.). Accurate conversions available on Calcolo.online.",
+         "title":"Weight/Mass Converter | Metric & Imperial Units Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Weight and Mass Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Temperature (Celsius, Fahrenheit, Kelvin)":{
+      "Video":"Video not found",
+      "description":"Convert temperatures between Celsius (°C), Fahrenheit (°F), and Kelvin (K). Essential for weather, cooking, and scientific applications.",
+      "meta":{
+         "description":"Temperature converter for Celsius, Fahrenheit, and Kelvin. Quick and accurate temperature conversions for any need on Calcolo.online.",
+         "title":"Temperature Converter | Celsius, Fahrenheit, Kelvin Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Temperature Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Volume (Liters, Gallons, etc.)":{
+      "Video":"Video not found",
+      "description":"Convert volume units between metric (liters, milliliters) and imperial/US customary systems (gallons, quarts, pints, cups, fluid ounces), and more.",
+      "meta":{
+         "description":"Volume converter for liters, gallons, milliliters, cups, ounces, and more metric/imperial units. Accurate conversions on Calcolo.online.",
+         "title":"Volume Converter | Liters, Gallons, Cups, Ounces Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Liquid and Dry Volume Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Speed (km/h, mph, etc.)":{
+      "Video":"Video not found",
+      "description":"Convert speed units such as kilometers per hour (km/h), miles per hour (mph), meters per second (m/s), knots, and feet per second (ft/s).",
+      "meta":{
+         "description":"Speed converter for km/h, mph, m/s, knots, and more. Quick and accurate speed unit conversions for various uses on Calcolo.online.",
+         "title":"Speed Converter | km/h, mph, m/s, knots Conversion Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Various Speed Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Area":{
+      "Video":"Video not found",
+      "description":"Convert area units between metric (square meters, hectares) and imperial/US customary systems (square feet, acres, square miles), and other units.",
+      "meta":{
+         "description":"Area converter for square meters, feet, acres, hectares, and more metric/imperial units. Accurate area conversions on Calcolo.online.",
+         "title":"Area Converter | Metric & Imperial Square Units Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Area Measurement Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Pressure":{
+      "Video":"Video not found",
+      "description":"Convert pressure units such as Pascals (Pa), kilopascals (kPa), bars, millibars, atmospheres (atm), pounds per square inch (PSI), and Torr.",
+      "meta":{
+         "description":"Pressure unit converter for Pa, bar, PSI, atm, Torr, and more. Accurate pressure conversions for science and engineering on Calcolo.online.",
+         "title":"Pressure Unit Converter | Pa, Bar, PSI, atm, Torr Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Pressure Measurement Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Energy":{
+      "Video":"Video not found",
+      "description":"Convert energy units including Joules (J), kilojoules (kJ), calories (cal), kilocalories (kcal, Calories), British Thermal Units (BTU), and kilowatt-hours (kWh).",
+      "meta":{
+         "description":"Energy unit converter for Joules, calories, BTU, kWh, and more. Accurate energy conversions for various applications on Calcolo.online.",
+         "title":"Energy Unit Converter | Joules, Calories, BTU, kWh Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Energy Measurement Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Data Storage (Bytes, KB, MB, GB, TB)":{
+      "Video":"Video not found",
+      "description":"Convert digital data storage units: Bytes, Kilobytes (KB), Megabytes (MB), Gigabytes (GB), Terabytes (TB), Petabytes (PB), and bits. Binary and decimal options.",
+      "meta":{
+         "description":"Data Storage converter for Bytes, KB, MB, GB, TB, PB, bits. Binary (KiB, MiB) and decimal (KB, MB) conversions on Calcolo.online.",
+         "title":"Data Storage Converter | Bytes, KB, MB, GB, TB, Bits Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Digital Data Storage Units",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Time & Date":{
+      "Video":"Video not found",
+      "description":"Perform various time and date calculations: find the duration between two dates, convert time zones, calculate age, or use countdown timers and stopwatches.",
+      "meta":{
+         "description":"Time and Date calculators: date duration, time zone converter, age calculator, countdown timer, and stopwatch. Manage time on Calcolo.online.",
+         "title":"Time & Date Calculators | Duration, Age, Time Zones"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Time & Date Calculations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Date Duration (Days between dates)":{
+      "Video":"Video not found",
+      "description":"Calculate the duration (number of days, weeks, months, years) between two specified dates. Useful for project planning, event tracking, or historical analysis.",
+      "meta":{
+         "description":"Date Duration calculator finds the time between two dates in days, weeks, months, years. Plan events accurately with Calcolo.online.",
+         "title":"Date Duration Calculator | Days Between Dates Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Duration Between Two Dates",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Time Zone Converter":{
+      "Video":"Video not found",
+      "description":"Convert time between different time zones across the world. Find the current time in various cities or schedule international meetings effectively.",
+      "meta":{
+         "description":"Time Zone Converter to find current time worldwide and convert between time zones. Essential for global communication on Calcolo.online.",
+         "title":"Time Zone Converter | Global Time Conversion Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Between World Time Zones",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Age Calculator":{
+      "Video":"Video not found",
+      "description":"Calculate your age in years, months, weeks, days, hours, minutes, and seconds based on your date of birth. Also find out your next birthday.",
+      "meta":{
+         "description":"Age Calculator: find your exact age in years, months, days, and more. See time until next birthday with Calcolo.online.",
+         "title":"Age Calculator | Find Your Exact Age & Next Birthday"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your Precise Age",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Countdown Timer / Stopwatch":{
+      "Video":"Video not found",
+      "description":"Use our online countdown timer to count down to a specific event or date. Or, use the stopwatch functionality to measure elapsed time accurately.",
+      "meta":{
+         "description":"Online Countdown Timer and Stopwatch. Set timers for events or measure elapsed time with precision on Calcolo.online. Easy to use.",
+         "title":"Countdown Timer & Stopwatch | Online Time Measurement"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Use Online Timer and Stopwatch",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Cooking & Kitchen":{
+      "Video":"Video not found",
+      "description":"Master your culinary creations with our cooking and kitchen calculators. Scale recipes, convert cooking units (cups to grams), and understand baking ingredient ratios.",
+      "meta":{
+         "description":"Cooking and Kitchen calculators: recipe scaler, cooking conversions (cups to grams), baking ratios. Perfect your dishes with Calcolo.online.",
+         "title":"Cooking & Kitchen Calculators | Recipe, Conversions Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Cooking & Kitchen",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Recipe Scaler":{
+      "Video":"Video not found",
+      "description":"Easily scale recipes up or down to adjust the number of servings. Enter original ingredient quantities and desired servings to get new amounts.",
+      "meta":{
+         "description":"Recipe Scaler: adjust ingredient quantities for different serving sizes. Scale recipes up or down effortlessly with Calcolo.online.",
+         "title":"Recipe Scaler Calculator | Adjust Ingredient Quantities"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Scale Your Recipes Perfectly",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Cooking Conversions (Cups to Grams, etc.)":{
+      "Video":"Video not found",
+      "description":"Convert common cooking and baking measurements between volume (cups, spoons, ml) and weight (grams, ounces) for various ingredients. Ensure recipe accuracy.",
+      "meta":{
+         "description":"Cooking Conversions: convert cups to grams, ml to oz, and more for common ingredients. Ensure recipe accuracy with Calcolo.online.",
+         "title":"Cooking Conversions | Cups to Grams, Volume to Weight"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Common Cooking Measurements",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Baking Ingredient Ratios":{
+      "Video":"Video not found",
+      "description":"Understand and calculate common baking ingredient ratios (e.g., flour to liquid, baker's percentages). Improve your baking consistency and results with these guidelines.",
+      "meta":{
+         "description":"Baking Ingredient Ratios calculator. Understand baker's percentages and common ratios for consistent baking results on Calcolo.online.",
+         "title":"Baking Ingredient Ratios Calculator | Baker's Percentage"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Master Baking Ingredient Ratios",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Travel":{
+      "Video":"Video not found",
+      "description":"Plan your journeys efficiently with our travel calculators. Estimate fuel costs and consumption, convert currencies, and calculate distances between cities.",
+      "meta":{
+         "description":"Travel calculators for fuel cost/consumption, currency conversion, and distance between cities. Plan your trips better with Calcolo.online.",
+         "title":"Travel Calculators | Fuel, Currency, Distance Tools"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Travel Planning",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Fuel Cost / Consumption":{
+      "Video":"Video not found",
+      "description":"Estimate the fuel cost for a trip based on distance, fuel efficiency (MPG or L/100km), and fuel price. Calculate fuel consumption for your vehicle.",
+      "meta":{
+         "description":"Fuel Cost and Consumption calculator. Estimate trip fuel expenses and vehicle fuel efficiency (MPG, L/100km) on Calcolo.online.",
+         "title":"Fuel Cost / Consumption Calculator | Trip Fuel Estimator"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Trip Fuel Costs and Consumption",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Currency Converter (can also be under Finance)":{
+      "Video":"Video not found",
+      "description":"Convert between a wide range of global currencies using up-to-date exchange rates. Essential for international travel, online shopping, and financial transactions.",
+      "meta":{
+         "description":"Currency Converter for real-time exchange rates between global currencies. Essential travel and finance tool on Calcolo.online.",
+         "title":"Currency Converter | Live Exchange Rates | Calcolo.online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert Between World Currencies",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Distance Calculator (between cities)":{
+      "Video":"Video not found",
+      "description":"Calculate the driving or flight distance between two cities or locations worldwide. Get estimated travel times and plan your routes effectively.",
+      "meta":{
+         "description":"Distance Calculator: find the distance (driving/flight) between cities worldwide. Plan routes and estimate travel time on Calcolo.online.",
+         "title":"Distance Calculator Between Cities | Route Planning Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Distances Between Cities",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Hobbies":{
+      "Video":"Video not found",
+      "description":"Support your favorite pastimes with specialized hobby calculators. Tools for gardening, photography, knitting/crochet, and more to enhance your creative pursuits.",
+      "meta":{
+         "description":"Hobby calculators for gardening, photography, knitting/crochet, and more. Enhance your leisure activities with Calcolo.online.",
+         "title":"Hobby Calculators | Gardening, Photography, Knitting"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Your Hobbies",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Gardening (e.g., Seed Spacing, Soil Mix)":{
+      "Video":"Video not found",
+      "description":"Optimize your gardening projects. Calculate seed spacing, soil mix ratios, fertilizer amounts, or estimate plant yields for a bountiful harvest.",
+      "meta":{
+         "description":"Gardening calculators for seed spacing, soil mix ratios, fertilizer needs, and more. Grow a better garden with Calcolo.online.",
+         "title":"Gardening Calculators | Seed Spacing, Soil Mix & More"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Tools for Successful Gardening",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Photography (e.g., Depth of Field, Exposure)":{
+      "Video":"Video not found",
+      "description":"Enhance your photography skills with calculators for Depth of Field (DoF), exposure value (EV), hyperfocal distance, and field of view. Capture the perfect shot.",
+      "meta":{
+         "description":"Photography calculators for Depth of Field (DoF), exposure, hyperfocal distance, and more. Master your camera with Calcolo.online.",
+         "title":"Photography Calculators | Depth of Field, Exposure Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Tools for Perfect Photography",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Knitting/Crochet (e.g., Gauge, Yarn Needed)":{
+      "Video":"Video not found",
+      "description":"Plan your knitting or crochet projects effectively. Calculate gauge, estimate yarn needed for a project, adjust patterns, or convert stitch counts.",
+      "meta":{
+         "description":"Knitting and Crochet calculators for gauge, yarn estimation, pattern adjustments, and more. Perfect your craft with Calcolo.online.",
+         "title":"Knitting & Crochet Calculators | Gauge, Yarn Estimator"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Tools for Knitting and Crochet Projects",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Clothing":{
+      "Video":"Video not found",
+      "description":"Simplify clothes and shoe shopping with our international size converters. Find the right fit by converting between US, UK, European, and other sizing systems.",
+      "meta":{
+         "description":"Clothing and shoe size converters for international sizes (US, UK, EU, etc.). Find your perfect fit shopping online with Calcolo.online.",
+         "title":"Clothing & Shoe Size Converter | International Sizes Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Clothing & Shoe Sizes",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Clothing Size Converter (International)":{
+      "Video":"Video not found",
+      "description":"Convert clothing sizes (dresses, shirts, pants) between different international standards (e.g., US, UK, Europe, Japan). Shop globally with confidence.",
+      "meta":{
+         "description":"International Clothing Size Converter for US, UK, EU, JP sizes and more. Ensure the right fit for apparel on Calcolo.online.",
+         "title":"Clothing Size Converter | International Apparel Sizes"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert International Clothing Sizes",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Shoe Size Converter":{
+      "Video":"Video not found",
+      "description":"Convert shoe sizes for men, women, and children between various international systems (US, UK, EU, Japan, CM). Find the perfect shoe fit anywhere.",
+      "meta":{
+         "description":"International Shoe Size Converter for US, UK, EU, JP, CM sizes. Find your correct shoe fit when shopping globally on Calcolo.online.",
+         "title":"Shoe Size Converter | International Footwear Sizes Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert International Shoe Sizes",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Business & Productivity":{
+      "Video":"Video not found",
+      "description":"Boost your business performance and personal productivity with Calcolo.online's specialized calculators. Tools for sales, marketing, operations, finance, and HR.",
+      "meta":{
+         "description":"Business and productivity calculators for profit margin, break-even, CLV, CPC, inventory, salary, and more. Optimize with Calcolo.online.",
+         "title":"Business & Productivity Calculators | Sales, Operations"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Explore Our Business & Productivity Calculators",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Sales & Marketing":{
+      "Video":"Video not found",
+      "description":"Optimize your sales and marketing strategies with key performance calculators. Analyze profit margins, break-even points, CLV, conversion rates, CPC, CPM, and ROAS.",
+      "meta":{
+         "description":"Sales & Marketing calculators: profit margin, break-even, CLV, conversion rate, CPC, CPM, ROAS. Drive growth with Calcolo.online.",
+         "title":"Sales & Marketing Calculators | Profit, ROAS, CPC Tools"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Sales & Marketing",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Profit Margin / Markup":{
+      "Video":"Video not found",
+      "description":"Calculate profit margin and markup percentage for your products or services. Understand your profitability and set effective pricing strategies.",
+      "meta":{
+         "description":"Profit Margin and Markup calculator. Determine profitability and set optimal pricing for your products/services on Calcolo.online.",
+         "title":"Profit Margin / Markup Calculator | Pricing & Profitability"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Profit Margin and Markup",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Break-Even Point":{
+      "Video":"Video not found",
+      "description":"Determine the break-even point for your business – the number of units or revenue needed to cover all fixed and variable costs. Essential for financial planning.",
+      "meta":{
+         "description":"Break-Even Point calculator. Find the sales volume needed to cover costs and start profiting. Key business tool on Calcolo.online.",
+         "title":"Break-Even Point Calculator | Business Financial Planning"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Find Your Business Break-Even Point",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Customer Lifetime Value (CLV)":{
+      "Video":"Video not found",
+      "description":"Estimate the Customer Lifetime Value (CLV), predicting the total net profit your business can expect from a single customer account throughout their relationship.",
+      "meta":{
+         "description":"Customer Lifetime Value (CLV) calculator. Understand the long-term value of your customers for strategic decisions on Calcolo.online.",
+         "title":"Customer Lifetime Value (CLV) Calculator | Business Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Estimate Customer Lifetime Value",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Conversion Rate":{
+      "Video":"Video not found",
+      "description":"Calculate conversion rates for your website, marketing campaigns, or sales funnels. Measure the effectiveness of your strategies in achieving desired actions.",
+      "meta":{
+         "description":"Conversion Rate calculator. Measure the effectiveness of your website, ads, or sales funnels. Optimize performance with Calcolo.online.",
+         "title":"Conversion Rate Calculator | Marketing & Sales Metric Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Measure Your Conversion Rates",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Cost Per Click (CPC) / Cost Per Mille (CPM)":{
+      "Video":"Video not found",
+      "description":"Calculate Cost Per Click (CPC) and Cost Per Mille (CPM, cost per thousand impressions) for your online advertising campaigns. Monitor ad spend efficiency.",
+      "meta":{
+         "description":"CPC and CPM calculator for online advertising. Analyze ad spend efficiency and campaign performance with Calcolo.online tools.",
+         "title":"CPC / CPM Calculator | Ad Campaign Cost Analysis Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Analyze Ad Campaign Costs (CPC/CPM)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Return on Ad Spend (ROAS)":{
+      "Video":"Video not found",
+      "description":"Measure the Return on Ad Spend (ROAS) for your advertising campaigns. Determine the revenue generated for every dollar spent on advertising.",
+      "meta":{
+         "description":"Return on Ad Spend (ROAS) calculator. Measure the profitability of your advertising campaigns effectively with Calcolo.online.",
+         "title":"Return on Ad Spend (ROAS) Calculator | Ad Profitability"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your Return on Ad Spend",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Operations":{
+      "Video":"Video not found",
+      "description":"Streamline your business operations with calculators for inventory management (e.g., EOQ) and productivity analysis (work hours, task time). Enhance efficiency.",
+      "meta":{
+         "description":"Business Operations calculators: inventory management (EOQ), productivity (work hours, task time). Optimize efficiency on Calcolo.online.",
+         "title":"Operations Calculators | Inventory & Productivity Tools"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Business Operations",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Inventory Management (e.g., EOQ - Economic Order Quantity)":{
+      "Video":"Video not found",
+      "description":"Optimize your inventory with calculators like Economic Order Quantity (EOQ) to find the ideal order size that minimizes total inventory costs (holding and ordering).",
+      "meta":{
+         "description":"Inventory Management calculators like Economic Order Quantity (EOQ). Optimize stock levels and reduce costs with Calcolo.online.",
+         "title":"Inventory Management Calculator | EOQ & Stock Control"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Tools for Inventory Optimization",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Productivity (e.g., Work Hours, Task Time)":{
+      "Video":"Video not found",
+      "description":"Measure and improve productivity with tools to calculate total work hours, analyze task completion times, and identify areas for efficiency gains.",
+      "meta":{
+         "description":"Productivity calculators for work hours, task time tracking, and efficiency analysis. Boost your output with Calcolo.online.",
+         "title":"Productivity Calculators | Work Hours & Task Time Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Analyze and Boost Productivity",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Business Finance (can overlap with general Finance)":{
+      "Video":"Video not found",
+      "description":"Manage your company's finances with specialized business finance calculators. Tools for business loans, depreciation schedules, and gross/net profit analysis.",
+      "meta":{
+         "description":"Business Finance calculators for loans, depreciation, gross/net profit, and more. Manage company finances effectively on Calcolo.online.",
+         "title":"Business Finance Calculators | Loans, Profit & Depreciation"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Business Finance",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Business Loan Calculator":{
+      "Video":"Video not found",
+      "description":"Estimate payments, total interest, and overall cost for a business loan. Compare different loan offers and plan your business financing strategy effectively.",
+      "meta":{
+         "description":"Business Loan Calculator to estimate payments and total interest. Make informed financing decisions for your company on Calcolo.online.",
+         "title":"Business Loan Calculator | Estimate Payments & Interest"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Plan Your Business Loan Repayments",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Depreciation":{
+      "Video":"Video not found",
+      "description":"Calculate asset depreciation using common methods like Straight-Line, Declining Balance, or Sum-of-the-Years' Digits. Essential for accounting and tax purposes.",
+      "meta":{
+         "description":"Depreciation calculator for assets using various methods (Straight-Line, etc.). Essential for business accounting on Calcolo.online.",
+         "title":"Depreciation Calculator | Asset Value & Accounting Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Asset Depreciation",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Gross/Net Profit":{
+      "Video":"Video not found",
+      "description":"Calculate your business's gross profit (Revenue - COGS) and net profit (Gross Profit - Operating Expenses). Key indicators of financial health and performance.",
+      "meta":{
+         "description":"Gross and Net Profit calculator for businesses. Understand your company's profitability and financial health with Calcolo.online.",
+         "title":"Gross/Net Profit Calculator | Business Profitability Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Analyze Business Gross and Net Profit",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Human Resources":{
+      "Video":"Video not found",
+      "description":"Simplify HR tasks with calculators for salary and hourly wage conversions, overtime pay calculations, and time card management. Essential for payroll and employee management.",
+      "meta":{
+         "description":"Human Resources calculators for salary/hourly wage, overtime pay, and time cards. Streamline HR tasks with Calcolo.online.",
+         "title":"Human Resources Calculators | Salary, Overtime, Time Card"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Human Resources",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Salary / Hourly Wage":{
+      "Video":"Video not found",
+      "description":"Convert between salary and hourly wage, considering hours worked per week. Calculate gross pay for different periods (annual, monthly, bi-weekly, weekly, daily).",
+      "meta":{
+         "description":"Salary and Hourly Wage calculator. Convert between pay rates and calculate gross income for various periods on Calcolo.online.",
+         "title":"Salary / Hourly Wage Calculator | Pay Rate Conversion Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Convert and Calculate Salary/Hourly Wages",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Overtime Pay":{
+      "Video":"Video not found",
+      "description":"Calculate overtime pay based on regular hourly rate, overtime multiplier (e.g., 1.5x or 2x), and number of overtime hours worked. Ensure accurate payroll.",
+      "meta":{
+         "description":"Overtime Pay calculator. Determine overtime earnings based on hourly rate and hours worked. Accurate payroll tool on Calcolo.online.",
+         "title":"Overtime Pay Calculator | Calculate Employee Overtime"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Employee Overtime Pay",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Time Card Calculator":{
+      "Video":"Video not found",
+      "description":"Calculate total hours worked based on clock-in and clock-out times, including breaks. Useful for employees and employers for accurate time tracking and payroll.",
+      "meta":{
+         "description":"Time Card calculator to total work hours from clock-in/out times, including breaks. Accurate time tracking for payroll on Calcolo.online.",
+         "title":"Time Card Calculator | Calculate Work Hours Accurately"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Track and Calculate Work Hours (Time Card)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Education":{
+      "Video":"Video not found",
+      "description":"Support your academic journey with Calcolo.online's education calculators. Tools for GPA calculation, test score grading, weighted grades, reading speed, and study planning.",
+      "meta":{
+         "description":"Education calculators for GPA, test scores, weighted grades, reading speed (WPM), and study planning. Succeed academically with Calcolo.online.",
+         "title":"Education Calculators | GPA, Grades, Study Tools Online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Explore Our Education Calculators",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Grading":{
+      "Video":"Video not found",
+      "description":"Simplify academic grading with calculators for GPA (various scales), test scores/exam grades, and weighted grade calculations. Track your performance accurately.",
+      "meta":{
+         "description":"Grading calculators for GPA, test scores, and weighted grades. Track academic performance effectively with Calcolo.online tools.",
+         "title":"Grading Calculators | GPA, Test Score & Weighted Grade"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Academic Grading",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "GPA Calculator (various scales)":{
+      "Video":"Video not found",
+      "description":"Calculate your Grade Point Average (GPA) on various scales (e.g., 4.0, 5.0). Input course grades and credit hours to determine your current academic standing.",
+      "meta":{
+         "description":"GPA Calculator for different scales (4.0, 5.0). Calculate your Grade Point Average easily and track academic progress on Calcolo.online.",
+         "title":"GPA Calculator | Calculate Your Grade Point Average Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your GPA (Multiple Scales)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Test Score / Exam Grade Calculator":{
+      "Video":"Video not found",
+      "description":"Calculate your test score or exam grade percentage based on the number of questions answered correctly and the total number of questions. See your performance.",
+      "meta":{
+         "description":"Test Score and Exam Grade calculator. Determine your percentage score quickly and easily for any assessment on Calcolo.online.",
+         "title":"Test Score / Exam Grade Calculator | Assess Performance"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Calculate Your Test and Exam Scores",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Weighted Grade Calculator":{
+      "Video":"Video not found",
+      "description":"Calculate your overall course grade when different assignments or exams have varying weights (percentages). Understand how each component contributes to your final grade.",
+      "meta":{
+         "description":"Weighted Grade calculator. Determine your final course grade based on assignments with different weights. Plan studies on Calcolo.online.",
+         "title":"Weighted Grade Calculator | Final Course Grade Estimator"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Determine Your Weighted Course Grade",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Study":{
+      "Video":"Video not found",
+      "description":"Enhance your study habits with tools for measuring reading speed (Words Per Minute - WPM) and planning your study time effectively for better learning outcomes.",
+      "meta":{
+         "description":"Study tools: WPM reading speed calculator and study time planner. Improve your learning efficiency with Calcolo.online.",
+         "title":"Study Calculators | Reading Speed (WPM) & Time Planner"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Effective Studying",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Words Per Minute (WPM) Reading Speed":{
+      "Video":"Video not found",
+      "description":"Measure your reading speed in Words Per Minute (WPM). Test how quickly you can read and comprehend text to improve reading efficiency for study or work.",
+      "meta":{
+         "description":"Words Per Minute (WPM) Reading Speed calculator. Test and improve your reading efficiency. Useful study tool on Calcolo.online.",
+         "title":"Words Per Minute (WPM) Reading Speed Calculator | Test"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Measure Your Reading Speed (WPM)",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Study Time Planner":{
+      "Video":"Video not found",
+      "description":"Plan your study sessions effectively. Allocate time for different subjects or tasks, set goals, and create a structured study schedule to maximize learning.",
+      "meta":{
+         "description":"Study Time Planner to organize your study schedule effectively. Allocate time for subjects and tasks. Boost learning on Calcolo.online.",
+         "title":"Study Time Planner | Organize Your Study Schedule Tool"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Plan Your Study Time Efficiently",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Academic Writing":{
+      "Video":"Video not found",
+      "description":"Assist your academic writing with essential utilities. Count words and characters accurately. Conceptual tools for understanding citation formatting principles (not a generator).",
+      "meta":{
+         "description":"Academic Writing tools: word count, character count, and conceptual citation formatting guides. Write better with Calcolo.online.",
+         "title":"Academic Writing Utilities | Word Count & Citation Info"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover Tools for Academic Writing",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Word Count / Character Count":{
+      "Video":"Video not found",
+      "description":"Quickly count the number of words and characters (with or without spaces) in any given text. Essential for essays, articles, social media posts, and more.",
+      "meta":{
+         "description":"Word Count and Character Count tool. Instantly find the length of your text for essays, reports, and online posts on Calcolo.online.",
+         "title":"Word Count / Character Count Tool | Text Analysis Online"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Count Words and Characters in Text",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Citation Formatting (conceptual, not a generator)":{
+      "Video":"Video not found",
+      "description":"Understand the core principles and common elements of various citation styles (e.g., APA, MLA, Chicago). This section offers conceptual guidance, not an automatic generator.",
+      "meta":{
+         "description":"Learn about citation formatting styles (APA, MLA, Chicago). Conceptual guides to help you understand referencing on Calcolo.online.",
+         "title":"Citation Formatting Guide (Conceptual) | APA, MLA Info"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Understand Citation Formatting",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Environment & Sustainability":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Environment & Sustainability. This section provides resources for energy analysis, carbon footprint calculation, waste management, water usage, and more.",
+      "meta":{
+         "description":"Find online calculators and tools for Environment & Sustainability. Perform calculations for assessing environmental impact and promoting sustainability, and explore related topics.",
+         "title":"Latest Tools and Calculators in the Environment & Sustainability Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Energy & Consumption":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of electrical calculators for precise calculations in electrical engineering, including current sizing, fault current, power,  resistance.",
+      "meta":{
+         "description":"Calcolo online provides electrical calculators for calculations of electricity and electronics. .",
+         "title":"Latest Tools and Calculators in the Energy & Consumption Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Electricity Cost":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Electricity Cost. This section provides resources for estimating electricity expenses, understanding consumption, and managing energy bills.",
+      "meta":{
+         "description":"Find online calculators and tools for Electricity Cost. Perform calculations for your electricity usage and explore related topics.",
+         "title":"Latest Tools and Calculators in the Electricity Cost Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Fuel Efficiency (MPG, L/100km)":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Fuel Efficiency (MPG, L/100km). This section provides resources for calculating vehicle fuel economy, comparing efficiency, and understanding consumption.",
+      "meta":{
+         "description":"Find online calculators and tools for Fuel Efficiency (MPG, L/100km). Perform calculations for vehicle mileage and explore related topics.",
+         "title":"Latest Tools and Calculators in the Fuel Efficiency (MPG, L/100km) Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Appliance Energy Use":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Appliance Energy Use. This section provides resources for estimating the energy consumption of household appliances and understanding their impact on electricity bills.",
+      "meta":{
+         "description":"Find online calculators and tools for Appliance Energy Use. Perform calculations for appliance power consumption and explore related topics.",
+         "title":"Latest Tools and Calculators in the Appliance Energy Use Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Carbon Footprint":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Carbon Footprint. This section provides resources for assessing carbon emissions from various activities and understanding environmental impact.",
+      "meta":{
+         "description":"Find online calculators and tools for Carbon Footprint. Perform calculations for personal or travel emissions and explore related topics.",
+         "title":"Latest Tools and Calculators in the Carbon Footprint Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Personal Carbon Footprint":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Personal Carbon Footprint. This section provides resources for estimating an individual's carbon emissions based on lifestyle and consumption habits.",
+      "meta":{
+         "description":"Find online calculators and tools for Personal Carbon Footprint. Perform calculations for your personal emissions and explore related topics.",
+         "title":"Latest Tools and Calculators in the Personal Carbon Footprint Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Travel Carbon Footprint (Flight, Car)":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Travel Carbon Footprint (Flight, Car). This section provides resources for assessing the carbon emissions associated with travel by different modes of transport.",
+      "meta":{
+         "description":"Find online calculators and tools for Travel Carbon Footprint (Flight, Car). Perform calculations for travel-related emissions and explore related topics.",
+         "title":"Latest Tools and Calculators in the Travel Carbon Footprint (Flight, Car) Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Waste & Recycling":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Waste & Recycling. This section provides resources for understanding waste management, recycling impact, and promoting sustainable practices.",
+      "meta":{
+         "description":"Find online calculators and tools for Waste & Recycling. Perform calculations related to waste generation and recycling benefits, and explore related topics.",
+         "title":"Latest Tools and Calculators in the Waste & Recycling Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Recycling Impact":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Recycling Impact. This section provides resources for quantifying the benefits of recycling various materials and understanding its environmental significance.",
+      "meta":{
+         "description":"Find online calculators and tools for Recycling Impact. Perform calculations for assessing the positive effects of recycling and explore related topics.",
+         "title":"Latest Tools and Calculators in the Recycling Impact Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Water Usage":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Water Usage. This section provides resources for estimating water consumption, promoting water conservation, and understanding water footprint.",
+      "meta":{
+         "description":"Find online calculators and tools for Water Usage. Perform calculations for household or personal water consumption and explore related topics.",
+         "title":"Latest Tools and Calculators in the Water Usage Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Household Water Consumption":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Household Water Consumption. This section provides resources for estimating the total water used in a household and identifying areas for conservation.",
+      "meta":{
+         "description":"Find online calculators and tools for Household Water Consumption. Perform calculations for your home's water usage and explore related topics.",
+         "title":"Latest Tools and Calculators in the Household Water Consumption Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents",
+      "updated":"Updated"
+   },
+   "Construction & DIY":{
+      "Video":"Video not found",
+      "description":"Explore a wide variety of calculators and tools for Construction & DIY. This section provides resources for material estimation, project planning, measurements, and layout for your building and home improvement projects.",
+      "meta":{
+         "description":"Find online calculators and tools for Construction & DIY. Perform calculations for materials, project dimensions, and more, and explore related topics.",
+         "title":"Latest Tools and Calculators in the Construction & DIY Section"
+      },
+      "next":"Next",
+      "previous":"Previous",
+      "read-time":"min read",
+      "source":"Source",
+      "title":"Discover the Latest Insights",
+      "toc":"Table of contents"
+   }
+}

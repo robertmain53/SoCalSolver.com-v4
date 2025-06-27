@@ -1,0 +1,29 @@
+<template>
+  <svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B2C51"/>
+      <stop offset="50%" stop-color="#D4482D"/>
+      <stop offset="100%" stop-color="#F28C38"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon Circle -->
+  <g transform="translate(100, 100)">
+    <circle cx="0" cy="0" r="80" fill="url(#skyGradient)" stroke="none"/>
+    <circle cx="0" cy="30" r="25" fill="#FDBA3B" stroke="none"/>
+    <path d="M -80 40 Q -40 30 0 40 T 80 40 L 80 80 L -80 80 Z" fill="#217C8D"/>
+    <path d="M -80 55 Q -40 45 0 55 T 80 55 L 80 80 L -80 80 Z" fill="#52B9C0" opacity="0.8"/>
+    <path d="M -80 50 Q -20 50 20 55 Q 40 58 80 50 L 80 80 L -80 80 Z" fill="#3C1F38" opacity="0.9"/>
+  </g>
+  
+  <!-- Text: SoCalSolver -->
+  <text x="200" y="115" font-family="Pacifico, cursive" font-size="64" fill="#D4542D">
+    SoCal
+  </text>
+  <text x="400" y="115" font-family="Montserrat, sans-serif" font-size="48" fill="#1D2D4F">
+    Solver
+  </text>
+</svg>
+
+</template>

@@ -1,0 +1,49 @@
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  ai_review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2  # ensure we can compare with main
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Find changed .vue and .md files
+        id: changed
+        run: |
+          echo "FILES=$(git diff --name-only origin/main | grep -E '\.vue$|\.md$' | tr '\n' ' ')" >> $GITHUB_ENV
+
+      - name: Run AI reviews
+        if: env.FILES != ''
+        run: |
+          for file in $FILES; do
+            node tools/ai-review-from-diff.js "$file"
+          done
+
+      - name: Post Review Comment
+        if: env.FILES != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "## 🤖 AI Code Review Report" > comment.txt
+          for file in $FILES; do
+            echo "\n### ${file}" >> comment.txt
+            cat logs/ai-review-$(basename "$file").json >> comment.txt
+            echo "\n---" >> comment.txt
+          done
+
+          gh pr comment ${{ github.event.pull_request.number }} --body-file comment.txt

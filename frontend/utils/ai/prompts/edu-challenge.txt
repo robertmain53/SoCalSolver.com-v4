@@ -1,0 +1,3 @@
+Based on the calculator inputs and logic, generate 2 short quiz questions that check user understanding. Include the correct answer for each as `@answer`.
+
+---

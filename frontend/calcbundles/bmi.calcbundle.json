@@ -1,0 +1,27 @@
+{
+  "slug": "bmi-calculator",
+  "title": "BMI Calculator",
+  "description": "Calculate your Body Mass Index",
+  "tags": [
+    "health",
+    "fitness",
+    "bmi"
+  ],
+  "inputs": [
+    {
+      "label": "Height",
+      "unit": "cm",
+      "name": "height"
+    },
+    {
+      "label": "Weight",
+      "unit": "kg",
+      "name": "weight"
+    }
+  ],
+  "formula": "weight / ((height / 100) ** 2)",
+  "output": {
+    "label": "BMI",
+    "unit": ""
+  }
+}

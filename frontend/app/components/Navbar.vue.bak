@@ -1,0 +1,13 @@
+<script setup>
+import { useAuthStore } from '#imports'
+const auth = useAuthStore()
+</script>
+
+<template>
+  <nav class="flex items-center justify-center space-x-4 p-4 bg-gray-200 dark:bg-gray-800">
+    <NuxtLink to="/" class="text-blue-700 dark:text-blue-300 hover:underline">Home</NuxtLink>
+    <NuxtLink to="/profile" class="text-blue-700 dark:text-blue-300 hover:underline">Profile</NuxtLink>
+    <NuxtLink v-if="!auth.isLoggedIn" to="/login" class="text-blue-700 dark:text-blue-300 hover:underline">Login</NuxtLink>
+    <LogoutButton v-else />
+  </nav>
+</template>

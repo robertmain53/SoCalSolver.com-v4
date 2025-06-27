@@ -1,0 +1,30 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B2C51"/>
+      <stop offset="50%" stop-color="#D4482D"/>
+      <stop offset="100%" stop-color="#F28C38"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="300" cy="300" r="280" fill="url(#skyGradient)" stroke="none"/>
+  
+  <!-- Sun Disk -->
+  <circle cx="300" cy="380" r="80" fill="#FDBA3B" stroke="none"/>
+  
+  <!-- Ocean Waves -->
+  <path d="M 0 400 Q 150 370 300 400 T 600 400 L 600 600 L 0 600 Z" fill="#217C8D"/>
+  <path d="M 0 430 Q 150 400 300 430 T 600 430 L 600 600 L 0 600 Z" fill="#52B9C0" opacity="0.8"/>
+  
+  <!-- Coastline silhouette -->
+  <path d="M 0 420 Q 200 410 400 430 Q 500 440 600 420 L 600 600 L 0 600 Z" fill="#3C1F38" opacity="0.9"/>
+  
+  <!-- Text: SoCalSolver -->
+  <text x="300" y="550" font-family="Pacifico, cursive" font-size="64" fill="#D4542D" text-anchor="middle">
+    SoCal
+  </text>
+  <text x="300" y="600" font-family="Montserrat, sans-serif" font-size="48" fill="#1D2D4F" text-anchor="middle">
+    Solver
+  </text>
+</svg>

@@ -1,0 +1,43 @@
+name: 🌍 Auto Multilingual SEO Check
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  seo-lighthouse-multilang:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: 🟢 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 Install Dependencies
+        run: npm install
+
+      - name: ⚒️ Build Project
+        run: npm run build
+
+      - name: 🧪 Detect Locales
+        id: detect_locales
+        run: |
+          echo "LOCALES=$(jq -r '.i18n.locales[].code' nuxt.config.ts | paste -sd ',' -)" >> $GITHUB_ENV
+
+      - name: 🚦 Run Lighthouse on All Locales
+        run: |
+          npm install -g @lhci/cli@0.12.x
+          for locale in $(echo $LOCALES | tr "," "\n"); do
+            echo "Running Lighthouse for: /$locale/calculators/compound-interest"
+            lhci collect --url=http://localhost:3000/$locale/calculators/compound-interest --settings.preset=desktop --outputDir=.lighthouse/$locale || echo "⚠️ LHCI failed for $locale"
+          done
+
+      - name: 📊 Structured Data Testing (SDTT)
+        run: |
+          npm install -g structured-data-testing-tool
+          structured-data-testing-tool .output/public/**/calculators/*.html || echo "⚠️ SDTT issues"

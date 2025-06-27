@@ -1,0 +1,3607 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "contact": "Contattaci"
+  },
+  "search": {
+    "placeholder": "Search...",
+    "button": "Search"
+  },
+
+
+  "Finance": "Finanza",
+  "Mathematics": "Matematica",
+  "Health & Fitness": "Salute e benessere",
+  "Science & Engineering": "Scienza e ingegneria",
+  "Everyday Live & Utilities": "Vita quotidiana e utilità",
+  "Business & Productivity": "Business e produttività",
+  "Education": "Istruzione",
+  "Environment & Sustainability": "Ambiente e sostenibilità",
+  "Costruction & DIY": "Fai da te e costruzione",
+  "Fun & Miscellaneous": "Divertimento e varie",
+  "app.sr.lang_select": "Seleziona lingua: ",
+  "Finance": "Finanza",
+  "Mathematics": "Matematica",
+  "Health & Fitness": "Salute e fitness",
+  "pageTitle": "Calcolatori e Strumenti Online",
+  "categoryTitle": "Calcolatori di {category}",
+  "categoryDescription": "Esplora strumenti per {category}: veloci, precisi e gratuiti.",
+  "categories": {
+    "finance": "Finanza",
+    "mathematics": "Matematica",
+    "health-fitness": "Salute e Fitness",
+    "science-engineering": "Scienza e Ingegneria",
+    "everyday-life": "Utilità Quotidiane",
+    "business-productivity": "Business e Produttività",
+    "education": "Educazione",
+    "environment-sustainability": "Ambiente e Sostenibilità",
+    "construction-diy": "Costruzioni e Fai-da-te",
+    "fun-miscellaneous": "Divertimento e Varie"
+  },
+
+
+  "Alert": {
+    "feature": "Feature Preview",
+    "maintenance": "This page is currently under construction and may look a little different when it's finished.",
+    "view": "View latest version"
+  },
+  "Blog": {
+    "Video": "Video not found",
+    "description": "News, guides and reviews on technology, how to use it and how to ensure your data remains is protected online.",
+    "meta": {
+      "description": "Xanzhu provides helpful articles, guides and tips on all things technology. Focusing on privacy, security and more.",
+      "title": "Latest Posts on Security and Technology News"
+    },
+    "next": "Next",
+    "previous": "Previous",
+    "read-time": "min read",
+    "source": "Source",
+    "title": "Discover the Latest Insights",
+    "toc": "Table of contents",
+    "updated": "Updated"
+  },
+  "Error": {
+    "404": {
+      "code": "Code: 404",
+      "desc": "Sorry, the page you are looking for could not be found.",
+      "title": "Page Not Found"
+    },
+    "500": {
+      "code": "Code: 500",
+      "desc": "Sorry we messed up, please try again..",
+      "title": "Internal Error"
+    },
+    "return": "Return"
+  },
+  "Home": {
+    "Seo": {
+      "description": "Stay safe online with Xanzhu. Get the latest tech trends, security tips, and privacy guides to navigate the digital world.",
+      "title": "News, Guides on Technology, Privacy and Security"
+    },
+    "a11y": {
+      "mouseicon": "Scroll down"
+    },
+    "desc": "At Xanzhu, we help you use technology safely and protect your data online. Learn from our articles, guides, and reviews on topics like VPNs, password managers, two-factor authentication, and more.",
+    "more": "Explore More Articles",
+    "release": "New Releases",
+    "subhead": "Navigating Technology with confidence",
+    "tag": "Leading the future",
+    "title": "Privacy, Security and everything in between.",
+    "weatherLoad": "Loading"
+  },
+  "Links": {
+    "analysis": "Analysis",
+    "blog": "Latest",
+    "home": "Home",
+    "privacy-policy": "Privacy Policy",
+    "resources": "Resources",
+    "reviews": "Reviews"
+  },
+  "PagesCard": {
+    "analysis": "Reports and write-ups on threats",
+    "blog": "Latest News, Guides on Technology",
+    "image": {
+      "building-1": "two teal and white skyscrapers",
+      "building-2": "white concrete building during daytime",
+      "building-3": "tall building"
+    },
+    "resources": "Security tools and links"
+  },
+  "SocialsCard": {
+    "h1": "Follow our Socials"
+  },
+  "StatsCard": {
+    "breach": {
+      "1": "OPTUS - 9.8 MILLION",
+      "2": "LAST PASS - 30 MILLION",
+      "3": "TWITTER - 211.5 MILLION",
+      "4": "LATITUDE - 14 MILLION"
+    },
+    "breaches": {
+      "title": "Recent Breaches"
+    },
+    "check": "Check your accounts",
+    "image": {
+      "badge": "Security Badge",
+      "pwn": "HaveIBeenpwnd Logo"
+    },
+    "threats": {
+      "1": "PHISHING",
+      "2": "RANSOMWARE",
+      "3": "SOCIAL ENGINEERING",
+      "4": "DENIAL OF SERVICE (DoS)",
+      "title": "Top Security Threats"
+    },
+    "title": "Common Threats Observed in 2023",
+    "warn": "These are rough estimates, exact values may slightly differ. Obtained through research gathered in 2023"
+  },
+  "a11y": {
+    "AnalysisPage": "Visit our Analysis Page",
+    "BlogPage": "Visit Blog Page",
+    "Home": "Visit the Home page",
+    "Menu": "Menu",
+    "ResourcePage": "Visit Resources Page",
+    "cMenu": "Close Menu",
+    "langSwitch": "Switch Language",
+    "logo": "Xanzhu Logo",
+    "oMenu": "Open Menu"
+  },
+  "analysis": {
+    "graph": {
+      "advancedPersistentThreat": "Advanced Persistent Threat",
+      "aiIntegration": "AI Integration",
+      "initialThreat": "Initial Threat",
+      "label": "Cyber Threat Sophistication",
+      "peakSophistication": "Peak Sophistication",
+      "targetedAttacks": "Targeted Attacks",
+      "title": "AI-Powered Cyber Threat Progression",
+      "xAxis": "Threat Evolution Stage",
+      "yAxis": "Threat Sophistication (%)"
+    },
+    "hero": {
+      "subhead": "Key Cybersecurity Challenges in AI",
+      "title": "2024 Cybersecurity Trends & Insights"
+    },
+    "keyTrend": {
+      "desc": "Tracking the rise of AI-enhanced cyber threats and their increasing sophistication.",
+      "title": "AI-Powered Threat Evolution"
+    },
+    "meta": {
+      "description": "Cybersecurity analysis from Xanzhu: Expert insights, trending threats, and real-world case studies.",
+      "title": "Cybersecurity Analysis | Trends & Case Studies"
+    }
+  },
+  "app": {
+    "sr": {
+      "lang": "Select Language",
+      "lang_select": "Selected Language: ",
+      "menu": "Open Menu"
+    }
+  },
+  "email": {
+    "share": "Check out this article"
+  },
+  "footer": {
+    "about": "About",
+    "blog": "Blog",
+    "brand": "Brand",
+    "community": "Community",
+    "company": "Company",
+    "copyright": "© Xanzhu 2025. All Rights reserved.",
+    "github": "GitHub",
+    "latest": "Latest",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "resources": "Resources",
+    "sr": {
+      "blog": "Blog Links",
+      "community": "Community Links",
+      "company": "Company Links",
+      "legal": "Legal Links",
+      "resource": "Resource Links"
+    },
+    "terms": "Terms",
+    "tools": "Tools",
+    "twitter": "Twitter",
+    "version": "Version"
+  },
+  "home": {
+    "hero": {
+      "cta": "Start the Journey",
+      "heading": "Privacy and Security for the Modern Web",
+      "subhead": "Explore trends, tools, and techniques driving technology forward—from safeguarding data to redefining the digital world.",
+      "tagline": "Beyond Code and Innovation"
+    },
+    "latest": "Recent Posts",
+    "features": {
+      "description": "Explore our key articles and featured new content."
+    }
+  },
+  "pageCard": {
+    "article": "Stay updated with our latest articles on security trends and best practices",
+    "caseStudy": "Deep dive into detailed security case studies and technical write-ups",
+    "tools": "Free tools and resources to help improve and protect your security"
+  },
+  "resources": {
+    "explain": {
+      "malware": "Free tools and platforms for analyzing suspicious files, detecting malware, and maintaining system security.",
+      "network": "Essential tools for monitoring network traffic, detecting vulnerabilities, and securing your connections.",
+      "phishing": "Tools and resources to help identify, avoid, and report phishing attempts and suspicious websites."
+    },
+    "hero": {
+      "description": "Comprehensive collection of free security tools, educational resources, and reporting platforms to help protect your digital presence.",
+      "title": "Security Toolkit"
+    },
+    "malware": "Malware Analysis",
+    "meta": {
+      "description": "Stay safe online with our curated list of the best security tools and services. From phishing protection to malware reporting, we've got you covered.",
+      "title": "Security Toolkit: Essential for Online Safety"
+    },
+    "network": "Network Security",
+    "phishing": "Phishing",
+    "quick_links": "Quick Links",
+    "reporting": {
+      "anyrun": "Interactive malware analysis tool for analyzing and sharing results in real time.",
+      "google": "Report suspicious websites to Google Safe Browsing for protection updates",
+      "hybrid": "Free malware analysis platform for analyzing suspicious files and URLs",
+      "microsoft": "Microsoft’s platform for reporting phishing and malicious URLs",
+      "securityheaders": "Analyze a website’s HTTP security headers for vulnerabilities",
+      "shodan": "Search engine for discovering devices and systems exposed to the internet."
+    },
+    "reporting_tools": "Reporting Tools",
+    "search": {
+      "noResults": "Oops, we couldn't find anything, please try again.",
+      "placeholder": "Search security resources"
+    },
+    "tools": {
+      "apwg": "Anti-Phishing Working Group offering resources to combat phishing globally",
+      "clamav": "Open-source antivirus engine for detecting malware and malicious files.",
+      "malwarebytes": "Malware protection and removal software for home and business use.",
+      "openphish": "Automatic phishing detection and intelligence feed service.",
+      "owaspzap": "Open-source penetration testing tool for identifying web application vulnerabilities",
+      "phishtank": "Community-powered database for identifying and reporting phishing websites",
+      "sandboxie": "Tool for running applications in an isolated sandbox environment.",
+      "snort": "Intrusion detection system for real-time traffic analysis and threat prevention.",
+      "urlvoid": "Tool to check a website’s reputation and detect malicious activities.",
+      "virustotal": "Online scanner for analyzing files and URLs for malware and suspicious content.",
+      "wireshark": "Network protocol analyzer for monitoring and troubleshooting network traffic."
+    }
+  },
+  "share": {
+    "email": "Share this page via email",
+    "linkedin": "Share this on LinkedIn",
+    "reddit": "Share this on Reddit",
+    "title": "Share this article!",
+    "twitter": "Share this on Twitter"
+  },
+  "threatCard": {
+    "ariaLabel": "(Read more in new tab)",
+    "recent": {
+      "crowdStrike": "8.5M SYSTEMS CRASHED",
+      "latitude": "14M RECORDS",
+      "optus": "10M CUSTOMERS IMPACTED",
+      "title": "Recent Attacks"
+    },
+    "regional": {
+      "dataBreach": "Data Breaches",
+      "phish": "Phishing Attacks",
+      "ransomware": "Ransomware and Cyber Extortion",
+      "supplyChain": "Supply Chain Vulnerabilities",
+      "takeOver": "Account Compromises",
+      "title": "Top Security Threats"
+    },
+    "source": "Data sourced from public breach notifications and security reports. Numbers represent approximate affected users/records.",
+    "title": "ANZ Cyber Threats 2024"
+  },
+  "v2": {
+    "app": {
+      "sr": {
+        "colorSwitch": "Colour Switcher"
+      }
+    },
+    "blog": {
+      "noPosts": "No posts available."
+    },
+    "blog_iframe": "Youtube Video",
+    "blog_updated": "Last Updated",
+    "home": {
+      "featuredPosts": "Featured Blog Posts"
+    }
+  },
+
+
+  "Alert": {
+    "feature": "Anteprima Funzionalità",
+    "maintenance": "Questa pagina è attualmente in costruzione e potrebbe apparire leggermente diversa una volta terminata.",
+    "view": "Visualizza l'ultima versione"
+  },
+  "Blog": {
+    "Video": "Video non trovato",
+    "description": "Notizie, guide e recensioni sulla tecnologia, come usarla e come garantire che i tuoi dati rimangano protetti online.",
+    "meta": {
+      "description": "Xanzhu fornisce articoli utili, guide e suggerimenti su tutto ciò che riguarda la tecnologia. Con un focus su privacy, sicurezza e altro ancora.",
+      "title": "Ultimi Articoli su Notizie di Sicurezza e Tecnologia"
+    },
+    "next": "Successivo",
+    "previous": "Precedente",
+    "read-time": "minuti di lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Error": {
+    "404": {
+      "code": "Codice: 404",
+      "desc": "Spiacenti, la pagina che stai cercando non è stata trovata.",
+      "title": "Pagina Non Trovata"
+    },
+    "500": {
+      "code": "Codice: 500",
+      "desc": "Spiacenti, si è verificato un errore. Riprova.",
+      "title": "Errore Interno"
+    },
+    "return": "Ritorna"
+  },
+  "Home": {
+    "Seo": {
+      "description": "Naviga sicuro online con Xanzhu. Ricevi le ultime tendenze tecnologiche, consigli sulla sicurezza e guide sulla privacy per esplorare il mondo digitale.",
+      "title": "Notizie, Guide su Tecnologia, Privacy e Sicurezza"
+    },
+    "a11y": {
+      "mouseicon": "Scorri verso il basso"
+    },
+    "desc": "Noi di Xanzhu ti aiutiamo a usare la tecnologia in modo sicuro e a proteggere i tuoi dati online. Impara dai nostri articoli, guide e recensioni su argomenti come VPN, gestori di password, autenticazione a due fattori e altro ancora.",
+    "more": "Esplora Altri Articoli",
+    "release": "Nuove Uscite",
+    "subhead": "Navigare la Tecnologia con fiducia",
+    "tag": "Guidando il futuro",
+    "title": "Privacy, Sicurezza e tutto ciò che sta nel mezzo.",
+    "weatherLoad": "Caricamento in corso"
+  },
+  "Links": {
+    "analysis": "Analisi",
+    "blog": "Ultimi Articoli",
+    "home": "Home",
+    "privacy-policy": "Informativa sulla Privacy",
+    "resources": "Risorse",
+    "reviews": "Recensioni"
+  },
+  "PagesCard": {
+    "analysis": "Report e analisi sulle minacce",
+    "blog": "Ultime Notizie, Guide sulla Tecnologia",
+    "image": {
+      "building-1": "due grattacieli verde acqua e bianchi",
+      "building-2": "edificio bianco in cemento durante il giorno",
+      "building-3": "edificio alto"
+    },
+    "resources": "Strumenti di sicurezza e link"
+  },
+  "SocialsCard": {
+    "h1": "Segui i nostri Social"
+  },
+  "StatsCard": {
+    "breach": {
+      "1": "OPTUS - 9,8 MILIONI",
+      "2": "LAST PASS - 30 MILIONI",
+      "3": "TWITTER - 211,5 MILIONI",
+      "4": "LATITUDE - 14 MILIONI"
+    },
+    "breaches": {
+      "title": "Violazioni Recenti"
+    },
+    "check": "Controlla i tuoi account",
+    "image": {
+      "badge": "Distintivo di Sicurezza",
+      "pwn": "Logo HaveIBeenpwnd"
+    },
+    "threats": {
+      "1": "PHISHING",
+      "2": "RANSOMWARE",
+      "3": "INGEGNERIA SOCIALE",
+      "4": "NEGAZIONE DEL SERVIZIO (DoS)",
+      "title": "Principali Minacce alla Sicurezza"
+    },
+    "title": "Minacce Comuni Osservate nel 2023",
+    "warn": "Queste sono stime approssimative, i valori esatti potrebbero differire leggermente. Ottenute tramite ricerche raccolte nel 2023"
+  },
+  "a11y": {
+    "AnalysisPage": "Visita la nostra Pagina di Analisi",
+    "BlogPage": "Visita la Pagina del Blog",
+    "Home": "Visita la pagina Home",
+    "Menu": "Menu",
+    "ResourcePage": "Visita la Pagina delle Risorse",
+    "cMenu": "Chiudi Menu",
+    "langSwitch": "Cambia Lingua",
+    "logo": "Logo Xanzhu",
+    "oMenu": "Apri Menu"
+  },
+  "analysis": {
+    "graph": {
+      "advancedPersistentThreat": "Minaccia Persistente Avanzata",
+      "aiIntegration": "Integrazione IA",
+      "initialThreat": "Minaccia Iniziale",
+      "label": "Sofisticazione delle Minacce Informatiche",
+      "peakSophistication": "Picco di Sofisticazione",
+      "targetedAttacks": "Attacchi Mirati",
+      "title": "Progressione delle Minacce Informatiche Potenziate dall'IA",
+      "xAxis": "Fase di Evoluzione della Minaccia",
+      "yAxis": "Sofisticazione della Minaccia (%)"
+    },
+    "hero": {
+      "subhead": "Principali Sfide della Sicurezza Informatica nell'IA",
+      "title": "Tendenze e Approfondimenti sulla Sicurezza Informatica 2024"
+    },
+    "keyTrend": {
+      "desc": "Monitoraggio dell'aumento delle minacce informatiche potenziate dall'IA e della loro crescente sofisticazione.",
+      "title": "Evoluzione delle Minacce Potenziate dall'IA"
+    },
+    "meta": {
+      "description": "Analisi sulla sicurezza informatica da Xanzhu: approfondimenti di esperti, minacce emergenti e casi di studio reali.",
+      "title": "Analisi della Sicurezza Informatica | Tendenze e Casi di Studio"
+    }
+  },
+  "app": {
+    "sr": {
+      "lang": "Seleziona Lingua",
+      "lang_select": "Lingua Selezionata: ",
+      "menu": "Apri Menu"
+    }
+  },
+  "email": {
+    "share": "Dai un'occhiata a questo articolo"
+  },
+  "footer": {
+    "about": "Chi siamo",
+    "blog": "Blog",
+    "brand": "Marchio",
+    "community": "Comunità",
+    "company": "Azienda",
+    "copyright": "© Xanzhu 2025. Tutti i diritti riservati.",
+    "github": "GitHub",
+    "latest": "Ultimi",
+    "legal": "Legale",
+    "privacy": "Privacy",
+    "resources": "Risorse",
+    "sr": {
+      "blog": "Link del Blog",
+      "community": "Link della Comunità",
+      "company": "Link Aziendali",
+      "legal": "Link Legali",
+      "resource": "Link delle Risorse"
+    },
+    "terms": "Termini",
+    "tools": "Strumenti",
+    "twitter": "Twitter",
+    "version": "Versione"
+  },
+  "home": {
+    "hero": {
+      "cta": "Inizia il Viaggio",
+      "heading": "Calcolatori & Strumenti Online",
+      "subhead": "Esplora tendenze, strumenti e tecniche che guidano la tecnologia—dalla protezione dei dati alla ridefinizione del mondo digitale.",
+      "tagline": "Oltre il Codice e l'Innovazione"
+    },
+    "latest": "Articoli Recenti",
+    "features": {
+      "description": "Esplora i nostri articoli chiave e i nuovi contenuti in primo piano."
+    }
+  },
+  "pageCard": {
+    "article": "Rimani aggiornato con i nostri ultimi articoli sulle tendenze della sicurezza e le migliori pratiche",
+    "caseStudy": "Approfondisci casi di studio dettagliati sulla sicurezza e analisi tecniche",
+    "tools": "Strumenti e risorse gratuite per aiutarti a migliorare e proteggere la tua sicurezza"
+  },
+  "resources": {
+    "explain": {
+      "malware": "Strumenti e piattaforme gratuite per analizzare file sospetti, rilevare malware e mantenere la sicurezza del sistema.",
+      "network": "Strumenti essenziali per monitorare il traffico di rete, rilevare vulnerabilità e proteggere le tue connessioni.",
+      "phishing": "Strumenti e risorse per aiutare a identificare, evitare e segnalare tentativi di phishing e siti web sospetti."
+    },
+    "hero": {
+      "description": "Raccolta completa di strumenti di sicurezza gratuiti, risorse educative e piattaforme di segnalazione per aiutare a proteggere la tua presenza digitale.",
+      "title": "Toolkit di Sicurezza"
+    },
+    "malware": "Analisi Malware",
+    "meta": {
+      "description": "Naviga sicuro online con la nostra lista curata dei migliori strumenti e servizi di sicurezza. Dalla protezione anti-phishing alla segnalazione di malware, abbiamo tutto ciò di cui hai bisogno.",
+      "title": "Toolkit di Sicurezza: Essenziale per la Sicurezza Online"
+    },
+    "network": "Sicurezza di Rete",
+    "phishing": "Phishing",
+    "quick_links": "Link Rapidi",
+    "reporting": {
+      "anyrun": "Strumento interattivo di analisi malware per analizzare e condividere risultati in tempo reale.",
+      "google": "Segnala siti web sospetti a Google Safe Browse per aggiornamenti sulla protezione",
+      "hybrid": "Piattaforma gratuita di analisi malware per analizzare file e URL sospetti",
+      "microsoft": "Piattaforma Microsoft per la segnalazione di phishing e URL malevoli",
+      "securityheaders": "Analizza gli header di sicurezza HTTP di un sito web per individuare vulnerabilità",
+      "shodan": "Motore di ricerca per scoprire dispositivi e sistemi esposti a Internet."
+    },
+    "reporting_tools": "Strumenti di Segnalazione",
+    "search": {
+      "noResults": "Oops, non siamo riusciti a trovare nulla, riprova.",
+      "placeholder": "Cerca risorse di sicurezza"
+    },
+    "tools": {
+      "apwg": "Anti-Phishing Working Group che offre risorse per combattere il phishing a livello globale",
+      "clamav": "Motore antivirus open-source per rilevare malware e file malevoli.",
+      "malwarebytes": "Software di protezione e rimozione malware per uso domestico e aziendale.",
+      "openphish": "Servizio automatico di rilevamento phishing e feed di intelligence.",
+      "owaspzap": "Strumento open-source per test di penetrazione per identificare vulnerabilità nelle applicazioni web",
+      "phishtank": "Database gestito dalla comunità per identificare e segnalare siti web di phishing",
+      "sandboxie": "Strumento per eseguire applicazioni in un ambiente sandbox isolato.",
+      "snort": "Sistema di rilevamento delle intrusioni per analisi del traffico in tempo reale e prevenzione delle minacce.",
+      "urlvoid": "Strumento per controllare la reputazione di un sito web e rilevare attività malevole.",
+      "virustotal": "Scanner online per analizzare file e URL alla ricerca di malware e contenuti sospetti.",
+      "wireshark": "Analizzatore di protocolli di rete per monitorare e risolvere problemi di traffico di rete."
+    }
+  },
+  "share": {
+    "email": "Condividi questa pagina via email",
+    "linkedin": "Condividi su LinkedIn",
+    "reddit": "Condividi su Reddit",
+    "title": "Condividi questo articolo!",
+    "twitter": "Condividi su Twitter"
+  },
+  "threatCard": {
+    "ariaLabel": "(Leggi di più in una nuova scheda)",
+    "recent": {
+      "crowdStrike": "8,5M DI SISTEMI BLOCCATI",
+      "latitude": "14M DI RECORD",
+      "optus": "10M DI CLIENTI COINVOLTI",
+      "title": "Attacchi Recenti"
+    },
+    "regional": {
+      "dataBreach": "Violazioni di Dati",
+      "phish": "Attacchi di Phishing",
+      "ransomware": "Ransomware e Cyber Estorsioni",
+      "supplyChain": "Vulnerabilità della Supply Chain",
+      "takeOver": "Compromissioni di Account",
+      "title": "Principali Minacce alla Sicurezza"
+    },
+    "source": "Dati provenienti da notifiche pubbliche di violazioni e report di sicurezza. I numeri rappresentano utenti/record approssimativamente interessati.",
+    "title": "Minacce Informatiche ANZ 2024"
+  },
+  "v2": {
+    "app": {
+      "sr": {
+        "colorSwitch": "Selettore Colore"
+      }
+    },
+    "blog": {
+      "noPosts": "Nessun articolo disponibile."
+    },
+    "blog_iframe": "Video Youtube",
+    "blog_updated": "Ultimo Aggiornamento",
+    "home": {
+      "featuredPosts": "Articoli del Blog in Evidenza"
+    }
+  },
+
+  "Finance": {
+    "Video": "Video non trovato",
+    "description": "Naviga nel tuo percorso finanziario con la suite completa di calcolatori finanziari di Calcolo.online. Dai prestiti e investimenti alle tasse e al budget, trova gli strumenti essenziali per decisioni informate.",
+    "meta": {
+      "description": "Esplora potenti calcolatori finanziari per prestiti, mutui, investimenti, risparmi, tasse e gestione delle finanze personali su Calcolo.online. Pianifica il tuo futuro.",
+      "title": "Calcolatori Finanziari | Prestiti, Investimenti, Budget | Calcolo.online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Esplora i nostri Calcolatori Finanziari",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Loans & Mortgages": {
+    "Video": "Video non trovato",
+    "description": "Comprendi le tue opzioni di prestito con i nostri calcolatori dettagliati per prestiti e mutui. Stima le rate, esplora il rifinanziamento e determina l’accessibilità per vari tipi di prestito.",
+    "meta": {
+      "description": "Calcolo.online offre calcolatori per prestiti e mutui per gestire i debiti, stimare le rate e pianificare grandi acquisti. Strumenti gratuiti, facili e precisi.",
+      "title": "Calcolatori Prestiti & Mutui | Strumenti di Pagamento e Accessibilità"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Prestiti & Mutui",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Mortgage Payment": {
+    "Video": "Video non trovato",
+    "description": "Stima con precisione la tua rata mensile del mutuo, considerando capitale, interessi, tasse e assicurazione (PITI). Pianifica il budget della casa con il nostro calcolatore facile da usare.",
+    "meta": {
+      "description": "Calcola le possibili rate del mutuo con PITI. Uno strumento essenziale per chi acquista casa o è proprietario su Calcolo.online.",
+      "title": "Calcolatore Rata Mutuo | Stima PITI | Calcolo.online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per il Calcolo della Rata del Mutuo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Mortgage Refinance": {
+    "Video": "Video non trovato",
+    "description": "Scopri se rifinanziare il tuo mutuo è la mossa finanziaria giusta. Confronta i tassi attuali, calcola i risparmi potenziali e comprendi i costi con il nostro calcolatore di rifinanziamento.",
+    "meta": {
+      "description": "Esplora le opzioni di rifinanziamento del mutuo e i potenziali risparmi. Prendi decisioni informate sul tuo prestito casa su Calcolo.online.",
+      "title": "Calcolatore Rifinanziamento Mutuo | Risparmi & Analisi Costi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Approfondimenti sul Rifinanziamento Mutuo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Loan Affordability": {
+    "Video": "Video non trovato",
+    "description": "Valuta quanto puoi davvero permetterti di chiedere in prestito, in base al tuo reddito, alle spese e alle condizioni desiderate. Prendi decisioni sicure con il nostro calcolatore di accessibilità.",
+    "meta": {
+      "description": "Determina la tua capacità di accesso al credito. Scopri quanto puoi ottenere per mutui, auto o prestiti personali. Pianifica saggiamente su Calcolo.online.",
+      "title": "Calcolatore Accessibilità Prestito | Quanto Puoi Ottenere?"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Valuta la Tua Accessibilità al Prestito",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Loan Amortization": {
+    "Video": "Video non trovato",
+    "description": "Visualizza un dettagliato piano di ammortamento del prestito mostrando la suddivisione di capitale e interessi nel corso della durata del prestito. Comprendi come il tuo debito si riduce ad ogni pagamento.",
+    "meta": {
+      "description": "Il nostro Calcolatore Ammortamento Prestito fornisce un piano di pagamento dettagliato per mutui, finanziamenti auto o prestiti personali. Vedi la suddivisione di capitale e interessi.",
+      "title": "Calcolatore Piano di Ammortamento Prestito | Calcolo.online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Comprendi i Dettagli dell’Ammortamento del Prestito",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Personal Loan": {
+    "Video": "Video non trovato",
+    "description": "Calcola le probabili rate mensili, il totale degli interessi e il costo complessivo di un prestito personale. Confronta diverse offerte e pianifica i rimborsi efficacemente.",
+    "meta": {
+      "description": "Stima le rate e gli interessi totali per prestiti personali. Prendi decisioni informate con il calcolatore di prestiti personali di Calcolo.online.",
+      "title": "Calcolatore Prestito Personale | Stima Rate & Interessi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per il Calcolo del Prestito Personale",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Car Loan": {
+    "Video": "Video non trovato",
+    "description": "Stima le rate del tuo prestito auto, considera l’impatto dell’anticipo, dei tassi di interesse e delle durate del prestito. Trova un finanziamento auto che si adatti al tuo budget.",
+    "meta": {
+      "description": "Il Calcolatore Prestito Auto di Calcolo.online aiuta a stimare le rate mensili e gli interessi totali. Pianifica l’acquisto del tuo prossimo veicolo con fiducia.",
+      "title": "Calcolatore Prestito Auto | Stima Rate Finanziamento Auto"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Pianifica il Prestito per l’Acquisto dell’Auto",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Student Loan": {
+    "Video": "Video non trovato",
+    "description": "Calcola le probabili rate del prestito studentesco ed esplora diverse strategie di rimborso. Comprendi i costi a lungo termine associati al finanziamento della tua formazione.",
+    "meta": {
+      "description": "Stima le rate del prestito studentesco ed esplora le opzioni di rimborso. Gestisci efficacemente il debito per l’istruzione con gli strumenti di Calcolo.online.",
+      "title": "Calcolatore Prestito Studentesco | Stima Piano di Rimborso"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcolatori per la Pianificazione del Prestito Studentesco",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Investment & Savings": {
+    "Video": "Video non trovato",
+    "description": "Fai crescere il tuo patrimonio con i nostri calcolatori per investimenti e risparmi. Analizza interesse composto, ROI, piani pensionistici e altro per raggiungere strategicamente i tuoi obiettivi finanziari.",
+    "meta": {
+      "description": "Massimizza i rendimenti con i calcolatori per investimenti e risparmi di Calcolo.online. Pianifica la pensione, calcola interessi e analizza diverse opportunità d’investimento.",
+      "title": "Calcolatori Investimenti & Risparmi | Fai Crescere il Tuo Patrimonio"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Investimenti & Risparmi",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Compound Interest": {
+    "Video": "Video non trovato",
+    "description": "Scopri il potere straordinario dell’interesse composto. Calcola come i tuoi risparmi o investimenti possono crescere nel tempo con diverse frequenze di capitalizzazione e contributi regolari.",
+    "meta": {
+      "description": "Usa il nostro Calcolatore di Interesse Composto per vedere la crescita dei tuoi investimenti. Considera contributi, tassi e capitalizzazione per il valore futuro.",
+      "title": "Calcolatore Interesse Composto | Stima Valore Futuro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Cogli il Potere della Crescita Composta",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Simple Interest": {
+    "Video": "Video non trovato",
+    "description": "Calcola l’interesse semplice su prestiti o investimenti con facilità. Comprendi l’accumulo base di interessi basato su capitale, tasso e tempo, senza gli effetti della capitalizzazione.",
+    "meta": {
+      "description": "Calcola facilmente l’interesse semplice per prestiti o investimenti. Comprendi in modo chiaro gli interessi maturati su Calcolo.online.",
+      "title": "Calcolatore Interesse Semplice | Calcoli Rapidi Interessi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Comprendi la Dinamica dell’Interesse Semplice",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Return on Investment (ROI)": {
+    "Video": "Video non trovato",
+    "description": "Misura la redditività e l’efficienza dei tuoi investimenti con il nostro calcolatore ROI. Valuta un singolo investimento o confronta più opportunità d’investimento fianco a fianco.",
+    "meta": {
+      "description": "Calcola il tuo Return on Investment (ROI) per valutare la redditività. Uno strumento essenziale per tutti gli investitori su Calcolo.online. Prendi decisioni più intelligenti.",
+      "title": "Calcolatore Return on Investment (ROI) | Valuta la Redditività"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Misura il Successo dei Tuoi Investimenti (ROI)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Savings Goal": {
+    "Video": "Video non trovato",
+    "description": "Pianifica strategicamente come raggiungere obiettivi di risparmio specifici. Determina quanto devi mettere da parte regolarmente o quanto tempo ci vorrà per raggiungere la tua cifra target.",
+    "meta": {
+      "description": "Raggiungi i tuoi obiettivi finanziari con il nostro Calcolatore Obiettivi di Risparmio. Pianifica contributi e tempistiche per raggiungere l’importo desiderato con facilità.",
+      "title": "Calcolatore Obiettivo di Risparmio | Pianifica i Tuoi Obiettivi Finanziari"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Raggiungi le Tue Tappe di Risparmio",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Retirement Planning": {
+    "Video": "Video non trovato",
+    "description": "Assicura il tuo futuro finanziario con i nostri calcolatori completi per la pianificazione della pensione. Stima quanto devi risparmiare per una pensione confortevole e verifica se sei sulla buona strada.",
+    "meta": {
+      "description": "Pianifica una pensione sicura. Stima i risparmi necessari, entrate e strategie di prelievo con gli strumenti pensionistici di Calcolo.online.",
+      "title": "Calcolatori Pianificazione Pensione | Assicura i Tuoi Anni d’Oro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Pianifica una Pensione Confortevole",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Stock Calculators (e.g., Dividend Yield, P/E Ratio)": {
+    "Video": "Video non trovato",
+    "description": "Analizza efficacemente le azioni con calcolatori essenziali come Dividend Yield, P/E Ratio e altro. Prendi decisioni d’investimento informate comprendendo i principali indicatori di valutazione azionaria.",
+    "meta": {
+      "description": "Utilizza calcolatori azionari per Dividend Yield, P/E Ratio e altro. Strumenti finanziari essenziali per l’analisi del mercato azionario su Calcolo.online.",
+      "title": "Calcolatori Analisi Azionaria | Dividend Yield, P/E & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti Essenziali per l’Analisi Azionaria",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Mutual Fund/ETF Returns": {
+    "Video": "Video non trovato",
+    "description": "Stima i rendimenti potenziali dei tuoi investimenti in fondi comuni o ETF. Analizza la crescita basata su dati storici, performance attese e commissioni associate per prendere decisioni informate.",
+    "meta": {
+      "description": "Calcola i rendimenti potenziali per investimenti in fondi comuni o ETF. Analizza scenari di crescita e performance con gli strumenti di Calcolo.online.",
+      "title": "Calcolatore Rendimenti Fondi Comuni & ETF | Crescita Investimento"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Valuta la Performance & i Rendimenti dei Fondi",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Cryptocurrency (e.g., Profit/Loss, Mining)": {
+    "Video": "Video non trovato",
+    "description": "Naviga il mondo dinamico delle criptovalute con calcolatori specializzati. Calcola profitto/perdita da operazioni, stima la redditività del mining e analizza i tuoi investimenti in criptovalute.",
+    "meta": {
+      "description": "Calcolatori criptovalute per profitto/perdita, redditività del mining e analisi degli investimenti. Il tuo toolkit essenziale per le criptovalute su Calcolo.online.",
+      "title": "Calcolatori Criptovalute | Profitto, Mining, Investimenti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Hub di Calcoli per Criptovalute",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Budgeting & Personal Finance": {
+    "Video": "Video non trovato",
+    "description": "Prendi il controllo delle tue finanze con i nostri completi strumenti di budgeting e finanze personali. Monitora le spese, calcola il patrimonio netto e gestisci i debiti efficacemente per una salute finanziaria duratura.",
+    "meta": {
+      "description": "Gestisci meglio il denaro con i calcolatori di budgeting e finanze personali di Calcolo.online. Monitora le spese, il patrimonio netto e il rapporto debito/reddito.",
+      "title": "Calcolatori Budgeting & Finanze Personali | Gestisci il Denaro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Budgeting & Finanze Personali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Monthly Budget": {
+    "Video": "Video non trovato",
+    "description": "Crea un budget mensile dettagliato per monitorare efficacemente entrate e spese. Identifica aree in cui puoi risparmiare e ottieni un migliore controllo sulle tue abitudini di spesa.",
+    "meta": {
+      "description": "Pianifica le tue entrate e spese mensili con il nostro Calcolatore Budget Mensile. Prendi il controllo delle tue spese oggi su Calcolo.online.",
+      "title": "Calcolatore Budget Mensile | Pianifica Entrate & Spese Facilmente"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Pianifica la Tua Strategia di Spesa Mensile",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Expense Tracker": {
+    "Video": "Video non trovato",
+    "description": "Tieni un registro meticoloso delle tue spese giornaliere, settimanali o mensili. Comprendi esattamente dove va il tuo denaro e individua opportunità chiave per risparmi significativi.",
+    "meta": {
+      "description": "Monitora efficacemente le tue abitudini di spesa con l’Expense Tracker di Calcolo.online. Ottieni preziose informazioni sui tuoi flussi finanziari.",
+      "title": "Calcolatore Monitor Spese | Tieni Traccia delle Tue Uscite"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Tieni Traccia delle Tue Spese",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Net Worth": {
+    "Video": "Video non trovato",
+    "description": "Calcola il tuo patrimonio netto attuale conteggiando accuratamente i tuoi attivi e sottraendo le passività. Ottieni un quadro chiaro della tua posizione finanziaria e monitora i progressi.",
+    "meta": {
+      "description": "Determina la tua salute finanziaria calcolando il patrimonio netto. Monitora attivi e passività con il nostro calcolatore Net Worth su Calcolo.online.",
+      "title": "Calcolatore Patrimonio Netto | Valuta la Tua Posizione Finanziaria"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola il Tuo Stato Patrimoniale Finanziario",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Debt-to-Income Ratio": {
+    "Video": "Video non trovato",
+    "description": "Calcola il tuo rapporto debito/reddito (DTI) per valutare la tua leva finanziaria e la capacità di indebitamento. Comprendi come i prestatori valutano il tuo carico di debiti attuali.",
+    "meta": {
+      "description": "Il nostro Calcolatore DTI valuta la salute finanziaria e il potere di indebitamento. Una metrica importante per i prestiti, su Calcolo.online.",
+      "title": "Calcolatore Rapporto Debito/Reddito (DTI) | Salute Finanziaria"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Comprendi il Tuo Carico di Debito (DTI)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Emergency Fund": {
+    "Video": "Video non trovato",
+    "description": "Determina la dimensione ideale del tuo fondo di emergenza cruciale. Calcola quanto devi mettere da parte per coprire spese impreviste e garantire una solida sicurezza finanziaria.",
+    "meta": {
+      "description": "Pianifica la tua rete di sicurezza finanziaria con il nostro Calcolatore Fondo di Emergenza. Determina quanto risparmiare per eventi imprevisti su Calcolo.online.",
+      "title": "Calcolatore Fondo di Emergenza | Pianificatore Sicurezza Finanziaria"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Costruisci la Tua Riserva Finanziaria",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Taxes": {
+    "Video": "Video non trovato",
+    "description": "Semplifica calcoli fiscali complessi con la nostra versatile gamma di stimatori di tasse. Dall’imposta sul reddito all’IVA, ottieni una comprensione chiara delle tue potenziali obbligazioni fiscali.",
+    "meta": {
+      "description": "Stima le imposte con i calcolatori di tasse di Calcolo.online per imposta sul reddito, IVA e plusvalenze. Pianifica le tue finanze.",
+      "title": "Calcolatori Tasse | Imposta sul Reddito, IVA & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per i Calcoli Fiscali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Income Tax (general or country-specific if localized)": {
+    "Video": "Video non trovato",
+    "description": "Stima la tua potenziale imposta sul reddito. Il nostro calcolatore può essere adattato per una comprensione generale o configurato per regole fiscali regionali o nazionali specifiche (se disponibile).",
+    "meta": {
+      "description": "Calcola la tua imposta sul reddito stimata. Fornisce stime generali o specifiche per paese (se disponibili). Pianifica in anticipo con Calcolo.online.",
+      "title": "Calcolatore Imposta sul Reddito | Stima la Tua Imposta Ora"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima la Tua Obbligazione Fiscale sul Reddito",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Sales Tax / VAT": {
+    "Video": "Video non trovato",
+    "description": "Calcola rapidamente l’imposta sulle vendite o l’IVA sugli acquisti o sulle vendite. Determina facilmente l’importo preciso delle tasse e il prezzo finale, incluse tutte le imposte applicabili.",
+    "meta": {
+      "description": "Calcola IVA o imposta sulle vendite con facilità. Risultati rapidi e precisi per consumatori e imprese. Strumento indispensabile su Calcolo.online.",
+      "title": "Calcolatore IVA / Imposta sulle Vendite | Calcolo Rapido Tasse"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola IVA e Imposta sulle Vendite",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Capital Gains Tax": {
+    "Video": "Video non trovato",
+    "description": "Stima la tua potenziale imposta sulle plusvalenze dalla vendita di asset come azioni, obbligazioni o immobili. Comprendi le implicazioni fiscali dei tuoi profitti d’investimento.",
+    "meta": {
+      "description": "Stima l’imposta sulle plusvalenze potenziali sugli investimenti. Comprendi le implicazioni fiscali sui profitti prima di vendere con Calcolo.online.",
+      "title": "Calcolatore Imposta Plusvalenze | Stima Tasse su Investimenti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Valuta l’Impatto dell’Imposta sulle Plusvalenze",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Credit Cards": {
+    "Video": "Video non trovato",
+    "description": "Gestisci le tue carte di credito in modo più efficace con la nostra suite di calcolatori specializzati. Ottimizza le strategie di rimborso, analizza i trasferimenti di saldo e valuta il vero valore delle tue ricompense.",
+    "meta": {
+      "description": "Calcolo.online fornisce calcolatori per carte di credito per pianificare il rimborso, trasferimenti di saldo e valore delle ricompense. Gestisci il credito in modo più intelligente.",
+      "title": "Calcolatori Carte di Credito | Rimborso, Trasferimenti & Ricompense"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Gestione delle Carte di Credito",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Credit Card Payoff": {
+    "Video": "Video non trovato",
+    "description": "Elabora una solida strategia per estinguere più rapidamente il debito delle carte di credito. Calcola quanto tempo ci vorrà e gli interessi risparmiati effettuando diverse rate di pagamento.",
+    "meta": {
+      "description": "Pianifica il rimborso del debito delle carte di credito con il nostro Calcolatore Payoff. Risparmia sugli interessi e diventa libero dai debiti più velocemente con Calcolo.online.",
+      "title": "Calcolatore Estinzione Carte di Credito | Strumento Pianificazione Debito"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Accelera l’Estinzione del Debito della Tua Carta di Credito",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Balance Transfer": {
+    "Video": "Video non trovato",
+    "description": "Valuta i potenziali risparmi da un trasferimento di saldo di carte di credito. Confronta commissioni, tassi promozionali e interessi correnti per prendere una decisione finanziaria informata.",
+    "meta": {
+      "description": "Analizza i risparmi con un trasferimento di saldo di carta di credito. Il nostro calcolatore aiuta a confrontare commissioni e tassi interesse su Calcolo.online. Risparmia ora.",
+      "title": "Calcolatore Trasferimento Saldo | Risparmia su Interessi Carta"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Valuta le Opzioni di Trasferimento Saldo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Rewards Value": {
+    "Video": "Video non trovato",
+    "description": "Calcola il valore monetario effettivo dei tuoi punti o miglia di ricompensa della carta di credito. Determina se una specifica carta di ricompensa è davvero vantaggiosa per le tue abitudini di spesa.",
+    "meta": {
+      "description": "Determina il valore reale delle ricompense della tua carta di credito. Prendi decisioni intelligenti con il nostro Calcolatore Valore Ricompense su Calcolo.online. Massimizza i vantaggi.",
+      "title": "Calcolatore Valore Ricompense Carta di Credito | Massimizza i Tuoi Vantaggi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Comprendi il Valore delle Tue Ricompense Carta",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Inflation": {
+    "Video": "Video non trovato",
+    "description": "Comprendi l’impatto significativo dell’inflazione sul tuo denaro nel tempo. Calcola i cambiamenti nel potere d’acquisto e adegua i valori monetari per l’inflazione con i nostri strumenti facili da usare.",
+    "meta": {
+      "description": "I calcolatori inflazione di Calcolo.online mostrano il potere d’acquisto e adeguano i valori per l’inflazione. Vedi come cambia il valore del denaro nel tempo.",
+      "title": "Calcolatori Inflazione | Potere d’Acquisto & Adeguamento Valore"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Comprendere l’Inflazione",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Inflation Adjustment": {
+    "Video": "Video non trovato",
+    "description": "Adegua i valori monetari storici o futuri per tenere conto dell’inflazione. Vedi come il valore reale del denaro cambia in diversi periodi a causa dei tassi di inflazione economica.",
+    "meta": {
+      "description": "Adegua i valori monetari per l’inflazione. Comprendi il valore reale del denaro—passato, presente o futuro—con il nostro calcolatore di Calcolo.online.",
+      "title": "Calcolatore Adeguamento Inflazione | Strumento Valore nel Tempo"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Adegua i Valori Monetari per l’Inflazione",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Purchasing Power": {
+    "Video": "Video non trovato",
+    "description": "Calcola come l’inflazione influisce direttamente sul potere d’acquisto del tuo denaro. Comprendi cosa una certa somma di denaro potrebbe effettivamente acquistare in periodi diversi (passato, presente o futuro).",
+    "meta": {
+      "description": "Vedi come l’inflazione impatta il potere d’acquisto del tuo denaro. Un indicatore economico chiave, calcolabile facilmente su Calcolo.online. Pianifica meglio.",
+      "title": "Calcolatore Potere d’Acquisto | Effetto dell’Inflazione sul Denaro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Valuta la Capacità d’Acquisto del Tuo Denaro",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Mathematics": {
+    "Video": "Video non trovato",
+    "description": "Risolvi problemi complessi o esegui calcoli di base con la nostra vasta suite di calcolatori matematici. Dall’algebra al calcolo, trova strumenti per qualsiasi compito matematico su Calcolo.online.",
+    "meta": {
+      "description": "Risorsa di riferimento per calcolatori matematici: aritmetica, algebra, geometria, calcolo, statistica e altro. Risolvi problemi su Calcolo.online.",
+      "title": "Calcolatori Matematici | Strumenti Algebra, Geometria, Calcolo"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Esplora i nostri Calcolatori Matematici",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Basic Arithmetic": {
+    "Video": "Video non trovato",
+    "description": "Esegui operazioni aritmetiche fondamentali come addizione, sottrazione, moltiplicazione e divisione. Trova anche calcolatori per percentuali, frazioni, rapporti e proporzioni per l’uso quotidiano.",
+    "meta": {
+      "description": "Accedi a calcolatori di aritmetica di base per addizione, sottrazione, percentuali, frazioni e rapporti. Strumenti semplici ed efficaci su Calcolo.online.",
+      "title": "Calcolatori Aritmetica Base | Aggiungi, Sottrai, Percentuale"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per l’Aritmetica di Base",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Addition, Subtraction, Multiplication, Division": {
+    "Video": "Video non trovato",
+    "description": "Usa il nostro calcolatore intuitivo per le quattro operazioni matematiche di base: addizione, sottrazione, moltiplicazione e divisione. Ottieni risultati rapidi e precisi per calcoli quotidiani, immediatamente.",
+    "meta": {
+      "description": "Esegui addizione, sottrazione, moltiplicazione e divisione rapidamente e con precisione con il nostro strumento di operazioni matematiche di base su Calcolo.online.",
+      "title": "Calcolatore Operazioni Aritmetiche Base | Aggiungi, Sottrai, Moltiplica, Dividi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per le Operazioni Aritmetiche Fondamentali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Percentage": {
+    "Video": "Video non trovato",
+    "description": "Calcola percentuali con facilità senza pari. Trova una percentuale di un numero, determina la variazione percentuale, o converti frazioni e decimali in percentuali (e viceversa), tutto in un unico posto.",
+    "meta": {
+      "description": "Calcolatori percentuali versatili per varie esigenze: sconti, mance, tassi di crescita e molto altro su Calcolo.online. Rapido e semplice.",
+      "title": "Calcolatore Percentuale | Calcola Tutte le Percentuali Facilmente"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Tutto sulla Calcolazione delle Percentuali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Fractions": {
+    "Video": "Video non trovato",
+    "description": "Semplifica tutti i tuoi calcoli con frazioni. Aggiungi, sottrai, moltiplica e dividi frazioni, converti frazioni in decimali o percentuali e semplifica frazioni complesse con facilità.",
+    "meta": {
+      "description": "I nostri calcolatori di frazioni aiutano ad aggiungere, sottrarre, moltiplicare, dividere e semplificare frazioni. Converti frazioni in decimali su Calcolo.online.",
+      "title": "Calcolatore di Frazioni | Aggiungi, Sottrai, Semplifica Frazioni"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Padroneggia le Operazioni con le Frazioni Facilmente",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Ratios & Proportions": {
+    "Video": "Video non trovato",
+    "description": "Risolvi problemi di rapporti e proporzioni senza sforzo con i nostri strumenti intuitivi. Calcola valori mancanti nelle proporzioni, semplifica rapporti alla forma base e scala quantità con precisione.",
+    "meta": {
+      "description": "Usa i nostri calcolatori di rapporti e proporzioni per risolvere valori mancanti, semplificare rapporti e gestire proporzioni su Calcolo.online.",
+      "title": "Calcolatore Rapporto & Proporzione | Risolvi Proporzioni Matematiche"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Comprendi Rapporti e Proporzioni",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Algebra": {
+    "Video": "Video non trovato",
+    "description": "Affronta espressioni e equazioni algebriche complesse. I nostri calcolatori di algebra aiutano a risolvere equazioni, fattorizzare, logaritmi, esponenti e concetti algebrici più complessi.",
+    "meta": {
+      "description": "Risolvi problemi algebrici con i calcolatori di Calcolo.online per equazioni, fattorizzazione, logaritmi ed esponenti. Semplifica i tuoi studi di algebra.",
+      "title": "Calcolatori Algebra | Risolutori di Equazioni, Fattorizzazione, Logaritmi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per l’Algebra",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Equation Solvers (Linear, Quadratic, etc.)": {
+    "Video": "Video non trovato",
+    "description": "Risolvi vari tipi di equazioni algebriche, incluse lineari, quadratiche, cubic e sistemi di equazioni. Ottieni soluzioni passo-passo e comprendi chiaramente tutto il processo di risoluzione.",
+    "meta": {
+      "description": "I nostri Risolutori di Equazioni gestiscono equazioni lineari, quadratiche e altri tipi. Ottieni soluzioni e passaggi per i problemi matematici su Calcolo.online.",
+      "title": "Risolutore di Equazioni | Lineari, Quadratiche & Altro | Calcolo.online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Trova Soluzioni per Vari Tipi di Equazioni",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Factoring": {
+    "Video": "Video non trovato",
+    "description": "Fattorizza espressioni algebriche e polinomi in modo efficiente utilizzando il nostro calcolatore di fattorizzazione. Trova i fattori di numeri o termini algebrici complessi rapidamente, facilmente e con precisione.",
+    "meta": {
+      "description": "Fattorizza polinomi ed espressioni con il nostro Calcolatore di Fattorizzazione online. Semplifica i tuoi compiti di algebra in modo efficiente su Calcolo.online.",
+      "title": "Calcolatore Fattorizzazione | Fattorizza Polinomi & Espressioni"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Semplifica Espressioni con la Fattorizzazione",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Logarithms & Exponents": {
+    "Video": "Video non trovato",
+    "description": "Calcola logaritmi con diverse basi (es. log naturale, base 10, base 2) e risolvi equazioni esponenziali. Comprendi la relazione tra logaritmi ed esponenti con i nostri strumenti.",
+    "meta": {
+      "description": "Calcola logaritmi e risolvi problemi esponenziali con i nostri calcolatori specializzati. Strumenti semplici per logaritmi e esponenziali su Calcolo.online.",
+      "title": "Calcolatore Logaritmi & Esponenti | Risolvi Matematica Log & Exp"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Esplora Logaritmi ed Esponenti",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Geometry": {
+    "Video": "Video non trovato",
+    "description": "Esplora varie forme geometriche e le loro proprietà intrinseche. Calcola area, volume, perimetro, circonferenza, angoli e utilizza strumenti come il risolutore del teorema di Pitagora.",
+    "meta": {
+      "description": "Calcolatori geometrici per area, volume, perimetro, teorema di Pitagora e conversione angoli. Risolvi problemi di geometria su Calcolo.online.",
+      "title": "Calcolatori Geometria | Area, Volume, Perimetro & Angoli"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Geometria",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Area (Circle, Square, Triangle, etc.)": {
+    "Video": "Video non trovato",
+    "description": "Calcola l’area di varie figure geometriche 2D come cerchi, quadrati, triangoli, rettangoli, parallelogrammi, trapezi, ellissi e altre figure comuni.",
+    "meta": {
+      "description": "Trova l’area di cerchi, quadrati, triangoli e altre forme con il nostro Calcolatore Area. Soluzioni geometriche rapide su Calcolo.online.",
+      "title": "Calcolatore Area | Cerchio, Quadrato, Triangolo | Calcolo.online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola l’Area delle Forme Geometriche",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Volume (Cube, Sphere, Cylinder, etc.)": {
+    "Video": "Video non trovato",
+    "description": "Determina il volume di varie figure tridimensionali come cubi, sfere, cilindri, coni, piramidi, prismi rettangolari e altri solidi geometrici comuni.",
+    "meta": {
+      "description": "Calcola il volume di cubi, sfere, cilindri e altre forme 3D. Calcolatore di Volume user-friendly per risultati rapidi su Calcolo.online.",
+      "title": "Calcolatore Volume | Cubo, Sfera, Cilindro | Calcolo.online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola il Volume delle Forme 3D",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Perimeter/Circumference": {
+    "Video": "Video non trovato",
+    "description": "Calcola il perimetro di figure 2D come quadrati, rettangoli e triangoli, o la circonferenza di cerchi. Fondamentale per vari problemi geometrici e applicazioni pratiche.",
+    "meta": {
+      "description": "Trova facilmente il perimetro di forme e la circonferenza dei cerchi con il nostro calcolatore. Misurazioni geometriche rapide su Calcolo.online.",
+      "title": "Calcolatore Perimetro & Circonferenza | Forme Geometriche"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Misura i Confini delle Forme con Precisione",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Pythagorean Theorem": {
+    "Video": "Video non trovato",
+    "description": "Risolvi qualsiasi lato mancante (ipotenusa o cateto) di un triangolo rettangolo usando il fondamentale teorema di Pitagora. Inserisci due lati noti per trovare istantaneamente il terzo.",
+    "meta": {
+      "description": "Usa il nostro Calcolatore Teorema di Pitagora per trovare il lato mancante di un triangolo rettangolo. Soluzioni rapide e accurate su Calcolo.online.",
+      "title": "Calcolatore Teorema di Pitagora | Risolvi Triangoli Rettangoli"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Soluzioni per Triangoli Rettangoli",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Angle Converters": {
+    "Video": "Video non trovato",
+    "description": "Converti tra diverse unità di misura angolare, come gradi, radianti, goni, minuti, secondi e altro. Utile per trigonometria, navigazione e problemi geometrici.",
+    "meta": {
+      "description": "Converti angoli tra gradi, radianti e altre unità con il nostro Convertitore Angoli. Conversioni precise per matematica e scienza su Calcolo.online.",
+      "title": "Convertitore Angoli | Gradi a Radianti & Altro | Calcolo.online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Tra Unità Angolari",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Trigonometry": {
+    "Video": "Video non trovato",
+    "description": "Esplora concetti trigonometrici essenziali con i nostri calcolatori completi. Risolvi funzioni trigonometriche (seno, coseno, tangente) e usa risolutori di triangoli per analisi dettagliate.",
+    "meta": {
+      "description": "Calcolatori trigonometrici per sin, cos, tan e risoluzione triangoli. Strumenti essenziali per studenti e professionisti su Calcolo.online.",
+      "title": "Calcolatori Trigonometrici | Sin, Cos, Tan, Risolvi Triangoli"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Trigonometria",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Trigonometric Functions (Sin, Cos, Tan)": {
+    "Video": "Video non trovato",
+    "description": "Calcola seno, coseno, tangente, cosecante, secante, cotangente e i loro inversi (arcsin, arccos, arctan) per un dato angolo in gradi o radianti. Essenziale per varie applicazioni.",
+    "meta": {
+      "description": "Trova i valori per le funzioni trigonometriche (sin, cos, tan, csc, sec, cot) e i loro inversi. Calcoli trigonometrici accurati su Calcolo.online.",
+      "title": "Calcolatore Funzioni Trigonometriche | Sin, Cos, Tan, ecc."
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola le Funzioni Trigonometriche",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Triangle Solver": {
+    "Video": "Video non trovato",
+    "description": "Risolvi qualsiasi triangolo trovando lati o angoli mancanti usando i valori noti. Supporta vari scenari inclusi SSS (Lato-Lato-Lato), SAS (Lato-Angolo-Lato), ASA, AAS e SSA.",
+    "meta": {
+      "description": "Il nostro Risolutore di Triangoli calcola angoli e lati mancanti di qualsiasi triangolo. Inserisci i valori noti per soluzioni rapide e accurate su Calcolo.online.",
+      "title": "Risolutore di Triangoli | Calcola Angoli & Lati dei Triangoli"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumento Completo per l’Analisi dei Triangoli",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Calculus": {
+    "Video": "Video non trovato",
+    "description": "Approfondisci i concetti fondamentali del calcolo con i nostri strumenti intuitivi per derivate, integrali (definiti e indefiniti) e limiti. Semplifica problemi complessi di calcolo.",
+    "meta": {
+      "description": "Calcolatori di calcolo per derivate, integrali e limiti. Risolvi problemi di calcolo e migliora la tua comprensione su Calcolo.online.",
+      "title": "Calcolatori Calcolo | Derivate, Integrali, Limiti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per il Calcolo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Derivatives": {
+    "Video": "Video non trovato",
+    "description": "Calcola derivate di funzioni con facilità. Il nostro calcolatore di derivate fornisce soluzioni passo-passo per vari problemi di differenziazione, aiutandoti a comprendere il processo.",
+    "meta": {
+      "description": "Trova derivate di funzioni con il nostro Calcolatore di Derivate online. Ottieni soluzioni passo-passo per i compiti di calcolo su Calcolo.online.",
+      "title": "Calcolatore Derivate | Trova Derivate di Funzioni Facilmente"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Differenziazione di Funzioni Semplificata",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Integrals": {
+    "Video": "Video non trovato",
+    "description": "Calcola integrali definiti e indefiniti di funzioni. Il nostro calcolatore di integrali fornisce soluzioni e può aiutare a visualizzare l’area sotto la curva per integrali definiti.",
+    "meta": {
+      "description": "Risolvi integrali definiti e indefiniti con il nostro Calcolatore di Integrali. Ottieni rapidamente soluzioni per i tuoi problemi di calcolo su Calcolo.online.",
+      "title": "Calcolatore Integrali | Integrali Definiti & Indefiniti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per l’Integrazione di Funzioni Online",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Limits": {
+    "Video": "Video non trovato",
+    "description": "Valuta i limiti delle funzioni mentre si avvicinano a un punto specifico o all’infinito. Comprendi il comportamento asintotico e la continuità delle funzioni con il nostro calcolatore di limiti intuitivo.",
+    "meta": {
+      "description": "Calcola i limiti delle funzioni con il nostro Calcolatore di Limiti. Uno strumento essenziale per comprendere i concetti base del calcolo su Calcolo.online.",
+      "title": "Calcolatore Limiti | Valuta Limiti di Funzioni | Calcolo.online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Analizza il Comportamento delle Funzioni con i Limiti",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Statistics & Probability": {
+    "Video": "Video non trovato",
+    "description": "Analizza set di dati e comprendi le probabilità con i nostri calcolatori di statistica e probabilità. Calcola media, mediana, moda, deviazione standard, varianza, probabilità, permutazioni e altro.",
+    "meta": {
+      "description": "Calcolatori completi di statistica & probabilità. Trova media, mediana, deviazione standard, probabilità, permutazioni e altro su Calcolo.online.",
+      "title": "Calcolatori Statistica & Probabilità | Strumenti Analisi Dati"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Statistica & Probabilità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Mean, Median, Mode": {
+    "Video": "Video non trovato",
+    "description": "Calcola le misure di tendenza centrale per un dataset: media, mediana e moda. Essenziale per l’analisi statistica di base.",
+    "meta": {
+      "description": "Trova la media, la mediana e la moda di qualsiasi dataset con il nostro calcolatore. Misure statistiche chiave per approfondimenti sui dati su Calcolo.online.",
+      "title": "Calcolatore Media, Mediana, Moda | Statistiche Tendenza Centrale"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcolo delle Misure di Tendenza Centrale",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Standard Deviation, Variance": {
+    "Video": "Video non trovato",
+    "description": "Misura la dispersione o variabilità di un dataset calcolando la deviazione standard (per campione o popolazione) e la varianza. Comprendi quanto i tuoi dati sono sparsi.",
+    "meta": {
+      "description": "Calcola deviazione standard e varianza per misurare la dispersione dei dati. Strumenti statistici essenziali per l’analisi dei dati su Calcolo.online.",
+      "title": "Calcolatore Deviazione Standard & Varianza | Dispersione Dati"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Misura la Dispersione e Variazione dei Dati",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Probability": {
+    "Video": "Video non trovato",
+    "description": "Calcola probabilità di eventi singoli, multipli e condizionali. Esplora concetti come eventi indipendenti, eventi dipendenti e applicazioni del teorema di Bayes.",
+    "meta": {
+      "description": "Il nostro Calcolatore di Probabilità aiuta a determinare la probabilità degli eventi. Risolvi vari problemi di probabilità con facilità su Calcolo.online.",
+      "title": "Calcolatore Probabilità | Calcola la Probabilità degli Eventi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Valuta la Probabilità degli Eventi",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Permutations & Combinations": {
+    "Video": "Video non trovato",
+    "description": "Calcola permutazioni (dove l’ordine conta) e combinazioni (dove l’ordine non conta) per un dato insieme di elementi. Indispensabile in probabilità, statistica e combinatoria.",
+    "meta": {
+      "description": "Calcola permutazioni e combinazioni con il nostro calcolatore facile P&C. Risolvi problemi di conteggio e arrangiamento su Calcolo.online.",
+      "title": "Calcolatore Permutazioni & Combinazioni | Strumento P&C"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Principi di Conteggio: Permutazioni & Combinazioni",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Regression Analysis": {
+    "Video": "Video non trovato",
+    "description": "Esegui un’analisi di regressione lineare semplice per modellare la relazione tra due variabili continue. Trova l’equazione di regressione, il coefficiente di correlazione (r) e il coefficiente di determinazione (R²).",
+    "meta": {
+      "description": "Usa il nostro Calcolatore Analisi di Regressione per trovare relazioni tra variabili. Esegui la regressione lineare facilmente su Calcolo.online.",
+      "title": "Calcolatore Analisi Regressione | Strumento Regressione Lineare"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Modella Relazioni tra Variabili (Regressione)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Number Theory": {
+    "Video": "Video non trovato",
+    "description": "Esplora le affascinanti proprietà dei numeri con i nostri calcolatori di teoria dei numeri. Trova numeri primi, MCD, mcm, controlla la divisibilità e esegui altri calcoli numerici.",
+    "meta": {
+      "description": "Calcolatori di teoria dei numeri per numeri primi, MCD, mcm e altro. Esplora proprietà intriganti dei numeri su Calcolo.online.",
+      "title": "Calcolatori Teoria dei Numeri | Primi, MCD, mcm & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Teoria dei Numeri",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Prime Numbers": {
+    "Video": "Video non trovato",
+    "description": "Determina se un numero dato è primo, trova i fattori primi di qualsiasi numero composito o genera un elenco di numeri primi entro un intervallo numerico specificato.",
+    "meta": {
+      "description": "Controlla numeri primi, trova scomposizioni in fattori primi e genera elenchi di numeri primi con i nostri strumenti su Calcolo.online.",
+      "title": "Calcolatore Numeri Primi | Controlla, Trova & Elenca Primi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Tutto sui Calcoli con i Numeri Primi",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Greatest Common Divisor (GCD)": {
+    "Video": "Video non trovato",
+    "description": "Trova il massimo comun divisore (MCD), noto anche come massimo comune fattore (MCF), di due o più interi usando metodi come l’algoritmo euclideo.",
+    "meta": {
+      "description": "Calcola il Massimo Comun Divisore (MCD) o HCF di numeri. Strumento rapido e accurato per trovare il MCD di qualsiasi intero su Calcolo.online.",
+      "title": "Calcolatore MCD | Massimo Comun Divisore (HCF) Finder"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Trova il Massimo Comun Divisore (MCD)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Least Common Multiple (LCM)": {
+    "Video": "Video non trovato",
+    "description": "Determina il minimo comune multiplo (mcm) di due o più interi. Questo è molto utile in varie applicazioni matematiche, specialmente quando si lavora con frazioni.",
+    "meta": {
+      "description": "Il nostro Calcolatore mcm trova il Minimo Comune Multiplo di due o più numeri. Uno strumento utile per problemi di matematica su Calcolo.online.",
+      "title": "Calcolatore mcm | Minimo Comune Multiplo Finder Tool"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Trova il Minimo Comune Multiplo (mcm)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Conversions": {
+    "Video": "Video non trovato",
+    "description": "Esegui rapidamente e con precisione varie conversioni matematiche. Questa sezione include conversioni di base numerici (binario, decimale, esadecimale, ottale) e conversioni di numeri romani.",
+    "meta": {
+      "description": "Strumenti di conversione matematica per basi numeriche (binario, esadecimale, decimale) e numeri romani. Conversioni accurate su Calcolo.online.",
+      "title": "Calcolatori Conversione Matematica | Base Numerica, Numeri Romani"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per le Conversioni Matematiche",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Number Base Converter (Binary, Decimal, Hex)": {
+    "Video": "Video non trovato",
+    "description": "Converti numeri senza interruzioni tra diverse basi, inclusi binario (base 2), decimale (base 10), esadecimale (base 16) e ottale (base 8). Essenziale per informatica ed elettronica digitale.",
+    "meta": {
+      "description": "Converti numeri tra basi binarie, decimali, esadecimali e ottali con il nostro versatile Convertitore di Base Numerica su Calcolo.online.",
+      "title": "Convertitore Base Numerica | Binario, Decimale, Esadecimale, Ottale"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Tra Diversi Sistemi Numerici",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Roman Numerals": {
+    "Video": "Video non trovato",
+    "description": "Converti numeri arabi (numeri decimali standard) in numeri romani e viceversa. Comprendi il sistema antico di numerazione romana e le sue regole con questo strumento utile.",
+    "meta": {
+      "description": "Converti numeri in e da numeri romani con il nostro facile Convertitore Numeri Romani. Esplora questo sistema antico su Calcolo.online.",
+      "title": "Convertitore Numeri Romani | Decimale a Romano & Viceversa"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Traduci Numeri Romani e Arabi",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Health & Fitness": {
+    "Video": "Video non trovato",
+    "description": "Prenditi cura del tuo benessere con i calcolatori per salute e fitness di Calcolo.online. Monitora metriche corporee, pianifica la nutrizione, traccia attività fisiche e valuta i rischi per una vita più sana.",
+    "meta": {
+      "description": "Calcolatori completi per salute e fitness: BMI, BMR, calorie, macro, gravidanza e altro. Raggiungi i tuoi obiettivi di benessere su Calcolo.online.",
+      "title": "Calcolatori Salute & Fitness | BMI, Calorie, Nutrizione"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Esplora i nostri Calcolatori per Salute & Fitness",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Body Metrics": {
+    "Video": "Video non trovato",
+    "description": "Comprendi meglio il tuo corpo con la nostra serie di calcolatori di metriche corporee. Calcola BMI, BMR, TDEE, percentuale di grasso corporeo, peso ideale e massa magra per una panoramica completa.",
+    "meta": {
+      "description": "Calcola metriche corporee chiave: BMI, BMR, TDEE, percentuale di grasso, peso ideale e massa magra. Monitora i tuoi progressi su Calcolo.online.",
+      "title": "Calcolatori Metriche Corporee | BMI, BMR, Grasso Corporeo & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per le Metriche Corporee",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Body Mass Index (BMI)": {
+    "Video": "Video non trovato",
+    "description": "Calcola il tuo Indice di Massa Corporea (BMI) per valutare il tuo stato di peso rispetto all’altezza. Un indicatore comune per individuare potenziali problemi di peso negli adulti.",
+    "meta": {
+      "description": "Usa il nostro Calcolatore BMI per verificare il tuo Indice di Massa Corporea. Un modo rapido e semplice per valutare il tuo stato di peso su Calcolo.online.",
+      "title": "Calcolatore BMI | Valuta il Tuo Peso"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola il Tuo Indice di Massa Corporea (BMI)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Basal Metabolic Rate (BMR)": {
+    "Video": "Video non trovato",
+    "description": "Stima il tuo Tasso Metabolico Basale (BMR), il numero di calorie che il tuo corpo brucia a riposo per mantenere le funzioni vitali di base. Fondamentale per la pianificazione della dieta.",
+    "meta": {
+      "description": "Determina il tuo Tasso Metabolico Basale (BMR) – calorie bruciate a riposo. Essenziale per la pianificazione della gestione del peso su Calcolo.online.",
+      "title": "Calcolatore Tasso Metabolico Basale (BMR) | Calorie a Riposo"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima il Tuo Tasso Metabolico Basale",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Total Daily Energy Expenditure (TDEE)": {
+    "Video": "Video non trovato",
+    "description": "Calcola il tuo Dispendio Energetico Giornaliero Totale (TDEE), ovvero il numero totale di calorie bruciate in un giorno, inclusa l’attività fisica. Cruciale per la gestione del peso.",
+    "meta": {
+      "description": "Il nostro Calcolatore TDEE stima il tuo fabbisogno calorico giornaliero basato sul livello di attività. Pianifica la tua dieta in modo efficace su Calcolo.online.",
+      "title": "Calcolatore TDEE | Stima Dispendio Energetico Giornaliero"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola il Tuo Dispendio Calorico Totale Giornaliero",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Body Fat Percentage": {
+    "Video": "Video non trovato",
+    "description": "Stima la tua percentuale di grasso corporeo utilizzando vari metodi (es. formula US Navy, metodo BMI). Monitora la tua composizione corporea per salute e fitness.",
+    "meta": {
+      "description": "Stima la tua percentuale di grasso corporeo con il nostro calcolatore. Monitora la composizione corporea per migliori informazioni sulla salute su Calcolo.online.",
+      "title": "Calcolatore Percentuale Grasso Corporeo | Stima Composizione Corporea"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima i Tuoi Livelli di Grasso Corporeo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Ideal Weight": {
+    "Video": "Video non trovato",
+    "description": "Determina la tua fascia di peso ideale in base all’altezza, al sesso e alla corporatura utilizzando formule popolari. Una linea guida utile per stabilire obiettivi di peso sani.",
+    "meta": {
+      "description": "Trova la tua fascia di peso ideale con il nostro calcolatore usando diverse formule. Imposta obiettivi di peso sani con la guida di Calcolo.online.",
+      "title": "Calcolatore Peso Ideale | Stima Fascia di Peso Sano"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Determina la Tua Fascia di Peso Ideale",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Lean Body Mass": {
+    "Video": "Video non trovato",
+    "description": "Calcola la tua Massa Corporea Magra (LBM), che è il peso del tuo corpo meno il grasso corporeo. Comprendere la LBM è importante per la pianificazione di fitness e nutrizione.",
+    "meta": {
+      "description": "Stima la tua Massa Corporea Magra (LBM) con il nostro calcolatore. Comprendi la composizione corporea oltre al solo peso su Calcolo.online.",
+      "title": "Calcolatore Massa Corporea Magra (LBM) | Strumento Composizione Corporea"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola la Tua Massa Corporea Magra",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Nutrition & Diet": {
+    "Video": "Video non trovato",
+    "description": "Ottimizza le tue abitudini alimentari con i nostri calcolatori di nutrizione e dieta. Conta calorie, calcola proporzioni di macronutrienti, determina l’assunzione di acqua e utilizza strumenti per diete specifiche.",
+    "meta": {
+      "description": "Calcolatori nutrizione e dieta per conteggio calorie, macro (proteine, carboidrati, grassi), assunzione di acqua e punti dieta su Calcolo.online.",
+      "title": "Calcolatori Nutrizione & Dieta | Calorie, Macronutrienti & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Pianificare Nutrizione & Dieta",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Calorie Counter": {
+    "Video": "Video non trovato",
+    "description": "Stima il tuo fabbisogno calorico giornaliero per mantenimento, perdita o aumento di peso in base al tuo BMR e al livello di attività. Pianifica la tua dieta efficacemente per raggiungere i tuoi obiettivi.",
+    "meta": {
+      "description": "Usa il nostro Calcolatore Calorie per stimare il fabbisogno calorico giornaliero per gestire il peso. Raggiungi i tuoi obiettivi dietetici con Calcolo.online.",
+      "title": "Calcolatore Calorie | Stima del Fabbisogno Calorico Giornaliero"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima il Tuo Apporto Calorico Giornaliero",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Macronutrient Calculator (Protein, Carbs, Fat)": {
+    "Video": "Video non trovato",
+    "description": "Determina il rapporto ottimale di macronutrienti (proteine, carboidrati e grassi) in base ai tuoi obiettivi calorici e alle preferenze alimentari (es. keto, equilibrata).",
+    "meta": {
+      "description": "Calcola l’assunzione ideale di macronutrienti (proteine, carboidrati, grassi) per i tuoi obiettivi dietetici e di fitness con il nostro strumento macro su Calcolo.online.",
+      "title": "Calcolatore Macronutrienti | Rapporto Proteine, Carboidrati, Grassi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Bilancia i Tuoi Macronutrienti",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Water Intake": {
+    "Video": "Video non trovato",
+    "description": "Stima l’assunzione giornaliera raccomandata di acqua in base a fattori come peso, livello di attività e clima. Rimani idratato per salute e prestazioni ottimali.",
+    "meta": {
+      "description": "Calcola il tuo fabbisogno giornaliero di acqua per un’idratazione ottimale e la tua salute. Strumento semplice ed efficace su Calcolo.online.",
+      "title": "Calcolatore Assunzione Acqua | Idratazione Giornaliera Raccomandata"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Determina il Tuo Bisogno Idrico Giornaliero",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Points Calculators (for specific diets)": {
+    "Video": "Video non trovato",
+    "description": "Utilizza calcolatori di punti adattati a specifici piani dietetici (es. Weight Watchers). Monitora facilmente l’assunzione di cibo e rimani allineato al tuo sistema dietetico scelto.",
+    "meta": {
+      "description": "Calcolatori di punti per piani dietetici popolari. Semplifica il monitoraggio e l’adesione al sistema dietetico specifico con Calcolo.online.",
+      "title": "Calcolatori Punti Dieta | Monitoraggio Piani Dietetici"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per il Monitoraggio di Piani Dietetici Specifici",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Fitness & Exercise": {
+    "Video": "Video non trovato",
+    "description": "Migliora i tuoi allenamenti con i nostri calcolatori per fitness ed esercizio. Stima le calorie bruciate, trova le frequenze cardiache target, calcola il passo e determina il massimale per l’allenamento di forza.",
+    "meta": {
+      "description": "Calcolatori fitness per calorie bruciate, frequenza cardiaca target, passo (corsae/ciclismo) e massimale. Ottimizza gli allenamenti su Calcolo.online.",
+      "title": "Calcolatori Fitness & Esercizio | Ottimizza i Tuoi Allenamenti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Fitness & Esercizio",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Calories Burned by Activity": {
+    "Video": "Video non trovato",
+    "description": "Stima il numero di calorie bruciate durante varie attività fisiche basate sulla durata e sul tuo peso corporeo. Traccia efficacemente il dispendio energetico.",
+    "meta": {
+      "description": "Stima le calorie bruciate per diverse attività ed esercizi. Monitora l’efficacia del tuo allenamento con il calcolatore di Calcolo.online.",
+      "title": "Calorie Bruciate per Attività | Calcolatore Esercizio"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima le Calorie Bruciate Durante le Attività",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Target Heart Rate": {
+    "Video": "Video non trovato",
+    "description": "Calcola le tue zone di frequenza cardiaca target per diverse intensità di esercizio (es. brucio grassi, cardio). Ottimizza i tuoi allenamenti per massimo beneficio e sicurezza.",
+    "meta": {
+      "description": "Trova le tue zone di frequenza cardiaca target per allenamenti efficaci. Ottimizza l’intensità dell’allenamento con il calcolatore FC di Calcolo.online.",
+      "title": "Calcolatore Frequenza Cardiaca Target | Ottimizza Intensità Allenamento"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Trova la Tua Frequenza Cardiaca Ottimale",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Pace Calculator (Running, Cycling)": {
+    "Video": "Video non trovato",
+    "description": "Calcola il tuo passo per corsa, ciclismo o altre attività data la distanza e il tempo, o viceversa. Pianifica l’allenamento e le strategie di gara in modo efficace.",
+    "meta": {
+      "description": "Calcolatore passo per corsa, ciclismo e altro. Determina velocità, tempo o distanza per allenamenti e gare su Calcolo.online.",
+      "title": "Calcolatore Passo | Corsa, Ciclismo Velocità & Distanza"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola il Tuo Passo per l’Attività",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "One-Rep Max (Strength Training)": {
+    "Video": "Video non trovato",
+    "description": "Stima il tuo massimale per una ripetizione (1RM) per esercizi di forza come panca, squat o stacchi, basandoti sul peso sollevato e sulle ripetizioni eseguite.",
+    "meta": {
+      "description": "Stima il tuo One-Rep Max (1RM) per l’allenamento di forza. Valuta la tua forza e pianifica gli allenamenti efficacemente con Calcolo.online.",
+      "title": "Calcolatore One-Rep Max (1RM) | Stima Allenamento Forza"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima la Tua Forza: One-Rep Max",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Pregnancy & Fertility": {
+    "Video": "Video non trovato",
+    "description": "Naviga nel tuo percorso di gravidanza e fertilità con calcolatori utili. Stima l’ovulazione, la data del parto e monitora il guadagno di peso in gravidanza.",
+    "meta": {
+      "description": "Calcolatori gravidanza e fertilità per ovulazione, data del parto e monitoraggio del peso in gravidanza. Pianifica e monitora su Calcolo.online.",
+      "title": "Calcolatori Gravidanza & Fertilità | Ovulazione, Data del Parto"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Gravidanza & Fertilità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Ovulation Calculator": {
+    "Video": "Video non trovato",
+    "description": "Stima i tuoi giorni più fertili calcolando il periodo di ovulazione basato sulla durata del tuo ciclo e sulla data dell’ultima mestruazione. Utile per la pianificazione familiare.",
+    "meta": {
+      "description": "Stima la tua finestra fertile e i giorni di ovulazione con il nostro Calcolatore di Ovulazione. Pianifica la concezione su Calcolo.online.",
+      "title": "Calcolatore Ovulazione | Prevedi i Tuoi Giorni Più Fertili"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima il Tuo Periodo di Ovulazione",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Due Date Calculator": {
+    "Video": "Video non trovato",
+    "description": "Stima la data del parto del tuo bambino basandoti sul primo giorno dell’ultima mestruazione (LMP) o sulla data del concepimento. Ottieni una timeline per il tuo viaggio di gravidanza.",
+    "meta": {
+      "description": "Calcola la data stimata del parto basandoti su LMP o concepimento. Pianifica l’arrivo del tuo bambino con Calcolo.online.",
+      "title": "Calcolatore Data del Parto | Stima Arrivo del Bambino"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima la Data del Parto del Tuo Bambino",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Pregnancy Weight Gain": {
+    "Video": "Video non trovato",
+    "description": "Monitora il guadagno di peso in gravidanza e confrontalo con le linee guida raccomandate in base al tuo BMI pre-gravidanza. Monitora per una gravidanza sana.",
+    "meta": {
+      "description": "Monitora il tuo guadagno di peso in gravidanza con il nostro calcolatore. Assicura un progresso sano per te e il tuo bambino con Calcolo.online.",
+      "title": "Calcolatore Guadagno di Peso in Gravidanza | Monitora Progresso"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Monitora il Guadagno di Peso in Gravidanza",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Health Risks": {
+    "Video": "Video non trovato",
+    "description": "Valuta i potenziali rischi per la salute con i nostri calcolatori specializzati. Stima il contenuto di alcol nel sangue (BAC) e comprendi il costo finanziario del fumo.",
+    "meta": {
+      "description": "Strumenti di valutazione dei rischi per la salute: calcolatore BAC e calcolatore costo fumo. Prendi decisioni informate per il tuo benessere su Calcolo.online.",
+      "title": "Calcolatori Rischi per la Salute | BAC & Costo Fumo"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Valutare i Rischi per la Salute",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Blood Alcohol Content (BAC)": {
+    "Video": "Video non trovato",
+    "description": "Stima il tuo contenuto di alcol nel sangue (BAC) in base al numero di drink consumati, peso, sesso e tempo trascorso. Promuove la consapevolezza sul consumo responsabile di alcol.",
+    "meta": {
+      "description": "Stima il tuo contenuto di alcol nel sangue (BAC) con il nostro calcolatore. Comprendi gli effetti dell’alcol e promuovi la sicurezza. Solo a scopo informativo.",
+      "title": "Calcolatore Contenuto Alcol nel Sangue (BAC) | Stima BAC"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima il Tuo Contenuto di Alcol nel Sangue",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Smoking Cost": {
+    "Video": "Video non trovato",
+    "description": "Calcola il costo finanziario del fumo nel tempo. Scopri quanti soldi potresti risparmiare smettendo, considerando spese giornaliere, settimanali, mensili e annuali.",
+    "meta": {
+      "description": "Il nostro Calcolatore Costo Fumo rivela l’impatto finanziario del fumo. Scopri i tuoi potenziali risparmi smettendo su Calcolo.online.",
+      "title": "Calcolatore Costo del Fumo | Scopri Quanto Costa Fumare"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola il Costo Finanziario del Fumo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Sleep": {
+    "Video": "Video non trovato",
+    "description": "Migliora la tua igiene del sonno con il nostro calcolatore del ciclo del sonno. Determina i momenti migliori per svegliarti o andare a letto in base ai cicli naturali del sonno per un riposo migliore.",
+    "meta": {
+      "description": "Ottimizza il riposo con il nostro Calcolatore Ciclo Sonno. Trova i momenti migliori per alzarti o andare a letto per migliorare la qualità del sonno su Calcolo.online.",
+      "title": "Calcolatore Ciclo Sonno | Ottimizza Sonno & Risveglio"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Migliorare il Sonno",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Sleep Cycle Calculator": {
+    "Video": "Video non trovato",
+    "description": "Calcola gli orari ottimali per svegliarti o andare a dormire in base ai cicli naturali del sonno (tipicamente 90 minuti). Mira a svegliarti alla fine di un ciclo per sentirti più riposato.",
+    "meta": {
+      "description": "Pianifica il tuo sonno per un riposo ottimale. Calcola orari di sonno e risveglio basandoti sui cicli del sonno con il nostro strumento su Calcolo.online.",
+      "title": "Calcolatore Ciclo Sonno | Sveglia Rinfrancato, Pianifica il Sonno"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Ottimizza i Tuoi Orari di Sonno e Risveglio",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Science & Engineering": {
+    "Video": "Video non trovato",
+    "description": "Potenzia i tuoi progetti scientifici e ingegneristici con i calcolatori precisi di Calcolo.online. Copri fisica, chimica, elettronica, meccanica, astronomia e fluidodinamica per soluzioni accurate.",
+    "meta": {
+      "description": "Calcolatori di scienza e ingegneria per fisica, chimica, elettronica, meccanica e altro. Risolvi problemi complessi su Calcolo.online.",
+      "title": "Calcolatori Scienza & Ingegneria | Fisica, Chimica"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Esplora i nostri Calcolatori di Scienza & Ingegneria",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Physics": {
+    "Video": "Video non trovato",
+    "description": "Risolvi problemi di fisica con i nostri calcolatori specializzati. Applica la legge di Ohm, le leggi di Newton, calcola energia, velocità, distanza, tempo, pressione, densità, frequenza e lunghezza d’onda.",
+    "meta": {
+      "description": "Calcolatori di fisica per legge di Ohm, leggi di Newton, energia, velocità, pressione, densità e altro. Strumenti essenziali su Calcolo.online.",
+      "title": "Calcolatori Fisica | Formule & Risolutori di Problemi Online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Calcoli di Fisica",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Ohm's Law": {
+    "Video": "Video non trovato",
+    "description": "Calcola tensione, corrente, resistenza o potenza usando la legge di Ohm (V=IR, P=VI). Uno strumento essenziale per appassionati di elettronica e studenti di ingegneria elettrica.",
+    "meta": {
+      "description": "Calcolatore legge di Ohm per tensione, corrente, resistenza e potenza. Risolvi facilmente problemi di circuiti elettrici su Calcolo.online.",
+      "title": "Calcolatore Legge di Ohm | Tensione, Corrente, Resistenza, Potenza"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Applica la Legge di Ohm per l’Analisi dei Circuiti",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Newton's Laws (e.g., Force = Mass x Acceleration)": {
+    "Video": "Video non trovato",
+    "description": "Applica le leggi del moto di Newton. Calcola forza, massa o accelerazione usando F=ma e esplora altri concetti relativi alla meccanica classica e alla dinamica.",
+    "meta": {
+      "description": "Calcolatori leggi di Newton, inclusi F=ma. Risolvi problemi relativi a forza, massa e accelerazione in meccanica classica su Calcolo.online.",
+      "title": "Calcolatore Leggi di Newton | Forza, Massa, Accelerazione"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per le Leggi del Moto di Newton",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Energy (Kinetic, Potential)": {
+    "Video": "Video non trovato",
+    "description": "Calcola energia cinetica (energia del moto) ed energia potenziale (energia immagazzinata, es. gravitazionale). Comprendi i concetti fondamentali dell’energia in fisica.",
+    "meta": {
+      "description": "Calcola energia cinetica e potenziale con i nostri calcolatori di fisica. Comprendi trasformazioni ed energia di conservazione su Calcolo.online.",
+      "title": "Calcolatore Energia | Kinetica & Potenziale"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola Energia Cinetica e Potenziale",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Speed, Distance, Time": {
+    "Video": "Video non trovato",
+    "description": "Calcola velocità, distanza o tempo dato gli altri due variabili. Uno strumento fondamentale per problemi di moto in fisica e per la vita quotidiana.",
+    "meta": {
+      "description": "Calcolatore Velocità, Distanza, Tempo. Risolvi per qualsiasi variabile in problemi di moto rapidamente e con precisione con il nostro strumento su Calcolo.online.",
+      "title": "Calcolatore Velocità, Distanza, Tempo | Calcoli di Moto"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Risolvi per Velocità, Distanza o Tempo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Pressure": {
+    "Video": "Video non trovato",
+    "description": "Calcola pressione, forza o area usando la formula P = F/A. Converti tra diverse unità di pressione (es. Pascal, Bar, PSI, atm).",
+    "meta": {
+      "description": "Calcolatore pressione per forza, area e conversione unità. Essenziale per compiti di fisica e ingegneria su Calcolo.online.",
+      "title": "Calcolatore Pressione | Forza, Area & Conversioni Unità"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola Pressione e Variabili Correlate",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Density": {
+    "Video": "Video non trovato",
+    "description": "Calcola densità, massa o volume usando la formula ρ = m/V. Una proprietà importante di materiali in fisica, chimica e ingegneria.",
+    "meta": {
+      "description": "Calcolatore densità per massa, volume e densità di sostanze. Uno strumento fondamentale per scienza e ingegneria su Calcolo.online.",
+      "title": "Calcolatore Densità | Massa, Volume, Relazione Densità"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola Densità, Massa o Volume",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Frequency & Wavelength": {
+    "Video": "Video non trovato",
+    "description": "Calcola frequenza o lunghezza d’onda di onde elettromagnetiche o sonore, data la velocità dell’onda. Comprendi la relazione tra queste proprietà delle onde.",
+    "meta": {
+      "description": "Calcolatore frequenza e lunghezza d’onda per onde (luce, suono). Comprendi la loro relazione con la velocità dell’onda su Calcolo.online.",
+      "title": "Calcolatore Frequenza & Lunghezza d’Onda | Strumento Onde"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Esplora Frequenza e Lunghezza d’Onda delle Onde",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Chemistry": {
+    "Video": "Video non trovato",
+    "description": "Facilita i tuoi calcoli di chimica con strumenti per molarità, massa molare, pH, leggi dei gas e diluizioni. Precisi e facili da usare per studenti e professionisti.",
+    "meta": {
+      "description": "Calcolatori di chimica per molarità, massa molare, pH, leggi dei gas e diluizioni. Strumenti essenziali per il laboratorio su Calcolo.online.",
+      "title": "Calcolatori Chimica | Molarità, pH, Leggi dei Gas & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per i Calcoli di Chimica",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Molarity / Molar Mass": {
+    "Video": "Video non trovato",
+    "description": "Calcola la molarità delle soluzioni, trova la massa molare dei composti o determina moli/masse necessarie. Calcoli fondamentali per stechiometria e chimica delle soluzioni.",
+    "meta": {
+      "description": "Calcolatore molarità e massa molare per soluzioni chimiche e composti. Essenziale per studenti e lavoro di laboratorio su Calcolo.online.",
+      "title": "Calcolatore Molarità & Massa Molare | Strumento Chimica Soluzioni"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola Molarità e Massa Molare",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "pH Calculator": {
+    "Video": "Video non trovato",
+    "description": "Calcola il pH dalla concentrazione di ioni idrogeno [H+] o pOH, e viceversa. Determina rapidamente l’acidità o l’alcalinità di soluzioni acquose.",
+    "meta": {
+      "description": "Calcolatore pH per determinare acidità/alcalinità da [H+] o pOH. Essenziale per applicazioni di chimica e biologia su Calcolo.online.",
+      "title": "Calcolatore pH | Acidità & Alcalinità delle Soluzioni"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Determina pH e pOH delle Soluzioni",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Gas Laws (Ideal Gas Law)": {
+    "Video": "Video non trovato",
+    "description": "Applica la Legge dei Gas Ideali (PV=nRT) per calcolare pressione, volume, temperatura o moli di un gas. Esplora anche le leggi di Boyle, Charles e Gay-Lussac.",
+    "meta": {
+      "description": "Calcolatore Leggi dei Gas (PV=nRT) e altre leggi dei gas. Risolvi per pressione, volume, temperatura o moli di gas su Calcolo.online.",
+      "title": "Calcolatore Legge dei Gas | Legge dei Gas Ideali & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per i Calcoli della Legge dei Gas",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Dilution": {
+    "Video": "Video non trovato",
+    "description": "Calcola la concentrazione o il volume necessario per diluizioni di soluzioni usando la formula M1V1 = M2V2. Prepara soluzioni accuratamente per il lavoro di laboratorio.",
+    "meta": {
+      "description": "Calcolatore Diluizione soluzioni (M1V1=M2V2). Prepara soluzioni a concentrazioni desiderate con precisione su Calcolo.online.",
+      "title": "Calcolatore Diluizione | Strumento Preparazione Soluzioni"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola per le Diluizioni di Soluzioni",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Electronics": {
+    "Video": "Video non trovato",
+    "description": "Semplifica i tuoi progetti di elettronica con calcolatori per codice colori resistori, capacità, induttanza e calcoli di potenza (Watt, Volt, Ampere). Essenziale per hobbisti e ingegneri.",
+    "meta": {
+      "description": "Calcolatori elettronici: codice colori resistore, capacità, induttanza e potenza (Watt, Volt, Ampere). Strumenti per circuiti su Calcolo.online.",
+      "title": "Calcolatori Elettronica | Resistenze, Condensatori, Potenza"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per l’Elettronica",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Resistor Color Code": {
+    "Video": "Video non trovato",
+    "description": "Determina il valore di resistenza e la tolleranza di un resistore in base alle sue bande di colore (3, 4, 5 o 6 bande). Inoltre, trova i colori per un valore di resistenza specificato.",
+    "meta": {
+      "description": "Calcolatore codice colori resistore. Decodifica bande o trova colori per un valore di resistenza specifico. Essenziale per l’elettronica.",
+      "title": "Calcolatore Codice Colori Resistore | Decodifica Bande"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Decodifica le Bande di Colore dei Resistori",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Capacitance": {
+    "Video": "Video non trovato",
+    "description": "Calcola capacità, carica o tensione nei condensatori (Q=CV). Comprendi il comportamento dei condensatori nei circuiti e converti unità di capacità.",
+    "meta": {
+      "description": "Calcolatore capacità (Q=CV). Calcola carica, tensione o capacità per condensatori in circuiti elettronici su Calcolo.online.",
+      "title": "Calcolatore Capacità | Carica, Tensione nei Condensatori"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola Capacità e Valori Correlati",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Inductance": {
+    "Video": "Video non trovato",
+    "description": "Calcola induttanza, tensione o tasso di cambiamento di corrente negli induttori. Comprendi le proprietà degli induttori e il loro comportamento in circuiti AC/DC.",
+    "meta": {
+      "description": "Calcolatore induttanza per induttori in circuiti. Analizza tensione, variazione di corrente e stoccaggio di energia con Calcolo.online.",
+      "title": "Calcolatore Induttanza | Proprietà Induttori & Circuiti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Analizza le Caratteristiche degli Induttori",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Power Calculators (Watts, Volts, Amps)": {
+    "Video": "Video non trovato",
+    "description": "Calcola potenza elettrica (Watt), tensione (Volt), corrente (Ampere) o resistenza usando formule come P=VI, P=I²R, P=V²/R. Essenziale per l’analisi dei circuiti.",
+    "meta": {
+      "description": "Calcolatore potenza elettrica per Watt, Volt, Ampere e Resistenza. Risolvi qualsiasi variabile nelle formule di potenza su Calcolo.online.",
+      "title": "Calcolatore Potenza | Watt, Volt, Ampere, Resistenza"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola Variabili di Potenza Elettrica",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+
+
+
+
+
+
+
+
+
+  "Mechanics": {
+    "Video": "Video non trovato",
+    "description": "Risolvi problemi di meccanica con calcolatori per coppia, rapporto di trasmissione, tensione meccanica e deformazione. Strumenti essenziali per ingegneria meccanica e progetti di design.",
+    "meta": {
+      "description": "Calcolatori meccanica per coppia, rapporto di trasmissione, tensione e deformazione. Strumenti di ingegneria per progetti di design su Calcolo.online.",
+      "title": "Calcolatori Meccanica | Coppia, Rapporti, Tensione, Deformazione"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Meccanica",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Torque": {
+    "Video": "Video non trovato",
+    "description": "Calcola la coppia (forza rotazionale) dato forza e braccio di leva. Converti tra diverse unità di coppia. Fondamentale per sistemi meccanici.",
+    "meta": {
+      "description": "Calcolatore coppia per forza rotazionale, braccio di leva e angolo. Essenziale per applicazioni di ingegneria meccanica su Calcolo.online.",
+      "title": "Calcolatore Coppia | Forza Rotazionale & Braccio di Leva"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola la Coppia nei Sistemi Meccanici",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Gear Ratio": {
+    "Video": "Video non trovato",
+    "description": "Calcola rapporti di ingranaggi, velocità in ingresso/uscita o numero di denti per sistemi di ingranaggi. Ottimizza il vantaggio meccanico e la trasmissione di velocità nei macchinari.",
+    "meta": {
+      "description": "Calcolatore rapporto di ingranaggi per velocità, denti e vantaggio meccanico in sistemi di ingranaggi. Ottimizza i tuoi progetti con Calcolo.online.",
+      "title": "Calcolatore Rapporto di Ingranaggi | Velocità, Denti & Progetto Meccanico"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Analizza Rapporti di Ingranaggi",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Stress & Strain": {
+    "Video": "Video non trovato",
+    "description": "Calcola sforzo meccanico (forza per unità di area) e deformazione (deformazione) nei materiali sotto carico. Concetti fondamentali in scienza dei materiali e ingegneria strutturale.",
+    "meta": {
+      "description": "Calcolatore sforzo e deformazione per materiali sotto carico. Analizza il comportamento dei materiali per progetti di ingegneria su Calcolo.online.",
+      "title": "Calcolatore Sforzo & Deformazione | Meccanica dei Materiali & Analisi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola Sforzo e Deformazione nei Materiali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Astronomy": {
+    "Video": "Video non trovato",
+    "description": "Esplora il cosmo con i nostri calcolatori di astronomia. Calcola il tuo peso su diversi pianeti o converte vaste distanze in anni luce.",
+    "meta": {
+      "description": "Calcolatori astronomici: calcola il tuo peso su altri pianeti e converti distanze in anni luce. Esplora lo spazio con Calcolo.online.",
+      "title": "Calcolatori Astronomia | Pianeta Peso & Convertitore Anno Luce"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti di Astronomia",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Planet Weight Calculator": {
+    "Video": "Video non trovato",
+    "description": "Curioso di sapere quanto peseresti su Marte o Giove? Inserisci il tuo peso sulla Terra per scoprire quanto peseresti su altri pianeti e corpi celesti del nostro sistema solare.",
+    "meta": {
+      "description": "Calcolatore peso pianeta: scopri quanto peseresti su Marte, Giove, la Luna e altri corpi celesti. Divertente e istruttivo!",
+      "title": "Calcolatore Peso Pianeta | Il Tuo Peso su Altri Pianeti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola il Tuo Peso sui Pianeti",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Light Year Converter": {
+    "Video": "Video non trovato",
+    "description": "Converti distanze astronomiche tra anni luce e altre unità come chilometri, miglia, parsec e unità astronomiche (AU). Comprendi l’immensità dello spazio.",
+    "meta": {
+      "description": "Convertitore di anni luce per distanze astronomiche. Converti anni luce in km, miglia, parsec e UA. Esplora lo spazio su Calcolo.online.",
+      "title": "Convertitore Anno Luce | Conversione Distanze Astronomiche"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Anni Luce e Distanze Astronomiche",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Fluid Dynamics": {
+    "Video": "Video non trovato",
+    "description": "Analizza il comportamento dei fluidi con calcolatori per portata e numero di Reynolds. Essenziale per applicazioni ingegneristiche che coinvolgono il movimento di liquidi o gas.",
+    "meta": {
+      "description": "Calcolatori fluidodinamica per portata e numero di Reynolds. Strumenti essenziali per sistemi fluidi di ingegneria su Calcolo.online.",
+      "title": "Calcolatori Fluidodinamica | Portata & Numero di Reynolds"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Fluidodinamica",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Flow Rate": {
+    "Video": "Video non trovato",
+    "description": "Calcola la portata volumetrica (Q = Av) o la portata massica di fluidi attraverso tubi o canali. Converti tra diverse unità di portata.",
+    "meta": {
+      "description": "Calcolatore portata per liquidi e gas (volumetrica o massica). Essenziale per analisi di tubi e canali su Calcolo.online.",
+      "title": "Calcolatore Portata | Analisi Portata Volumetrica & Massica"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola la Portata dei Fluidi",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Reynolds Number": {
+    "Video": "Video non trovato",
+    "description": "Calcola il numero di Reynolds per prevedere i regimi di flusso (laminare o turbolento) in diverse situazioni di flusso di fluidi. Chiave per la progettazione di meccanica dei fluidi.",
+    "meta": {
+      "description": "Calcolatore numero di Reynolds per prevedere i regimi di flusso dei fluidi (laminare/turbolento). Fondamentale per analisi fluidodinamica su Calcolo.online.",
+      "title": "Calcolatore Numero di Reynolds | Analisi Regime di Flusso Fluidi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Determina il Numero di Reynolds",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Everyday Life & Utilities": {
+    "Video": "Video non trovato",
+    "description": "Semplifica le attività quotidiane con i calcolatori di Calcolo.online per la vita di tutti i giorni e le utilità. Esegui conversioni di unità, calcoli di tempo/data, conversioni di cucina, pianificazione di viaggi e altro.",
+    "meta": {
+      "description": "Calcolatori utili per la vita quotidiana per conversioni di unità, tempo e data, cucina, viaggi e altro. Rendi le attività quotidiane più semplici con Calcolo.online.",
+      "title": "Calcolatori Vita Quotidiana & Utilità | Conversioni & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Vita Quotidiana & Utilità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Unit Conversions": {
+    "Video": "Video non trovato",
+    "description": "Converti una vasta gamma di unità tra diverse categorie: lunghezza, peso/massa, temperatura, volume, velocità, area, pressione, energia e archiviazione dati. Rapido e preciso.",
+    "meta": {
+      "description": "Convertitori di unità completi per lunghezza, peso, temperatura, volume, velocità, area, pressione, energia, dati. Risultati veloci su Calcolo.online.",
+      "title": "Calcolatori Conversione Unità | Lunghezza, Peso, Temp & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Conversione Unità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Length (Metric/Imperial)": {
+    "Video": "Video non trovato",
+    "description": "Converti unità di lunghezza tra sistema metrico (metri, chilometri, centimetri) e sistema imperiale (miglia, piedi, pollici, iarde) e altre unità di lunghezza comuni.",
+    "meta": {
+      "description": "Convertitore lunghezza per unità metriche e imperiali (metri, piedi, pollici, km, miglia, ecc.). Conversioni di lunghezza rapide e accurate su Calcolo.online.",
+      "title": "Convertitore Lunghezza | Conversione Unità Metriche & Imperiali"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Unità di Lunghezza",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Weight/Mass (Metric/Imperial)": {
+    "Video": "Video non trovato",
+    "description": "Converti unità di peso e massa tra sistema metrico (chilogrammi, grammi, milligrammi) e sistema imperiale (libbre, once, stone) e altre unità comuni.",
+    "meta": {
+      "description": "Convertitore peso e massa per unità metriche/imperiali (kg, lbs, grammi, once, ecc.). Conversioni accurate disponibili su Calcolo.online.",
+      "title": "Convertitore Peso/Massa | Strumento Unità Metriche & Imperiali"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Unità di Peso e Massa",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Temperature (Celsius, Fahrenheit, Kelvin)": {
+    "Video": "Video non trovato",
+    "description": "Converti temperature tra Celsius (°C), Fahrenheit (°F) e Kelvin (K). Essenziale per meteo, cucina e applicazioni scientifiche.",
+    "meta": {
+      "description": "Convertitore temperatura per Celsius, Fahrenheit e Kelvin. Conversioni di temperatura rapide e precise per qualsiasi esigenza su Calcolo.online.",
+      "title": "Convertitore Temperatura | Strumento Celsius, Fahrenheit, Kelvin"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Unità di Temperatura",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Volume (Liters, Gallons, etc.)": {
+    "Video": "Video non trovato",
+    "description": "Converti unità di volume tra sistema metrico (litri, millilitri) e sistema imperiale/us (galloni, quarti, pinte, tazze, once liquide) e altro.",
+    "meta": {
+      "description": "Convertitore volume per litri, galloni, millilitri, tazze, once e altre unità metriche/imperiali. Conversioni accurate su Calcolo.online.",
+      "title": "Convertitore Volume | Strumento Litri, Galloni, Tazze, Once"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Unità di Volume",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Speed (km/h, mph, etc.)": {
+    "Video": "Video non trovato",
+    "description": "Converti unità di velocità come km/h, mph, m/s, nodi e ft/s.",
+    "meta": {
+      "description": "Convertitore velocità per km/h, mph, m/s, nodi e altro. Conversioni rapide e accurate di unità di velocità per vari usi su Calcolo.online.",
+      "title": "Convertitore Velocità | km/h, mph, m/s, nodi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Unità di Velocità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Area": {
+    "Video": "Video non trovato",
+    "description": "Converti unità di area tra sistema metrico (metri quadrati, ettari) e sistema imperiale/us (piedi quadrati, acri, miglia quadrate) e altre unità.",
+    "meta": {
+      "description": "Convertitore area per metri quadrati, piedi, acri, ettari e altre unità metriche/imperiali. Conversioni di area accurate su Calcolo.online.",
+      "title": "Convertitore Area | Strumento Unità Quadrate Metriche & Imperiali"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Unità di Area",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Pressure": {
+    "Video": "Video non trovato",
+    "description": "Converti unità di pressione come Pascal (Pa), kilopascal (kPa), bar, millibar, atmosfere (atm), psi e Torr.",
+    "meta": {
+      "description": "Convertitore unità di pressione per Pa, bar, PSI, atm, Torr e altro. Conversioni accurate di pressione per scienza e ingegneria su Calcolo.online.",
+      "title": "Convertitore Unità Pressione | Pa, Bar, PSI, atm, Torr"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Unità di Pressione",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Energy": {
+    "Video": "Video non trovato",
+    "description": "Converti unità di energia tra Joule (J), kilojoule (kJ), calorie (cal), kilocalorie (kcal), British Thermal Units (BTU) e kilowatt-ora (kWh).",
+    "meta": {
+      "description": "Convertitore unità energia per Joule, calorie, BTU, kWh e altro. Conversioni accurate di energia per varie applicazioni su Calcolo.online.",
+      "title": "Convertitore Unità Energia | Joule, Calorie, BTU, kWh"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Unità di Energia",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Data Storage (Bytes, KB, MB, GB, TB)": {
+    "Video": "Video non trovato",
+    "description": "Converti unità di archiviazione dati: Bytes, Kilobytes (KB), Megabytes (MB), Gigabytes (GB), Terabytes (TB), Petabytes (PB) e bit. Opzioni binarie e decimali.",
+    "meta": {
+      "description": "Convertitore archiviazione dati per Bytes, KB, MB, GB, TB, PB, bit. Conversioni binarie (KiB, MiB) e decimali (KB, MB) su Calcolo.online.",
+      "title": "Convertitore Archiviazione Dati | Bytes, KB, MB, GB, TB, bit"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Unità di Archiviazione Dati",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Time & Date": {
+    "Video": "Video non trovato",
+    "description": "Esegui vari calcoli di tempo e data: trova la durata tra due date, converti fusi orari, calcola età o usa timer e cronometri.",
+    "meta": {
+      "description": "Calcolatori tempo e data: durata date, convertitore fuso orario, calcolatore età, timer e cronometro. Gestisci il tempo su Calcolo.online.",
+      "title": "Calcolatori Tempo & Data | Durata, Età, Fusi Orari"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Tempo & Data",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Date Duration (Days between dates)": {
+    "Video": "Video non trovato",
+    "description": "Calcola la durata (numero di giorni, settimane, mesi, anni) tra due date specificate. Utile per pianificazione progetti, monitoraggio eventi o analisi storica.",
+    "meta": {
+      "description": "Calcolatore durata date trova il tempo tra due date in giorni, settimane, mesi, anni. Pianifica eventi con precisione su Calcolo.online.",
+      "title": "Calcolatore Durata Date | Giorni tra Due Date"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola la Durata tra Due Date",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Time Zone Converter": {
+    "Video": "Video non trovato",
+    "description": "Converti l’ora tra diversi fusi orari nel mondo. Scopri l’ora attuale in varie città o programma riunioni internazionali.",
+    "meta": {
+      "description": "Convertitore fuso orario per trovare l’ora corrente in tutto il mondo e convertire tra fusi. Essenziale per comunicazione globale su Calcolo.online.",
+      "title": "Convertitore Fuso Orario | Strumento Conversione Orario Globale"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Tra Fusi Orari Mondiali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Age Calculator": {
+    "Video": "Video non trovato",
+    "description": "Calcola la tua età in anni, mesi, settimane, giorni, ore, minuti e secondi in base alla data di nascita. Scopri anche quanto manca al tuo prossimo compleanno.",
+    "meta": {
+      "description": "Calcolatore età: trova la tua età esatta in anni, mesi, giorni e altro. Visualizza il tempo fino al prossimo compleanno con Calcolo.online.",
+      "title": "Calcolatore Età | Trova la Tua Età Esatta & Prossimo Compleanno"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola la Tua Età Precisa",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Countdown Timer / Stopwatch": {
+    "Video": "Video non trovato",
+    "description": "Usa il nostro timer online per un conto alla rovescia verso un evento o una data specifica. Oppure, usa la funzione cronometro per misurare il tempo trascorso con precisione.",
+    "meta": {
+      "description": "Timer conto alla rovescia online e cronometro. Imposta timer per eventi o misura tempo trascorso con precisione su Calcolo.online. Facile da usare.",
+      "title": "Timer Conto alla Rovescia & Cronometro | Misurazione Tempo Online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Usa Timer e Cronometro Online",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Cooking & Kitchen": {
+    "Video": "Video non trovato",
+    "description": "Padroneggia le tue creazioni culinarie con i nostri calcolatori di cucina. Scala ricette, converti unità di cottura (tazze a grammi) e comprendi proporzioni ingredienti da forno.",
+    "meta": {
+      "description": "Calcolatori cucina & cucina: scalatore di ricette, conversioni cucina (tazze a grammi), proporzioni da forno. Perfeziona i tuoi piatti con Calcolo.online.",
+      "title": "Calcolatori Cucina & Cucina | Ricette, Conversioni"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Cucina & Cucina",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Recipe Scaler": {
+    "Video": "Video non trovato",
+    "description": "Scala facilmente ricette verso l’alto o verso il basso per regolare il numero di porzioni. Inserisci le quantità originali degli ingredienti e le porzioni desiderate per ottenere le nuove quantità.",
+    "meta": {
+      "description": "Scalatore di ricette: regola le quantità degli ingredienti per diverse porzioni. Scala ricette con facilità su Calcolo.online.",
+      "title": "Calcolatore Scala Ricetta | Regola Quantità Ingredienti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scala Perfettamente le Tue Ricette",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Cooking Conversions (Cups to Grams, etc.)": {
+    "Video": "Video non trovato",
+    "description": "Converti misure di cottura e baking comuni tra volume (tazze, cucchiai, ml) e peso (grammi, once) per vari ingredienti. Garantisce precisione nelle ricette.",
+    "meta": {
+      "description": "Conversioni cucina: converti tazze a grammi, ml a oz e altro per ingredienti comuni. Garantisce precisione nelle ricette con Calcolo.online.",
+      "title": "Conversioni Cucina | Tazze a Grammi, Volume a Peso"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Misure di Cottura Comuni",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Baking Ingredient Ratios": {
+    "Video": "Video non trovato",
+    "description": "Comprendi e calcola le proporzioni comuni degli ingredienti da forno (es. farina a liquido, percentuali del panificatore). Migliora la consistenza e i risultati della tua panificazione con queste linee guida.",
+    "meta": {
+      "description": "Calcolatore proporzioni ingredienti da forno. Comprendi percentuali del panificatore e proporzioni comuni per risultati di panificazione consistenti su Calcolo.online.",
+      "title": "Calcolatore Proporzioni Ingredienti da Forno | Percentuali Panificatore"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Padroneggia le Proporzioni da Forno",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Travel": {
+    "Video": "Video non trovato",
+    "description": "Pianifica i tuoi viaggi in modo efficiente con i nostri calcolatori di viaggio. Stima i costi e il consumo di carburante, converti valute e calcola la distanza tra città.",
+    "meta": {
+      "description": "Calcolatori viaggio per costo/consumo carburante, conversione valuta e distanza tra città. Pianifica meglio i tuoi viaggi con Calcolo.online.",
+      "title": "Calcolatori Viaggio | Carburante, Valuta, Distanza"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Pianificazione di Viaggio",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Fuel Cost / Consumption": {
+    "Video": "Video non trovato",
+    "description": "Stima il costo del carburante per un viaggio in base a distanza, efficienza del carburante (MPG o L/100km) e prezzo del carburante. Calcola il consumo di carburante per il tuo veicolo.",
+    "meta": {
+      "description": "Calcolatore costo e consumo carburante. Stima spese carburante per viaggio ed efficienza del veicolo (MPG, L/100km) su Calcolo.online.",
+      "title": "Calcolatore Costo/Consumo Carburante | Stima Carburante Viaggio"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima i Costi e il Consumo di Carburante",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Currency Converter (can also be under Finance)": {
+    "Video": "Video non trovato",
+    "description": "Converti tra una vasta gamma di valute globali utilizzando tassi di cambio aggiornati. Essenziale per viaggi internazionali, acquisti online e transazioni finanziarie.",
+    "meta": {
+      "description": "Convertitore valuta per tassi di cambio in tempo reale tra valute globali. Strumento di viaggio e finanziario essenziale su Calcolo.online.",
+      "title": "Convertitore Valute | Tassi di Cambio Live | Calcolo.online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Tra Valute Mondiali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Distance Calculator (between cities)": {
+    "Video": "Video non trovato",
+    "description": "Calcola la distanza in auto o in volo tra due città o località nel mondo. Ottieni tempi di viaggio stimati e pianifica i tuoi percorsi in modo efficace.",
+    "meta": {
+      "description": "Calcolatore distanza: trova la distanza (auto/volo) tra città nel mondo. Pianifica percorsi e stima tempo di viaggio su Calcolo.online.",
+      "title": "Calcolatore Distanza tra Città | Strumento Pianificazione Percorsi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola le Distanze tra Città",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Hobbies": {
+    "Video": "Video non trovato",
+    "description": "Supporta i tuoi passatempi preferiti con calcolatori per hobby specializzati. Strumenti per giardinaggio, fotografia, maglia/uncinetto e altro per migliorare le tue passioni creative.",
+    "meta": {
+      "description": "Calcolatori hobby per giardinaggio, fotografia, maglia/uncinetto e altro. Migliora le tue attività ricreative con Calcolo.online.",
+      "title": "Calcolatori Hobby | Giardinaggio, Fotografia, Maglia"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per i Tuoi Hobby",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Gardening (e.g., Seed Spacing, Soil Mix)": {
+    "Video": "Video non trovato",
+    "description": "Ottimizza i tuoi progetti di giardinaggio. Calcola spaziatura sementi, proporzioni miscela del suolo, quantità di fertilizzante o stima resa delle piante per un raccolto abbondante.",
+    "meta": {
+      "description": "Calcolatori giardinaggio per spaziatura sementi, proporzioni miscela suolo, necessità di fertilizzante e altro. Coltiva un giardino migliore con Calcolo.online.",
+      "title": "Calcolatori Giardinaggio | Spaziatura Sementi, Miscela del Suolo & Altro"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per un Giardinaggio di Successo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Photography (e.g., Depth of Field, Exposure)": {
+    "Video": "Video non trovato",
+    "description": "Migliora le tue competenze fotografiche con calcolatori per profondità di campo (DoF), valore di esposizione (EV), distanza iperfocale e campo visivo. Cattura lo scatto perfetto.",
+    "meta": {
+      "description": "Calcolatori fotografia per profondità di campo (DoF), esposizione, distanza iperfocale e altro. Padroneggia la tua fotocamera con Calcolo.online.",
+      "title": "Calcolatori Fotografia | Profondità di Campo, Esposizione"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per la Fotografia Perfetta",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Knitting/Crochet (e.g., Gauge, Yarn Needed)": {
+    "Video": "Video non trovato",
+    "description": "Pianifica efficacemente i tuoi progetti di maglia o uncinetto. Calcola la tensione, stima il filato necessario per un progetto, regola i modelli o converti i conti dei punti.",
+    "meta": {
+      "description": "Calcolatori maglia e uncinetto per tensione, stima filato, aggiustamenti modello e altro. Perfeziona la tua arte con Calcolo.online.",
+      "title": "Calcolatori Maglia & Uncinetto | Tensione, Stima Filato"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per Progetti di Maglia e Uncinetto",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Clothing": {
+    "Video": "Video non trovato",
+    "description": "Semplifica l’acquisto di vestiti e scarpe con i nostri convertitori di taglie internazionali. Trova la misura giusta convertendo tra sistemi di taglie USA, UK, Europa e altri.",
+    "meta": {
+      "description": "Convertitori taglie abbigliamento e scarpe per taglie internazionali (USA, UK, UE, ecc.). Trova la vestibilità perfetta per lo shopping online con Calcolo.online.",
+      "title": "Convertitore Taglie Abbigliamento & Scarpe | Taglie Internazionali"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Taglie di Abbigliamento & Scarpe",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Clothing Size Converter (International)": {
+    "Video": "Video non trovato",
+    "description": "Converti taglie di abbigliamento (vestiti, camicie, pantaloni) tra diversi standard internazionali (es. USA, UK, Europa, Giappone). Fai acquisti globali con fiducia.",
+    "meta": {
+      "description": "Convertitore taglie abbigliamento internazionale per taglie USA, UK, UE, JP e altro. Assicura la giusta vestibilità su Calcolo.online.",
+      "title": "Convertitore Taglie Abbigliamento | Taglie Internazionali"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Taglie di Abbigliamento Internazionali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Shoe Size Converter": {
+    "Video": "Video non trovato",
+    "description": "Converti taglie di scarpe per uomini, donne e bambini tra vari sistemi internazionali (USA, UK, UE, Giappone, CM). Trova la calzata perfetta ovunque.",
+    "meta": {
+      "description": "Convertitore taglie scarpe internazionale per taglie USA, UK, UE, JP, CM. Trova la giusta misura per scarpe quando fai acquisti a livello globale su Calcolo.online.",
+      "title": "Convertitore Taglie Scarpe | Taglie Calzature Internazionali"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti Taglie di Scarpe Internazionali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Business & Productivity": {
+    "Video": "Video non trovato",
+    "description": "Potenzia le performance aziendali e la produttività personale con i calcolatori specializzati di Calcolo.online. Strumenti per vendite, marketing, operazioni, finanza e risorse umane.",
+    "meta": {
+      "description": "Calcolatori business e produttività per margine di profitto, punto di pareggio, CLV, CPC, inventario, stipendio e altro. Ottimizza con Calcolo.online.",
+      "title": "Calcolatori Business & Produttività | Vendite, Operazioni"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Business & Produttività",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Sales & Marketing": {
+    "Video": "Video non trovato",
+    "description": "Ottimizza le tue strategie di vendita e marketing con calcolatori delle performance chiave. Analizza margini di profitto, punti di pareggio, CLV, tassi di conversione, CPC, CPM e ROAS.",
+    "meta": {
+      "description": "Calcolatori vendite & marketing: margine di profitto, punto di pareggio, CLV, tasso di conversione, CPC, CPM, ROAS. Guida la crescita con Calcolo.online.",
+      "title": "Calcolatori Vendite & Marketing | Margine, ROAS, CPC"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Vendite & Marketing",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Profit Margin / Markup": {
+    "Video": "Video non trovato",
+    "description": "Calcola il margine di profitto e la percentuale di markup per i tuoi prodotti o servizi. Comprendi la tua redditività e imposta strategie di prezzo efficaci.",
+    "meta": {
+      "description": "Calcolatore margine di profitto e markup. Determina la redditività e imposta prezzi ottimali per i tuoi prodotti/servizi su Calcolo.online.",
+      "title": "Calcolatore Margine di Profitto / Markup | Prezzi & Redditività"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola Margine di Profitto e Markup",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Break-Even Point": {
+    "Video": "Video non trovato",
+    "description": "Determina il punto di pareggio per la tua azienda – il numero di unità o fatturato necessario per coprire tutti i costi fissi e variabili. Essenziale per la pianificazione finanziaria.",
+    "meta": {
+      "description": "Calcolatore punto di pareggio. Trova il volume di vendite necessario per coprire i costi e iniziare a guadagnare. Strumento chiave per business su Calcolo.online.",
+      "title": "Calcolatore Punto di Pareggio | Pianificazione Finanziaria Aziendale"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Trova il Punto di Pareggio della Tua Azienda",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Customer Lifetime Value (CLV)": {
+    "Video": "Video non trovato",
+    "description": "Stima il Valore del Cliente a Vita (CLV), prevedendo il profitto netto totale che la tua azienda può aspettarsi da un singolo cliente durante l’intera relazione.",
+    "meta": {
+      "description": "Calcolatore CLV. Comprendi il valore a lungo termine dei tuoi clienti per decisioni strategiche su Calcolo.online.",
+      "title": "Calcolatore Customer Lifetime Value (CLV) | Strumento Business"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Stima il Valore del Cliente nel Tempo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Conversion Rate": {
+    "Video": "Video non trovato",
+    "description": "Calcola i tassi di conversione per il tuo sito web, campagne marketing o funnel di vendita. Misura l’efficacia delle tue strategie nel raggiungere azioni desiderate.",
+    "meta": {
+      "description": "Calcolatore tasso di conversione. Misura l’efficacia del tuo sito, annunci o funnel. Ottimizza le performance con Calcolo.online.",
+      "title": "Calcolatore Tasso di Conversione | Strumento Metriche Marketing & Vendite"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Misura i Tuoi Tassi di Conversione",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Cost Per Click (CPC) / Cost Per Mille (CPM)": {
+    "Video": "Video non trovato",
+    "description": "Calcola CPC e CPM per le campagne pubblicitarie online. Monitora l’efficienza della spesa pubblicitaria.",
+    "meta": {
+      "description": "Calcolatore CPC e CPM per pubblicità online. Analizza l’efficienza della spesa pubblicitaria e le performance con Calcolo.online.",
+      "title": "Calcolatore CPC / CPM | Analisi Costi Campagna Pubblicitaria"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Analizza i Costi delle Campagne Pubblicitarie (CPC/CPM)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Return on Ad Spend (ROAS)": {
+    "Video": "Video non trovato",
+    "description": "Misura il ritorno sulla spesa pubblicitaria (ROAS) per le tue campagne pubblicitarie. Determina il ricavo generato per ogni euro speso in pubblicità.",
+    "meta": {
+      "description": "Calcolatore ROAS. Misura la redditività delle tue campagne pubblicitarie con Calcolo.online.",
+      "title": "Calcolatore Return on Ad Spend (ROAS) | Redditività Pubblicitaria"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola il Ritorno sulla Spesa Pubblicitaria",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Operations": {
+    "Video": "Video non trovato",
+    "description": "Snellisci le tue operazioni aziendali con calcolatori per gestione inventario (es. EOQ) e analisi della produttività (ore di lavoro, tempo compiti). Migliora l’efficienza.",
+    "meta": {
+      "description": "Calcolatori operazioni aziendali: gestione inventario (EOQ), produttività (ore lavoro, tempo compiti). Ottimizza l’efficienza su Calcolo.online.",
+      "title": "Calcolatori Operazioni | Strumenti Inventario & Produttività"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per le Operazioni Aziendali",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Inventory Management (e.g., EOQ - Economic Order Quantity)": {
+    "Video": "Video non trovato",
+    "description": "Ottimizza il tuo inventario con calcolatori come la Quantità Economica di Ordine (EOQ) per trovare la dimensione dell’ordine ideale che minimizza i costi totali di inventario (mantenimento e ordinazione).",
+    "meta": {
+      "description": "Calcolatori gestione inventario come Quantità Economica di Ordine (EOQ). Ottimizza livelli di scorta e riduci costi con Calcolo.online.",
+      "title": "Calcolatore Gestione Inventario | EOQ & Controllo Scorte"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Strumenti per l’Ottimizzazione dell’Inventario",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Productivity (e.g., Work Hours, Task Time)": {
+    "Video": "Video non trovato",
+    "description": "Misura e migliora la produttività con strumenti per calcolare le ore totali di lavoro, analizzare i tempi di completamento dei compiti e identificare aree di miglioramento dell’efficienza.",
+    "meta": {
+      "description": "Calcolatori produttività per ore di lavoro, tracciamento tempo compiti e analisi dell’efficienza. Aumenta la produttività con Calcolo.online.",
+      "title": "Calcolatori Produttività | Strumento Ore Lavoro & Tempo Compiti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Analizza e Potenzia la Produttività",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Business Finance (can overlap with general Finance)": {
+    "Video": "Video non trovato",
+    "description": "Gestisci le finanze della tua azienda con calcolatori finanziari specializzati. Strumenti per prestiti aziendali, schede di ammortamento e analisi di profitto lordo/netto.",
+    "meta": {
+      "description": "Calcolatori finanza aziendale per prestiti, ammortamento, profitto lordo/netto e altro. Gestisci efficacemente le finanze aziendali su Calcolo.online.",
+      "title": "Calcolatori Finanza Aziendale | Prestiti, Profitto & Ammortamento"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Finanza Aziendale",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Business Loan Calculator": {
+    "Video": "Video non trovato",
+    "description": "Stima le rate, il totale degli interessi e il costo complessivo per un prestito aziendale. Confronta diverse offerte di prestito e pianifica la tua strategia di finanziamento aziendale efficacemente.",
+    "meta": {
+      "description": "Calcolatore prestito aziendale per stimare rate e interessi totali. Prendi decisioni di finanziamento informate per la tua azienda su Calcolo.online.",
+      "title": "Calcolatore Prestito Aziendale | Stima Rate & Interessi"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Pianifica il Rimborso del Prestito Aziendale",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Depreciation": {
+    "Video": "Video non trovato",
+    "description": "Calcola l’ammortamento degli asset usando metodi comuni come retta, saldo decrescente o somma degli anni. Essenziale per contabilità e scopi fiscali.",
+    "meta": {
+      "description": "Calcolatore ammortamento asset con vari metodi (Retta, ecc.). Essenziale per contabilità aziendale su Calcolo.online.",
+      "title": "Calcolatore Ammortamento | Asset & Strumento Contabilità"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola l’Ammortamento degli Asset",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Gross/Net Profit": {
+    "Video": "Video non trovato",
+    "description": "Calcola il profitto lordo (Ricavi - COGS) e il profitto netto (Profitto Lordo - Spese Operative) della tua azienda. Indicatori chiave della salute e delle performance finanziarie.",
+    "meta": {
+      "description": "Calcolatore profitto lordo e netto per aziende. Comprendi la redditività e la salute finanziaria della tua azienda con Calcolo.online.",
+      "title": "Calcolatore Profitto Lordo/Netto | Strumento Redditività Aziendale"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Analizza Profitto Lordo e Netto",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Human Resources": {
+    "Video": "Video non trovato",
+    "description": "Semplifica le attività HR con calcolatori per conversioni stipendio e salario orario, calcoli di paga straordinari e gestione delle schede orarie. Essenziale per payroll e gestione dipendenti.",
+    "meta": {
+      "description": "Calcolatori risorse umane per stipendio/salario orario, paga straordinaria e schede orarie. Snellisci le attività HR con Calcolo.online.",
+      "title": "Calcolatori Risorse Umane | Stipendio, Straordinario, Scheda Oraria"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per le Risorse Umane",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Salary / Hourly Wage": {
+    "Video": "Video non trovato",
+    "description": "Converti tra stipendio e salario orario, considerando le ore lavorate a settimana. Calcola il reddito lordo per diversi periodi (annuale, mensile, bisettimanale, settimanale, giornaliero).",
+    "meta": {
+      "description": "Calcolatore stipendio e salario orario. Converti tra tariffe di pagamento e calcola il reddito lordo per vari periodi su Calcolo.online.",
+      "title": "Calcolatore Stipendio / Salario Orario | Strumento Conversione"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Converti e Calcola Stipendio/Salario Orario",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Overtime Pay": {
+    "Video": "Video non trovato",
+    "description": "Calcola la paga straordinaria basata sulla tariffa oraria regolare, moltiplicatore (es. 1,5x o 2x) e numero di ore di straordinario lavorate. Garantisce payroll accurato.",
+    "meta": {
+      "description": "Calcolatore paga straordinaria. Determina guadagni straordinari basati su tariffa oraria e ore lavorate. Strumento accurato payroll su Calcolo.online.",
+      "title": "Calcolatore Paga Straordinaria | Calcola Straordinari Dipendenti"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola la Paga Straordinaria dei Dipendenti",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Time Card Calculator": {
+    "Video": "Video non trovato",
+    "description": "Calcola il totale delle ore lavorate basato sugli orari di ingresso e uscita, incluse le pause. Utile per dipendenti e datori di lavoro per un tracciamento orario accurato e payroll.",
+    "meta": {
+      "description": "Calcolatore scheda oraria per totalizzare ore di lavoro da orari di ingresso/uscita, incluse pause. Tracciamento orario accurato per payroll su Calcolo.online.",
+      "title": "Calcolatore Scheda Oraria | Calcola Ore di Lavoro Accuratamente"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Traccia e Calcola Ore di Lavoro (Scheda Oraria)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Education": {
+    "Video": "Video non trovato",
+    "description": "Supporta il tuo percorso accademico con i calcolatori di educazione di Calcolo.online. Strumenti per calcolo GPA, voti esame, voti ponderati, velocità di lettura e pianificazione dello studio.",
+    "meta": {
+      "description": "Calcolatori educazione per GPA, voti esami, voti ponderati, velocità di lettura (WPM) e pianificazione studio. Raggiungi il successo accademico con Calcolo.online.",
+      "title": "Calcolatori Educazione | GPA, Voti, Strumenti Studio Online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per l’Educazione",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Grading": {
+    "Video": "Video non trovato",
+    "description": "Semplifica la valutazione accademica con calcolatori per GPA (diverse scale), voti esami e calcolo voti ponderati. Monitora la tua performance con precisione.",
+    "meta": {
+      "description": "Calcolatori valutazione per GPA, voti esame e voti ponderati. Monitora efficacemente la performance accademica con gli strumenti di Calcolo.online.",
+      "title": "Calcolatori Valutazione | GPA, Voto Esame & Voto Ponderato"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Valutazione Accademica",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "GPA Calculator (various scales)": {
+    "Video": "Video non trovato",
+    "description": "Calcola il tuo GPA su diverse scale (es. 4.0, 5.0). Inserisci voti dei corsi e crediti per determinare la tua situazione accademica attuale.",
+    "meta": {
+      "description": "Calcolatore GPA per diverse scale (4.0, 5.0). Calcola facilmente il tuo GPA e monitora i progressi accademici su Calcolo.online.",
+      "title": "Calcolatore GPA | Calcola il tuo Indice dei Punti di Voto"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola il Tuo GPA (Più Scale)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Test Score / Exam Grade Calculator": {
+    "Video": "Video non trovato",
+    "description": "Calcola la tua percentuale di voto dell’esame basandoti sul numero di risposte corrette e sul numero totale di domande. Valuta la tua performance.",
+    "meta": {
+      "description": "Calcolatore punteggio esame. Determina rapidamente la tua percentuale di voto per qualsiasi valutazione su Calcolo.online.",
+      "title": "Calcolatore Punteggio Esame | Valuta la Performance"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Calcola i Tuoi Punteggi di Test e Esame",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Weighted Grade Calculator": {
+    "Video": "Video non trovato",
+    "description": "Calcola il tuo voto complessivo in un corso quando diverse prove o esami hanno pesi differenti (percentuali). Comprendi come ogni componente contribuisce al voto finale.",
+    "meta": {
+      "description": "Calcolatore voti ponderati. Determina il voto finale del corso basato su compiti con pesi differenti. Pianifica lo studio su Calcolo.online.",
+      "title": "Calcolatore Voti Ponderati | Stima Voto Finale Corso"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Determina il Tuo Voto Ponderato di Corso",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Study": {
+    "Video": "Video non trovato",
+    "description": "Migliora le tue abitudini di studio con strumenti per misurare la velocità di lettura (WPM) e pianificare il tempo di studio efficacemente per migliori risultati di apprendimento.",
+    "meta": {
+      "description": "Strumenti di studio: calcolatore velocità lettura WPM e pianificatore tempo di studio. Migliora l’efficienza di apprendimento con Calcolo.online.",
+      "title": "Calcolatori Studio | Velocità Lettura (WPM) & Pianificatore Tempo"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per Studiare Efficacemente",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Words Per Minute (WPM) Reading Speed": {
+    "Video": "Video non trovato",
+    "description": "Misura la tua velocità di lettura in parole al minuto (WPM). Testa quanto velocemente riesci a leggere e comprendere un testo per migliorare l’efficienza di lettura per studio o lavoro.",
+    "meta": {
+      "description": "Calcolatore velocità lettura WPM. Testa e migliora la tua efficienza di lettura. Strumento di studio utile su Calcolo.online.",
+      "title": "Calcolatore Velocità Lettura (WPM) | Test"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Misura la Tua Velocità di Lettura (WPM)",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Study Time Planner": {
+    "Video": "Video non trovato",
+    "description": "Pianifica efficacemente le sessioni di studio. Assegna tempo per diverse materie o compiti, imposta obiettivi e crea un programma di studio strutturato per massimizzare l’apprendimento.",
+    "meta": {
+      "description": "Pianificatore tempo di studio per organizzare efficacemente il programma di studio. Assegna tempo per materie e compiti. Aumenta l’apprendimento su Calcolo.online.",
+      "title": "Pianificatore Tempo di Studio | Organizza il Tuo Programma di Studio"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Pianifica il Tuo Tempo di Studio",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Academic Writing": {
+    "Video": "Video non trovato",
+    "description": "Assisti la tua scrittura accademica con utility essenziali. Conta parole e caratteri con precisione. Strumenti concettuali per comprendere principi di formattazione delle citazioni (non un generatore).",
+    "meta": {
+      "description": "Strumenti scrittura accademica: conteggio parole, conteggio caratteri e guide concettuali sulla formattazione delle citazioni. Scrivi meglio con Calcolo.online.",
+      "title": "Utility Scrittura Accademica | Conteggio Parole & Info Citazioni"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri gli Strumenti per la Scrittura Accademica",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Word Count / Character Count": {
+    "Video": "Video non trovato",
+    "description": "Conta rapidamente il numero di parole e caratteri (con o senza spazi) in qualsiasi testo. Essenziale per saggi, articoli, post sui social e altro.",
+    "meta": {
+      "description": "Strumento conteggio parole e caratteri. Trova istantaneamente la lunghezza del tuo testo per saggi, rapporti e post online su Calcolo.online.",
+      "title": "Strumento Conteggio Parole / Caratteri | Analisi Testo Online"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Conta Parole e Caratteri nel Testo",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Citation Formatting (conceptual, not a generator)": {
+    "Video": "Video non trovato",
+    "description": "Comprendi i principi e gli elementi comuni di vari stili di citazione (es. APA, MLA, Chicago). Queste sezioni offrono linee guida concettuali, non un generatore automatico.",
+    "meta": {
+      "description": "Impara sugli stili di formattazione delle citazioni (APA, MLA, Chicago). Guide concettuali per aiutarti a capire il riferimento su Calcolo.online.",
+      "title": "Guida Formattazione Citazioni (Concettuale) | Info APA, MLA"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Comprendi la Formattazione delle Citazioni",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Environment & Sustainability": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Ambiente & Sostenibilità. Questa sezione fornisce risorse per analisi energetica, calcolo impronta di carbonio, gestione dei rifiuti, uso dell’acqua e altro.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Ambiente & Sostenibilità. Esegui calcoli per valutare l’impatto ambientale e promuovere la sostenibilità ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Ambiente & Sostenibilità"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Energy & Consumption": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori elettrici per calcoli precisi in ingegneria elettrica, inclusi dimensionamento cavi, corrente di corto circuito, potenza e resistenza.",
+    "meta": {
+      "description": "Calcolo.online fornisce calcolatori elettrici per calcoli di elettricità ed elettronica.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Energia & Consumo"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Electricity Cost": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per il Costo dell’Elettricità. Questa sezione fornisce risorse per stimare le spese elettriche, comprendere il consumo e gestire le bollette energetiche.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per il Costo dell’Elettricità. Esegui calcoli per il tuo uso di energia elettrica ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Costo Elettricità"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Fuel Efficiency (MPG, L/100km)": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Efficienza del Carburante (MPG, L/100km). Questa sezione fornisce risorse per calcolare l’economia di carburante del veicolo, confrontare l’efficienza e comprendere il consumo.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Efficienza del Carburante (MPG, L/100km). Esegui calcoli per il consumo di carburante del veicolo ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Efficienza Carburante (MPG, L/100km)"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Appliance Energy Use": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Uso Energetico degli Elettrodomestici. Questa sezione fornisce risorse per stimare il consumo energetico degli elettrodomestici domestici e comprendere il loro impatto sulle bollette elettriche.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Uso Energetico degli Elettrodomestici. Esegui calcoli per il consumo di energia degli elettrodomestici ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Uso Energetico Elettrodomestici"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Carbon Footprint": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Impronta di Carbonio. Questa sezione fornisce risorse per valutare le emissioni di carbonio da varie attività e comprendere l’impatto ambientale.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Impronta di Carbonio. Esegui calcoli per le emissioni personali o da viaggio ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Impronta di Carbonio"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Personal Carbon Footprint": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Impronta di Carbonio Personale. Questa sezione fornisce risorse per stimare le emissioni di carbonio di un individuo in base allo stile di vita e alle abitudini di consumo.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Impronta di Carbonio Personale. Esegui calcoli per le tue emissioni personali ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Impronta di Carbonio Personale"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Travel Carbon Footprint (Flight, Car)": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Impronta di Carbonio da Viaggio (Aereo, Auto). Questa sezione fornisce risorse per valutare le emissioni di carbonio associate ai viaggi con diversi mezzi di trasporto.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Impronta di Carbonio da Viaggio (Aereo, Auto). Esegui calcoli per le emissioni correlate ai viaggi ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Impronta di Carbonio da Viaggio (Aereo, Auto)"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Waste & Recycling": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Rifiuti & Riciclo. Questa sezione fornisce risorse per comprendere la gestione dei rifiuti, l’impatto del riciclo e promuovere pratiche sostenibili.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Rifiuti & Riciclo. Esegui calcoli relativi alla generazione di rifiuti e ai benefici del riciclo ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Rifiuti & Riciclo"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Recycling Impact": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Impatto del Riciclo. Questa sezione fornisce risorse per quantificare i benefici del riciclo di vari materiali e comprenderne l’importanza ambientale.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Impatto del Riciclo. Esegui calcoli per valutare gli effetti positivi del riciclo ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Impatto del Riciclo"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Water Usage": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Uso dell’Acqua. Questa sezione fornisce risorse per stimare il consumo di acqua, promuovere il risparmio idrico e comprendere l’impronta idrica.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Uso dell’Acqua. Esegui calcoli per il consumo di acqua domestico o personale ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Uso dell’Acqua"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Household Water Consumption": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Consumo d’Acqua Domestico. Questa sezione fornisce risorse per stimare l’acqua totale utilizzata in una casa e identificare aree di risparmio.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Consumo d’Acqua Domestico. Esegui calcoli per il consumo idrico della tua casa ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Consumo d’Acqua Domestico"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  },
+  "Construction & DIY": {
+    "Video": "Video non trovato",
+    "description": "Esplora un’ampia varietà di calcolatori e strumenti per Costruzione & Fai-da-te. Questa sezione fornisce risorse per stima materiali, pianificazione progetti, misurazioni e layout per i tuoi progetti di costruzione e miglioramento della casa.",
+    "meta": {
+      "description": "Trova calcolatori e strumenti online per Costruzione & Fai-da-te. Esegui calcoli per materiali, dimensioni del progetto e altro, ed esplora argomenti correlati.",
+      "title": "Ultimi Strumenti e Calcolatori nella Sezione Costruzione & Fai-da-te"
+    },
+    "next": "Avanti",
+    "previous": "Precedente",
+    "read-time": "min lettura",
+    "source": "Fonte",
+    "title": "Scopri le Ultime Novità",
+    "toc": "Indice dei contenuti",
+    "updated": "Aggiornato"
+  }
+}

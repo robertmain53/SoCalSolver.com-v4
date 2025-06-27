@@ -1,0 +1,42 @@
+name: 📚 Auto-Generate Educational Content
+
+on:
+  pull_request:
+    paths:
+      - 'content/calcbundle/**/contentConfig.json'
+
+jobs:
+  generate-educational-md:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🟢 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🔑 Inject OpenAI key
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: echo "KEY injected"
+
+      - name: 🚀 Run content generator for each config file
+        run: |
+          for f in $(find content/calcbundle -name contentConfig.json); do
+            slug=$(basename $(dirname "$f"))
+            echo "Generating for $slug..."
+            OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} node scripts/generateEducationalContent.js $slug
+          done
+
+      - name: 📤 Commit generated files
+        run: |
+          git config --global user.email "bot@calchub.com"
+          git config --global user.name "CalcHub Bot"
+          git add content/calculators/*.generated.en.md || true
+          git commit -m "🤖 Auto-generated educational content" || echo "No changes"
+          git push || true

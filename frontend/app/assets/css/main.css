@@ -1,0 +1,6 @@
+/* Minimal placeholder to unblock Nuxt build */
+body {
+  font-family: system-ui, sans-serif;
+  background: #fff;
+  color: #222;
+}

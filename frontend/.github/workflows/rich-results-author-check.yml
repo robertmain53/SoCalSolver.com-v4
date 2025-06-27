@@ -1,0 +1,44 @@
+name: ✅ Multilingual Rich Results Test
+
+on:
+  workflow_run:
+    workflows: ["🔁 Netlify Deploy"]
+    types:
+      - completed
+
+jobs:
+  multilingual-rich-results-test:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Install CLI tools
+        run: |
+          npm install -g rich-results-test
+          sudo apt-get install -y curl jq
+
+      - name: 🌍 Fetch Sitemap and Extract All Language Variations
+        run: |
+          BASE_URL="https://calchub-site.netlify.app"
+          echo "## 🌐 Multilingual Rich Results Test" > rich-results.md
+
+          echo "🔄 Fetching sitemap.xml from: $BASE_URL/sitemap.xml"
+          curl -s $BASE_URL/sitemap.xml > sitemap.xml
+
+          echo "🔍 Extracting all calculators and author locale URLs..."
+          grep -oP '(?<=<loc>)[^<]+' sitemap.xml | grep -E '/(calculators|info/authors)/' > urls.txt
+
+          while IFS= read -r url; do
+            echo "- Testing: $url" >> rich-results.md
+            RESULT=$(rich-results-test "$url" || echo "FAIL")
+            if [[ "$RESULT" == *"FAIL"* ]]; then
+              echo "❌ Failed Rich Results for $url" >> rich-results.md
+            else
+              echo "✅ Passed Rich Results for $url" >> rich-results.md
+            fi
+          done < urls.txt
+
+      - name: 💬 Post PR Comment (Rich Results)
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: rich-results.md

@@ -1,0 +1,56 @@
+name: AI Auto Fixes
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  auto_ai_fix:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Detect changes
+        id: diff
+        run: |
+          echo "FILES=$(git diff --name-only origin/main | grep -E '\.vue$|\.md$' | tr '\n' ' ')" >> $GITHUB_ENV
+
+      - name: Run AI reviews
+        if: env.FILES != ''
+        run: |
+          for file in $FILES; do
+            node tools/ai-review-from-diff.js "$file"
+          done
+
+      - name: Apply AI improvements
+        if: env.FILES != ''
+        run: node tools/apply-ai-fixes.js
+
+      - name: Commit AI improvements
+        if: env.FILES != ''
+        run: |
+          git config --global user.name "ai-bot"
+          git config --global user.email "ai@calchub.dev"
+          git checkout -b ai/improvements
+          git add .
+          git commit -m "🤖 AI auto-improvements applied"
+          git push origin ai/improvements
+
+      - name: Create Pull Request
+        if: env.FILES != ''
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ai/improvements
+          title: "AI-Suggested Improvements"
+          body: "This PR contains automatic fixes from the AI reviewer."

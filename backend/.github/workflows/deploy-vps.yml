@@ -1,0 +1,33 @@
+name: 🚀 Deploy Admin to VPS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🛫 Deploy via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_KEY }}
+          script: |
+            mkdir -p ${{ secrets.VPS_PATH }}
+            cd ${{ secrets.VPS_PATH }}
+            if [ ! -d .git ]; then
+              git init
+              git remote add origin https://github.com/YOUR_USERNAME/calculator-admin-v2.git
+            fi
+            git fetch origin
+            git reset --hard origin/main
+            npm install
+            npm run build
+            pm2 restart admin || pm2 start npm --name admin -- start

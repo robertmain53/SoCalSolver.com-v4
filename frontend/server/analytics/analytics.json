@@ -1,0 +1,26 @@
+{
+  "topCalculators": [
+    {
+      "slug": "compound-interest",
+      "views": 4500
+    },
+    {
+      "slug": "loan-payment",
+      "views": 3900
+    },
+    {
+      "slug": "bmi-calculator",
+      "views": 3500
+    }
+  ],
+  "topEmbeds": [
+    {
+      "slug": "compound-interest",
+      "views": 2500
+    },
+    {
+      "slug": "loan-payment",
+      "views": 2000
+    }
+  ]
+}

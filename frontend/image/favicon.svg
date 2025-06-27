@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B2C51"/>
+      <stop offset="50%" stop-color="#D4482D"/>
+      <stop offset="100%" stop-color="#F28C38"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon Circle -->
+  <circle cx="100" cy="100" r="80" fill="url(#skyGradient)" stroke="none"/>
+  
+  <!-- Sun Disk -->
+  <circle cx="100" cy="130" r="25" fill="#FDBA3B" stroke="none"/>
+  
+  <!-- Ocean Waves -->
+  <path d="M 20 140 Q 60 130 100 140 T 180 140 L 180 180 L 20 180 Z" fill="#217C8D"/>
+  <path d="M 20 155 Q 60 145 100 155 T 180 155 L 180 180 L 20 180 Z" fill="#52B9C0" opacity="0.8"/>
+  
+  <!-- Coastline silhouette -->
+  <path d="M 20 150 Q 80 150 120 155 Q 150 158 180 150 L 180 180 L 20 180 Z" fill="#3C1F38" opacity="0.9"/>
+</svg>
