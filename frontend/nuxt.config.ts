@@ -1,11 +1,22 @@
 export default defineNuxtConfig({
-  plugins: ['~/plugins/markdown-it-challenge', '~/plugins/markdown-it-explain', '~/plugins/markdown-it-meta-tags'],
+  plugins: [
+    '~/plugins/markdown-it-challenge',
+    '~/plugins/markdown-it-explain',
+    '~/plugins/markdown-it-meta-tags'
+  ],
 
   ssr: true,
+
   nitro: {
-    preset: 'vercel'
+    preset: 'vercel',
+    compatibilityDate: '2025-06-27'
   },
-  modules: ['@nuxtjs/i18n'],
+
+  modules: [
+    '@nuxtjs/i18n',
+    '@pinia/nuxt'
+  ],
+
   i18n: {
     strategy: 'prefix',
     defaultLocale: 'en',
@@ -13,10 +24,11 @@ export default defineNuxtConfig({
     locales: [
       { code: 'en', name: 'English' },
       { code: 'it', name: 'Italiano' },
-      { code: 'fr', name: 'Français' },
+      { code: 'fr', name: 'Français' }
     ],
     detectBrowserLanguage: false
   },
+
   app: {
     head: {
       link: [

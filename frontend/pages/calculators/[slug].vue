@@ -23,36 +23,13 @@
       </ul>
     </div>
 
-    <script type="application/ld+json">
-      {{
-        JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": `What is the purpose of the ${doc.title}?`,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": doc.description || `Learn about ${doc.title} and how it helps users with calculations.`
-              }
-            },
-            {
-              "@type": "Question",
-              "name": `How do I use the ${doc.title}?`,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": `Use the ${doc.title} by filling in your values and reviewing the result instantly.`
-              }
-            }
-          ]
-        })
-      }}
-    </script>
+    
   </div>
 </template>
 
 <script setup>
+import { useHead } from '#imports'
+
 const route = useRoute()
 const slug = route.params.slug
 
@@ -73,5 +50,35 @@ const { data: related } = await useAsyncData(`related-${slug}`, async () => {
     (item.category === doc.value.category ||
      (item.tags && doc.value.tags?.some(tag => item.tags.includes(tag))))
   ).slice(0, 5)
+})
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": `What is the purpose of the ${doc.title}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": doc.description || `Learn about ${doc.title} and how it helps users with calculations.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `How do I use the ${doc.title}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Use the ${doc.title} by filling in your values and reviewing the result instantly.`
+            }
+          }
+        ]
+      })
+    }
+  ]
 })
 </script>

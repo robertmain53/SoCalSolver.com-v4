@@ -56,14 +56,6 @@ function removeField(index: number) {
   inputs.value.splice(index, 1)
 }
 
-function evaluate() {
-  try {
-    const vars = inputs.value.map(f => \`const \${f.name} = Number(values.value[\`\${f.name}\`] || 0);\`).join('\n')
-    const expr = formula.value.includes('=') ? formula.value.split('=')[1] : formula.value
-    return Function('values', \`\${vars}\nreturn \${expr}\`)(values.value)
-  } catch {
-    return 'Error'
-  }
 }
 
 const exportBundle = computed(() => JSON.stringify({
@@ -81,6 +73,20 @@ function download() {
   URL.revokeObjectURL(url)
 }
 </script>
+
+function evaluate() {
+  try {
+    const assignments = inputs.value
+      .map(f => `const ${f.name} = Number(values["${f.name}"] || 0);`)
+      .join('\n');
+    const expr = formula.value.includes('=')
+      ? formula.value.split('=')[1]
+      : formula.value;
+    return Function('values', `${assignments}\nreturn ${expr}`)(values.value);
+  } catch {
+    return 'Error';
+  }
+}
 
 <style scoped>
 .input {

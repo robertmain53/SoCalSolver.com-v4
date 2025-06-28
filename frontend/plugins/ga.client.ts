@@ -1,4 +1,5 @@
 import { defineNuxtPlugin } from '#app'
+
 export default defineNuxtPlugin(() => {
   useHead({
     script: [
@@ -7,12 +8,12 @@ export default defineNuxtPlugin(() => {
         src: "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
       },
       {
-        children: \`
+        children: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-XXXXXXXXXX');
-        \`
+        `
       }
     ]
   })
