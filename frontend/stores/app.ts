@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-export const useAppStore = defineStore('app', () => {
+export const useAuthStore = defineStore('auth', {
   const darkMode = ref(false)
   const toggleDarkMode = () => darkMode.value = !darkMode.value
   return { darkMode, toggleDarkMode }

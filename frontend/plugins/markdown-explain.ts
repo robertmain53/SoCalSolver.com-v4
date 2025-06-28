@@ -1,16 +1,19 @@
+import container from "markdown-it-container"
+import type MarkdownIt from "markdown-it"
 
-import type MarkdownIt from 'markdown-it'
-
-export default function explainPlugin(md: MarkdownIt) {
-  md.use(require('markdown-it-container'), 'explain', {
-    render(tokens, idx) {
-      const token = tokens[idx]
-      if (token.nesting === 1) {
-        return '<div class="explain-block">'
-      } else {
-        const slugVar = 'slug' // to be injected at component level
-        return `</div><RelatedCalculators :slug="$route.params.slug" />`
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.hook("content:markdown", (md: MarkdownIt) => {
+    md.use(container, "explain", {
+      render(tokens, idx) {
+        const token = tokens[idx]
+        if (token.nesting === 1) {
+          // opening
+          return `<div class="explain-block">`
+        } else {
+          // closing
+          return `</div><RelatedCalculators :slug="$route.params.slug" />`
+        }
       }
-    }
+    })
   })
-}
+})

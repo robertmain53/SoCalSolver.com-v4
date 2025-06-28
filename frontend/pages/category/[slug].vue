@@ -25,32 +25,51 @@
         </li>
       </ul>
     </div>
-
-    <script type="application/ld+json">
-      {{
-        JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": `What is the ${categoryTitle} category used for?`,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": categoryDescription
-              }
-            },
-            {
-              "@type": "Question",
-              "name": `How many calculators are in ${categoryTitle}?`,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": `This category currently contains ${calculators?.length || 0} calculators.`
-              }
-            }
-          ]
-        })
-      }}
-    </script>
   </div>
 </template>
+
+<script setup>
+// Example: These props or data must come from somewhere!
+const categoryTitle = 'Example Category'
+const categoryDescription = 'This category helps you calculate amazing things.'
+const calculators = [
+  { slug: 'calc1', title: 'Calculator 1', description: 'Desc 1' },
+  { slug: 'calc2', title: 'Calculator 2', description: 'Desc 2' }
+]
+// If you have `related`, define it too.
+const related = []
+
+import { useHead } from '#imports'
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": `What is the ${categoryTitle} category used for?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": categoryDescription
+      }
+    },
+    {
+      "@type": "Question",
+      "name": `How many calculators are in ${categoryTitle}?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `This category currently contains ${calculators?.length || 0} calculators.`
+      }
+    }
+  ]
+}
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify(schema)
+    }
+  ]
+})
+</script>

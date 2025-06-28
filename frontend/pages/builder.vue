@@ -1,4 +1,3 @@
-
 <template>
   <div class="max-w-4xl mx-auto p-6">
     <h1 class="text-2xl font-semibold mb-4">🧮 Build Your Calculator</h1>
@@ -45,8 +44,9 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+
 const inputs = ref([{ name: '', label: '', type: 'number' }])
-const values = ref({})
+const values = ref<Record<string, number | string>>({})
 const formula = ref('output = a + b')
 
 function addField() {
@@ -56,12 +56,31 @@ function removeField(index: number) {
   inputs.value.splice(index, 1)
 }
 
+function evaluate() {
+  try {
+    const vars = inputs.value
+      .map(f => `const ${f.name} = Number(values["${f.name}"] || 0);`)
+      .join('\n')
+    const expr = formula.value.includes('=')
+      ? formula.value.split('=')[1]
+      : formula.value
+    // Note: no `values` argument needed, variables are declared inside Function
+    return Function(`"use strict"; ${vars}\nreturn ${expr}`)()
+  } catch {
+    return 'Error'
+  }
 }
 
-const exportBundle = computed(() => JSON.stringify({
-  inputs: inputs.value,
-  formula: formula.value,
-}, null, 2))
+const exportBundle = computed(() =>
+  JSON.stringify(
+    {
+      inputs: inputs.value,
+      formula: formula.value,
+    },
+    null,
+    2
+  )
+)
 
 function download() {
   const blob = new Blob([exportBundle.value], { type: 'application/json' })
@@ -73,20 +92,6 @@ function download() {
   URL.revokeObjectURL(url)
 }
 </script>
-
-function evaluate() {
-  try {
-    const assignments = inputs.value
-      .map(f => `const ${f.name} = Number(values["${f.name}"] || 0);`)
-      .join('\n');
-    const expr = formula.value.includes('=')
-      ? formula.value.split('=')[1]
-      : formula.value;
-    return Function('values', `${assignments}\nreturn ${expr}`)(values.value);
-  } catch {
-    return 'Error';
-  }
-}
 
 <style scoped>
 .input {

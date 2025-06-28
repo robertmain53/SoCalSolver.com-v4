@@ -1,20 +1,15 @@
-import { defineNuxtPlugin } from '#app'
-
 export default defineNuxtPlugin(() => {
-  useHead({
-    script: [
-      {
-        async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-      },
-      {
-        children: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-XXXXXXXXXX');
-        `
-      }
-    ]
-  })
+  if (process.client) {
+    const script = document.createElement('script')
+    script.async = true
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX'
+    document.head.appendChild(script)
+
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      window.dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+    gtag('config', 'G-XXXXXXX')
+  }
 })
