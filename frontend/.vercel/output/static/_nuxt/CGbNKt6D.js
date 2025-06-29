@@ -1,0 +1,3 @@
+import{g as c,r as s,c as n,i as v,a as l,k as p,v as m,t as d,o as u}from"./Ddirn40s.js";const _={class:"builder-page"},f={key:0},b=c({__name:"builder",setup(x){const o=s(""),r=s("");function i(){try{const e=inputs.value.map(a=>`const ${a.name} = Number(values["${a.name}"] || 0);`).join(`
+`),t=formula.value.includes("=")?formula.value.split("=")[1]:formula.value;return Function("values",`${e}
+return ${t}`)(values.value)}catch(e){return console.error(e),"Error"}}return(e,t)=>(u(),n("div",_,[v(l("input",{"onUpdate:modelValue":t[0]||(t[0]=a=>o.value=a),placeholder:"Enter expression"},null,512),[[m,o.value]]),l("button",{onClick:i},"Evaluate"),r.value?(u(),n("div",f,"Result: "+d(r.value),1)):p("",!0)]))}});export{b as default};

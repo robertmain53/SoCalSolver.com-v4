@@ -1,8 +1,10 @@
-<script setup>
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
+import { useI18n } from '#imports'
 import Chart from 'chart.js/auto'
 
-const aiThreatChartRef = ref(null)
-let chartInstance = null
+const aiThreatChartRef = ref<HTMLCanvasElement | null>(null)
+let chartInstance: Chart | null = null
 
 const { t } = useI18n()
 
@@ -11,22 +13,33 @@ onMounted(() => {
     chartInstance.destroy()
   }
 
+  if (!aiThreatChartRef.value) return
+
   const ctx = aiThreatChartRef.value.getContext('2d')
+  if (!ctx) return
 
   chartInstance = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: [t('analysis.graph.initialThreat'), t('analysis.graph.aiIntegration'), t('analysis.graph.targetedAttacks'), t('analysis.graph.advancedPersistentThreat'), t('analysis.graph.peakSophistication')],
-      datasets: [{
-        label: t('analysis.graph.label'),
-        data: [20, 40, 60, 80, 100],
-        borderColor: '#3B82F6', // Blue color for the line
-        backgroundColor: 'rgba(0, 0, 0, 0.1)',
-        borderWidth: 3,
-        pointBackgroundColor: '#3B82F6',
-        pointRadius: 6,
-        pointHoverRadius: 8,
-      }],
+      labels: [
+        t('analysis.graph.initialThreat'),
+        t('analysis.graph.aiIntegration'),
+        t('analysis.graph.targetedAttacks'),
+        t('analysis.graph.advancedPersistentThreat'),
+        t('analysis.graph.peakSophistication'),
+      ],
+      datasets: [
+        {
+          label: t('analysis.graph.label'),
+          data: [20, 40, 60, 80, 100],
+          borderColor: '#3B82F6',
+          backgroundColor: 'rgba(0, 0, 0, 0.1)',
+          borderWidth: 3,
+          pointBackgroundColor: '#3B82F6',
+          pointRadius: 6,
+          pointHoverRadius: 8,
+        },
+      ],
     },
     options: {
       responsive: true,
@@ -36,13 +49,9 @@ onMounted(() => {
           display: true,
           text: t('analysis.graph.title'),
           color: '#000000',
-          font: {
-            size: 16,
-          },
+          font: { size: 16 },
         },
-        legend: {
-          display: false,
-        },
+        legend: { display: false },
       },
       scales: {
         y: {
@@ -67,12 +76,8 @@ onMounted(() => {
             text: t('analysis.graph.xAxis'),
             color: '#000000',
           },
-          ticks: {
-            color: '#000000',
-          },
-          grid: {
-            color: 'rgba(0, 0, 0, 0.1)',
-          },
+          ticks: { color: '#000000' },
+          grid: { color: 'rgba(0, 0, 0, 0.1)' },
         },
       },
     },
