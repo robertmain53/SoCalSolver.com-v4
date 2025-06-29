@@ -1,15 +1,24 @@
 export default defineNuxtPlugin(() => {
-  if (process.client) {
-    const script = document.createElement('script')
-    script.async = true
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX'
-    document.head.appendChild(script)
+  const { public: { gtagId, googleAnalyticsId } } = useRuntimeConfig();
+  const analyticsId = gtagId || googleAnalyticsId;
+  if (!analyticsId) return;
 
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      window.dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
-    gtag('config', 'G-XXXXXXX')
+  // Google Analytics dataLayer and gtag setup
+  (window as any).dataLayer = (window as any).dataLayer || [];
+  function gtag() {
+    (window as any).dataLayer.push(arguments);
   }
-})
+
+  gtag('js', new Date());
+  gtag('config', analyticsId);
+
+  // Inject Google Analytics script into <head>
+  useHead({
+    script: [
+      {
+        src: `https://www.googletagmanager.com/gtag/js?id=${analyticsId}`,
+        async: true
+      }
+    ]
+  });
+});

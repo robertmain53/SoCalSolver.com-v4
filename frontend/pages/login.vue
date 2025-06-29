@@ -1,20 +1,29 @@
-<script setup>
-import { useAuthStore } from '#imports'
-const auth = useAuthStore()
-const name = ref('')
-function handleLogin() {
-  if (name.value.trim()) {
-    auth.login(name.value)
-    return navigateTo('/')
-  }
-}
-</script>
-
 <template>
-  <div class="min-h-screen flex items-center justify-center">
-    <div class="bg-white dark:bg-gray-900 p-8 shadow-md rounded">
-      <input v-model="name" type="text" placeholder="Enter your name" class="input mb-4" />
-      <button @click="handleLogin" class="btn">Login</button>
-    </div>
+  <div class="login-page">
+    <form @submit.prevent="submit">
+      <input v-model="email" type="email" placeholder="Email" required />
+      <input v-model="password" type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { useAuthStore } from '@/stores/auth';  // Ensure an auth Pinia store is defined in /stores/auth.ts
+
+const email = ref('');
+const password = ref('');
+const authStore = useAuthStore();
+const router = useRouter();
+
+const submit = async () => {
+  try {
+    await authStore.login({ email: email.value, password: password.value });
+    router.push('/');
+  } catch (error) {
+    console.error('Login failed:', error);
+  }
+};
+</script>
