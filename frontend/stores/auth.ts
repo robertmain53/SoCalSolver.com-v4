@@ -7,9 +7,8 @@ export const useAuthStore = defineStore('auth', {
     token: null,
   }),
   actions: {
-    async login({ email, password }) {
-      // call your login API here
-      console.log('Logging in with', email, password)
+    login(email: string, password: string) {
+      console.log('login', email, password)
     },
   },
 })

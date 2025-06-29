@@ -17,13 +17,14 @@ function evaluate() {
   try {
     const vars = inputs.value
       .map(f => `const ${f.name} = Number(values["${f.name}"] || 0);`)
-      .join('\n');
-    const expr = formula.value.includes('=') ? formula.value.split('=')[1] : formula.value;
-    return Function('values', `${vars}\nreturn ${expr}`)(values.value);
+      .join('\n')
+    const expr = formula.value.includes('=')
+      ? formula.value.split('=')[1]
+      : formula.value
+    return Function('values', `${vars}\nreturn ${expr}`)(values.value)
   } catch (e) {
-    console.error(e);
-    return 'Error';
+    console.error(e)
+    return 'Error'
   }
 }
-
 </script>
