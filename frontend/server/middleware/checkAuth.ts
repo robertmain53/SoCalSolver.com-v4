@@ -1,14 +1,17 @@
+import { defineEventHandler, getCookie, createError } from 'h3'
 
-export default defineEventHandler((event) => {
-  const cookie = getCookie(event, 'auth_token')
-  if (!cookie) {
-    throw createError({ statusCode: 401, statusMessage: 'Not authenticated' })
+export default defineEventHandler(async (event) => {
+  const token = getCookie(event, 'auth_token')
+
+  if (!token) {
+    throw createError({
+      statusCode: 401,
+      statusMessage: 'Not authenticated'
+    })
   }
 
-  try {
-    const user = JSON.parse(cookie)
-    event.context.user = user
-  } catch {
-    throw createError({ statusCode: 401, statusMessage: 'Invalid session' })
-  }
+  // Se vuoi fare ulteriori controlli del token (es. JWT), falli qui
+  // Esempio (opzionale):
+  // const user = verifyJWT(token)
+  // event.context.user = user
 })

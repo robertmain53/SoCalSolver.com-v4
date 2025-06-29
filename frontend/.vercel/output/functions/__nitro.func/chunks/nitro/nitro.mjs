@@ -4246,7 +4246,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "cf5978fd-99e7-4e31-868b-7b2870a2cdee",
+    "buildId": "445d563f-811f-4dda-a9b8-f26dac241b1c",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -4256,6 +4256,9 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false,
         "isr": false
+      },
+      "/admin/**": {
+        "middleware": "protectedAuth"
       },
       "/_nuxt/builds/meta/**": {
         "headers": {
@@ -4742,7 +4745,17 @@ const plugins = [
   _2gyzIUP3BIqnnqE2cWez4QPt3NWd22krngbtHFcRW0
 ];
 
-const checkAuth = defineEventHandler((event) => {
+const checkAuth = defineEventHandler(async (event) => {
+  const token = getCookie(event, "auth_token");
+  if (!token) {
+    throw createError$1({
+      statusCode: 401,
+      statusMessage: "Not authenticated"
+    });
+  }
+});
+
+const _j0TRzS = defineEventHandler((event) => {
   const cookie = getCookie(event, "auth_token");
   if (!cookie) {
     throw createError$1({ statusCode: 401, statusMessage: "Not authenticated" });
@@ -4786,6 +4799,7 @@ const _lazy_S6jqZO = () => import('../routes/renderer.mjs').then(function (n) { 
 
 const handlers = [
   { route: '', handler: checkAuth, lazy: false, middleware: true, method: undefined },
+  { route: '', handler: _j0TRzS, lazy: false, middleware: true, method: undefined },
   { route: '/api/__i18n-warmup__', handler: _lazy_YnTiFv, lazy: true, middleware: false, method: undefined },
   { route: '/api/admin/analytics', handler: _lazy_ps7GBW, lazy: true, middleware: false, method: "get" },
   { route: '/api/admin/generate-edu', handler: _lazy_376OiF, lazy: true, middleware: false, method: "post" },

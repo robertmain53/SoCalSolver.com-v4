@@ -5,6 +5,10 @@ export default defineNuxtConfig({
     '~/plugins/markdown-it-meta-tags'
   ],
 
+  routeRules: {
+    '/admin/**': { middleware: 'protectedAuth' },
+  },
+  
   ssr: true,
 
   nitro: {
