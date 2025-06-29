@@ -7,20 +7,18 @@
 
 <script setup lang="ts">
 const route = useRoute();
-const schemaData = {
+const schema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Category: " + (route.params.slug ?? "Category"),
-  "description": "List of items in category " + (route.params.slug ?? "")
-  // ... additional structured data properties as needed
+  "name": route.params.slug,
 };
 
 useHead({
   script: [
     {
       type: 'application/ld+json',
-      children: JSON.stringify(schemaData)
-    }
-  ]
+      children: JSON.stringify(schema),
+    },
+  ],
 });
 </script>

@@ -15,11 +15,15 @@ const result = ref<string>('');
 
 function evaluate() {
   try {
-    // Caution: using eval for demonstration; consider replacing with a safe parser if needed
-    result.value = eval(expression.value);
-  } catch (err) {
-    console.error(err);
-    result.value = 'Error';
+    const vars = inputs.value
+      .map(f => `const ${f.name} = Number(values["${f.name}"] || 0);`)
+      .join('\n');
+    const expr = formula.value.includes('=') ? formula.value.split('=')[1] : formula.value;
+    return Function('values', `${vars}\nreturn ${expr}`)(values.value);
+  } catch (e) {
+    console.error(e);
+    return 'Error';
   }
 }
+
 </script>
