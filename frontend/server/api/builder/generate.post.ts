@@ -1,55 +1,30 @@
-
-import { writeFileSync, mkdirSync, existsSync } from 'fs'
-import { join, kebabCase } from 'path'
+import { OpenAI } from 'openai'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
-  const slug = body.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
-  const base = join(process.cwd(), 'generated', slug)
+  const { inputs, formula } = body
 
-  if (!existsSync(base)) mkdirSync(base, { recursive: true })
+  if (!inputs || !formula) {
+    throw createError({ statusCode: 400, statusMessage: 'Missing inputs or formula' })
+  }
 
-  const md = `---
-title: "${body.title}"
-slug: "${slug}"
-tags: [${body.tags.split(',').map(t => `"${t.trim()}"`).join(', ')}]
----
+  const prompt = `Generate a calculator code in JavaScript. Use these inputs:
 
-:::meta
-Generated from builder UI
-:::
+${JSON.stringify(inputs, null, 2)}
 
-:::inputs
-${body.inputs.map(i => `- name: ${i.name}
-  label: "${i.label}"
-  unit: "${i.unit}"`).join('
-')}
-:::
+Formula:
+${formula}
 
-:::formula
-${body.formula}
-:::
-`
+Return only the code.`
 
-  const vue = `<template>
-  <div>
-    <h1>${body.title}</h1>
-    <!-- Form UI goes here -->
-  </div>
-</template>
+  const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
 
-<script setup>
-defineProps(['inputs'])
-</script>
-`
+  const response = await openai.chat.completions.create({
+    messages: [{ role: 'user', content: prompt }],
+    model: 'gpt-4'
+  })
 
-  const test = `test('Calculator ${slug} works', () => {
-  // TODO: implement test logic
-})`
-
-  writeFileSync(join(base, `${slug}.en.md`), md, 'utf-8')
-  writeFileSync(join(base, `${slug}.vue`), vue, 'utf-8')
-  writeFileSync(join(base, `${slug}.test.js`), test, 'utf-8')
-
-  return { success: true, slug }
+  return {
+    code: response.choices[0].message.content
+  }
 })
