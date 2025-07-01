@@ -20,11 +20,13 @@ export default defineEventHandler(async (event) => {
 
   const explainDeepPrompt = await readFile(join(process.cwd(), 'utils', 'ai', 'prompts', 'explain-deep.txt'), 'utf-8');
 
-  const [explain, learn, challenge, deep] = await Promise.all([
-    openai.chat.completions.create({ messages: [{ role: 'user', content: explainPrompt + md }], model: 'gpt-4' }),,
-    openai.chat.completions.create({ messages: [{ role: 'user', content: learnPrompt + md }], model: 'gpt-4' }),,
-    openai.chat.completions.create({ messages: [{ role: 'user', content: challengePrompt + md }], model: 'gpt-4' }),
-  ])
+  // Correggi questa riga in frontend/server/api/admin/generate-edu.post.ts
+const [explain, learn, challenge, deep] = await Promise.all([
+  openai.chat.completions.create({ messages: [{ role: 'user', content: explainPrompt + md }], model: 'gpt-4' }),
+  openai.chat.completions.create({ messages: [{ role: 'user', content: learnPrompt + md }], model: 'gpt-4' }),
+  openai.chat.completions.create({ messages: [{ role: 'user', content: challengePrompt + md }], model: 'gpt-4' }),
+  openai.chat.completions.create({ messages: [{ role: 'user', content: explainDeepPrompt + md }], model: 'gpt-4' })
+])
 
   return {
     deepExplain: deep.choices[0].message.content,
