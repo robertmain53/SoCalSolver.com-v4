@@ -1,5 +1,5 @@
 import { defineComponent, shallowRef, h, resolveComponent, getCurrentInstance, provide, cloneVNode, createElementBlock, hasInjectionContext, inject, computed, ref, Suspense, Fragment, createApp, createVNode, Text, shallowReactive, toRef, onErrorCaptured, onServerPrefetch, unref, resolveDynamicComponent, reactive, effectScope, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, mergeProps, withCtx, getCurrentScope, createTextVNode, toDisplayString as toDisplayString$1, useSSRContext } from 'vue';
-import { n as createError$1, ad as getContext, W as sanitizeStatusCode, ae as $fetch$1, af as createHooks, ag as executeAsync, ah as toRouteMatcher, ai as createRouter$1, aj as defu, C as getRequestHost, E as getRequestProtocol, ak as destr, al as klona, A as getRequestHeader, a3 as setCookie, x as getCookie, t as deleteCookie } from '../nitro/nitro.mjs';
+import { n as createError$1, ac as getContext, W as sanitizeStatusCode, ad as $fetch$1, ae as createHooks, af as executeAsync, ag as toRouteMatcher, ah as createRouter$1, ai as defu, C as getRequestHost, E as getRequestProtocol, aj as destr, ak as klona, A as getRequestHeader, a3 as setCookie, x as getCookie, t as deleteCookie } from '../nitro/nitro.mjs';
 import { a as baseURL } from '../_/paths.mjs';
 import { createPinia, setActivePinia, shouldHydrate } from 'pinia';
 import { RouterView, createMemoryHistory, createRouter, START_LOCATION, useRouter as useRouter$1 } from 'vue-router';
@@ -94,7 +94,7 @@ function createNuxtApp(options) {
     globalName: "nuxt",
     versions: {
       get nuxt() {
-        return "3.17.4";
+        return "3.17.5";
       },
       get vue() {
         return nuxtApp.vueApp.version;
@@ -537,7 +537,7 @@ function defineNuxtRouteMiddleware(middleware) {
 }
 const addRouteMiddleware = (name, middleware, options = {}) => {
   const nuxtApp = useNuxtApp();
-  const global2 = options.global || false;
+  const global2 = options.global || typeof name !== "string";
   const mw = middleware;
   if (!mw) {
     console.warn("[nuxt] No route middleware passed to `addRouteMiddleware`.", name);
@@ -834,47 +834,47 @@ const _routes = [
   {
     name: "lang-slug___en",
     path: "/en/:lang()/:slug()",
-    component: () => import('./_slug_-B4puOsCm.mjs')
+    component: () => import('./_slug_-DQE4vojP.mjs')
   },
   {
     name: "lang-slug___it",
     path: "/it/:lang()/:slug()",
-    component: () => import('./_slug_-B4puOsCm.mjs')
+    component: () => import('./_slug_-DQE4vojP.mjs')
   },
   {
     name: "lang-slug___fr",
     path: "/fr/:lang()/:slug()",
-    component: () => import('./_slug_-B4puOsCm.mjs')
+    component: () => import('./_slug_-DQE4vojP.mjs')
   },
   {
     name: "admin-feedback___en",
     path: "/en/admin/feedback",
-    component: () => import('./feedback-BelPjCbm.mjs')
+    component: () => import('./feedback-CjiLMSMq.mjs')
   },
   {
     name: "admin-feedback___it",
     path: "/it/admin/feedback",
-    component: () => import('./feedback-BelPjCbm.mjs')
+    component: () => import('./feedback-CjiLMSMq.mjs')
   },
   {
     name: "admin-feedback___fr",
     path: "/fr/admin/feedback",
-    component: () => import('./feedback-BelPjCbm.mjs')
+    component: () => import('./feedback-CjiLMSMq.mjs')
   },
   {
     name: "admin-analytics___en",
     path: "/en/admin/analytics",
-    component: () => import('./analytics-DluNvLDB.mjs')
+    component: () => import('./analytics-MfAkAPEQ.mjs')
   },
   {
     name: "admin-analytics___it",
     path: "/it/admin/analytics",
-    component: () => import('./analytics-DluNvLDB.mjs')
+    component: () => import('./analytics-MfAkAPEQ.mjs')
   },
   {
     name: "admin-analytics___fr",
     path: "/fr/admin/analytics",
-    component: () => import('./analytics-DluNvLDB.mjs')
+    component: () => import('./analytics-MfAkAPEQ.mjs')
   },
   {
     name: "admin-generator___en",
@@ -924,17 +924,17 @@ const _routes = [
   {
     name: "admin-edit-slug___en",
     path: "/en/admin/edit/:slug()",
-    component: () => import('./_slug_-U_Tj0cir.mjs')
+    component: () => import('./_slug_-DbL1Np9j.mjs')
   },
   {
     name: "admin-edit-slug___it",
     path: "/it/admin/edit/:slug()",
-    component: () => import('./_slug_-U_Tj0cir.mjs')
+    component: () => import('./_slug_-DbL1Np9j.mjs')
   },
   {
     name: "admin-edit-slug___fr",
     path: "/fr/admin/edit/:slug()",
-    component: () => import('./_slug_-U_Tj0cir.mjs')
+    component: () => import('./_slug_-DbL1Np9j.mjs')
   },
   {
     name: "admin-translations___en",
@@ -1342,7 +1342,7 @@ const __nuxt_component_0$2 = defineComponent({
       }
       const slot = slots.fallback || slots.placeholder;
       if (slot) {
-        return slot();
+        return h(slot);
       }
       const fallbackStr = props.fallback || props.placeholder || "";
       const fallbackTag = props.fallbackTag || props.placeholderTag || "span";
@@ -5291,11 +5291,11 @@ function getMessageContextOptions(context, locale, message, options) {
   return ctxOptions;
 }
 /*!
-  * vue-i18n v11.1.5
+  * vue-i18n v11.1.7
   * (c) 2025 kazuya kawaguchi
   * Released under the MIT License.
   */
-const VERSION = "11.1.5";
+const VERSION = "11.1.7";
 const I18nErrorCodes = {
   // composer module errors
   UNEXPECTED_RETURN_TYPE: CORE_ERROR_CODES_EXTEND_POINT,
@@ -6758,14 +6758,11 @@ const plugins = [
 const defineRouteProvider = (name = "RouteProvider") => defineComponent({
   name,
   props: {
-    vnode: {
-      type: Object,
-      required: true
-    },
     route: {
       type: Object,
       required: true
     },
+    vnode: Object,
     vnodeRef: Object,
     renderKey: String,
     trackRootNodes: Boolean
@@ -6782,6 +6779,9 @@ const defineRouteProvider = (name = "RouteProvider") => defineComponent({
     }
     provide(PageRouteSymbol, shallowReactive(route));
     return () => {
+      if (!props.vnode) {
+        return props.vnode;
+      }
       return h(props.vnode, { ref: props.vnodeRef });
     };
   }

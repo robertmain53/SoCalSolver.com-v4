@@ -1,0 +1,1 @@
+import{g as t,C as s,u as o,c as a,o as c}from"./dX-0TnA8.js";const n={class:"category-page"},m=t({__name:"[slug]",setup(r){const e={"@context":"https://schema.org","@type":"CollectionPage",name:s().params.slug};return o({script:[{type:"application/ld+json",children:JSON.stringify(e)}]}),(i,l)=>(c(),a("div",n))}});export{m as default};

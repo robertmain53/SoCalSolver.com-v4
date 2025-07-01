@@ -1,1 +1,0 @@
-import{g as t,C as a,u as s,c as o,o as c}from"./Ddirn40s.js";const n={class:"calculator-page"},m=t({__name:"[slug]",setup(r){const e={"@context":"https://schema.org","@type":"WebPage",name:"Calculator: "+(a().params.slug??"Calculator")};return s({script:[{type:"application/ld+json",children:JSON.stringify(e)}]}),(p,u)=>(c(),o("div",n))}});export{m as default};

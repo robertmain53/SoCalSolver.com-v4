@@ -2,8 +2,6 @@
 import { readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 
-import checkAuth from '~/server/middleware/checkAuth'
-
 export default defineEventHandler(async (event) => {
   await checkAuth(event)
   if (event.context.user.role !== 'admin') {

@@ -1,9 +1,8 @@
+import { checkAuth } from '~/server/utils/checkAuth'
 
-import { readFileSync } from 'fs'
-import { join } from 'path'
+export default defineEventHandler(async (event) => {
+  await checkAuth(event)
 
-export default defineEventHandler(() => {
-  const path = join(process.cwd(), 'server/analytics/analytics.json')
-  const raw = readFileSync(path, 'utf-8')
-  return JSON.parse(raw)
+  // Esempio risposta
+  return { message: 'Hello Admin' }
 })

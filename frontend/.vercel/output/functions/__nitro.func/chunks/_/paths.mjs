@@ -1,4 +1,4 @@
-import { ac as joinRelativeURL, a as useRuntimeConfig } from '../nitro/nitro.mjs';
+import { ab as joinRelativeURL, a as useRuntimeConfig } from '../nitro/nitro.mjs';
 
 function baseURL() {
   return useRuntimeConfig().app.baseURL;

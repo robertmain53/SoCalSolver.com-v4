@@ -1,4 +1,5 @@
-import { r as defineEventHandler, ab as checkAuth, n as createError, U as readBody } from '../../nitro/nitro.mjs';
+import { r as defineEventHandler, n as createError, U as readBody } from '../../nitro/nitro.mjs';
+import { c as checkAuth } from '../../_/checkAuth.mjs';
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import 'node:http';
