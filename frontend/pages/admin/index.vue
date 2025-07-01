@@ -1,6 +1,3 @@
-<script setup lang="ts">
-definePageMeta({ middleware: 'checkAuth' })
-</script>
 
 <template>
   <div class="p-6">
@@ -28,4 +25,8 @@ definePageMeta({ middleware: 'checkAuth' })
 
 <script setup lang="ts">
 const calculators = await $fetch('/api/admin/list')
+
+definePageMeta({
+  middleware: "checkAuth"
+})
 </script>

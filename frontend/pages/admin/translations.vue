@@ -1,6 +1,4 @@
-<script setup lang="ts">
-definePageMeta({ middleware: 'checkAuth' })
-</script>
+ 
 
 <template>
   <div class="p-6">
@@ -79,4 +77,8 @@ async function save() {
 
 watch(selectedLocale, loadTranslations)
 onMounted(() => loadTranslations(selectedLocale.value))
+
+definePageMeta({
+  middleware: "checkAuth"
+})
 </script>

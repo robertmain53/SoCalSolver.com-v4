@@ -15,9 +15,8 @@ export default defineNitroPlugin((nitroApp) => {
     // Try to log Nuxt/i18n state if available
     try {
       // These are only available in Nuxt context, so we must use dynamic import
-      const { useNuxtApp, useI18n, useRoute } = await import('#imports');
-      const nuxtApp = useNuxtApp();
-      let locale = null;
+      const { useI18n, useRoute } = await import('#imports');
+       let locale = null;
       let route = null;
       try {
         locale = useI18n().locale.value;

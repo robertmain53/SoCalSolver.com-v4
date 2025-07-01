@@ -1,6 +1,3 @@
-<script setup lang="ts">
-definePageMeta({ middleware: 'checkAuth' })
-</script>
 
 
 <template>
@@ -21,4 +18,8 @@ definePageMeta({ middleware: 'checkAuth' })
 
 <script setup lang="ts">
 const { data: feedback } = await useFetch('/logs/feedback.json')
+
+definePageMeta({
+  middleware: "checkAuth"
+})
 </script>

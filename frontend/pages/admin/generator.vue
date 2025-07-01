@@ -1,7 +1,4 @@
-<script setup lang="ts">
-definePageMeta({ middleware: 'checkAuth' })
-</script>
-
+ 
 
 <template>
   <div class="p-6 max-w-2xl mx-auto">
@@ -56,4 +53,9 @@ async function generateEdu() {
     loading.value = false
   }
 }
+
+
+definePageMeta({
+  middleware: "checkAuth"
+})
 </script>

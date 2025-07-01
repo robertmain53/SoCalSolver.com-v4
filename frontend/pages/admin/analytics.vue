@@ -1,6 +1,4 @@
-<script setup lang="ts">
-definePageMeta({ middleware: 'checkAuth' })
-</script>
+ 
 
 <template>
   <div class="max-w-4xl mx-auto p-6 space-y-6">
@@ -36,4 +34,8 @@ definePageMeta({ middleware: 'checkAuth' })
 const { data: analytics } = await useFetch('/api/analytics/summary')
 const total = analytics.value?.total || 0
 const top = analytics.value?.top || []
+
+definePageMeta({
+  middleware: "checkAuth"
+})
 </script>
