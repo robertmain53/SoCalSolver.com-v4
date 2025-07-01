@@ -1,3 +1,7 @@
+<script setup lang="ts">
+definePageMeta({ middleware: 'checkAuth' })
+</script>
+
 
 <template>
   <div class="p-6 max-w-4xl mx-auto">

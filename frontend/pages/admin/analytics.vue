@@ -1,3 +1,7 @@
+<script setup lang="ts">
+definePageMeta({ middleware: 'checkAuth' })
+</script>
+
 <template>
   <div class="max-w-4xl mx-auto p-6 space-y-6">
     <h1 class="text-2xl font-semibold mb-4">📊 Analytics Dashboard</h1>
