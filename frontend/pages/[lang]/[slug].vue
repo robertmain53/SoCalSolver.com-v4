@@ -66,7 +66,7 @@ const route = useRoute()
 const { slug, lang } = route.params
 const query = useRoute().query
 
-const { buildCalculatorGraph, getRelatedCalculators } = await import('~/lib/seoGraph')
+const { buildCalculatorGraph, getRelatedCalculators } = await import('~/lib/seoGraph.server.ts')
 const { generateEmbedCode } = await import('~/lib/embedUtils')
 
 const { data: doc } = await useAsyncData('doc', () =>

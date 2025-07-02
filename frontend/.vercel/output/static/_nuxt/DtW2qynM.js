@@ -1,1 +1,0 @@
-import{_ as t,c as s,a as o,o as a}from"./dX-0TnA8.js";const c={},n={class:"p-6 text-center"};function r(l,e){return a(),s("div",n,e[0]||(e[0]=[o("h1",{class:"text-3xl font-bold"},"Welcome to SoCalSolver",-1),o("p",null,"This is your Nuxt app home page.",-1)]))}const _=t(c,[["render",r]]);export{_ as default};

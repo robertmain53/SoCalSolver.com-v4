@@ -1,1 +1,0 @@
-{"version":3,"file":"checkAuth.mjs","sources":["../../../../../../server/utils/checkAuth.ts"],"sourcesContent":null,"names":[],"mappings":";;AAEO,MAAM,SAAA,GAAY,kBAAA,CAAmB,CAAC,KAAA,KAAU;AACrD,EAAA,MAAM,KAAA,GAAQ,SAAA,CAAU,KAAA,EAAO,YAAY,CAAA;AAC3C,EAAA,IAAI,CAAC,KAAA,EAAO;AACV,IAAA,MAAM,YAAY,EAAE,UAAA,EAAY,GAAA,EAAK,aAAA,EAAe,qBAAqB,CAAA;AAAA;AAE7E,CAAC;;;;"}

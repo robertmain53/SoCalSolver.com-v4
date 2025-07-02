@@ -1,14 +1,14 @@
-import { r as defineEventHandler, n as createError, U as readBody } from '../../nitro/nitro.mjs';
-import { c as checkAuth } from '../../_/checkAuth.mjs';
+import { d as defineEventHandler, c as checkAuth, a as createError, r as readBody } from '../../nitro/nitro.mjs';
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
+import 'jsonwebtoken';
+import 'node:crypto';
 import 'node:http';
 import 'node:https';
 import 'node:events';
 import 'node:buffer';
 import 'node:fs';
 import 'node:path';
-import 'node:crypto';
 
 const approve_post = defineEventHandler(async (event) => {
   await checkAuth(event);

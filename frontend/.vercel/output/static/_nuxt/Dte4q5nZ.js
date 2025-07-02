@@ -1,1 +1,0 @@
-import{_ as t,c as e,o}from"./dX-0TnA8.js";const c={},s={class:"max-w-xl mx-auto py-20 text-center text-2xl font-bold"};function n(r,a){return o(),e("div",s," Hello SSR ")}const l=t(c,[["render",n]]);export{l as default};

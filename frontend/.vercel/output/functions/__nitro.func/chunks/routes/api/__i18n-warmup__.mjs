@@ -1,11 +1,12 @@
-import { r as defineEventHandler } from '../../nitro/nitro.mjs';
+import { d as defineEventHandler } from '../../nitro/nitro.mjs';
+import 'jsonwebtoken';
+import 'node:crypto';
 import 'node:http';
 import 'node:https';
 import 'node:events';
 import 'node:buffer';
 import 'node:fs';
 import 'node:path';
-import 'node:crypto';
 
 const __i18nWarmup__ = defineEventHandler(async (event) => {
   const { $i18n } = useNuxtApp();

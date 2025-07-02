@@ -59,6 +59,7 @@
     "perfect-debounce": "1.0.0",
     "pinia": "3.0.3",
     "radix3": "1.1.2",
+    "requrl": "3.0.2",
     "safe-buffer": "5.2.1",
     "section-matter": "1.0.0",
     "semver": "7.7.2",

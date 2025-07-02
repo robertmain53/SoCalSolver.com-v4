@@ -1,10 +1,11 @@
+import jwt from 'jsonwebtoken';
+import nodeCrypto, { createHash } from 'node:crypto';
 import http from 'node:http';
 import https from 'node:https';
 import { EventEmitter } from 'node:events';
 import { Buffer as Buffer$1 } from 'node:buffer';
 import { promises, existsSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
-import { createHash } from 'node:crypto';
 
 const suspectProtoRx = /"(?:_|\\u0{2}5[Ff]){2}(?:p|\\u0{2}70)(?:r|\\u0{2}72)(?:o|\\u0{2}6[Ff])(?:t|\\u0{2}74)(?:o|\\u0{2}6[Ff])(?:_|\\u0{2}5[Ff]){2}"\s*:/;
 const suspectConstructorRx = /"(?:c|\\u0063)(?:o|\\u006[Ff])(?:n|\\u006[Ee])(?:s|\\u0073)(?:t|\\u0074)(?:r|\\u0072)(?:u|\\u0075)(?:c|\\u0063)(?:t|\\u0074)(?:o|\\u006[Ff])(?:r|\\u0072)"\s*:/;
@@ -826,6 +827,315 @@ const defuFn = createDefu((object, key, currentValue) => {
   }
 });
 
+const subtle = nodeCrypto.webcrypto?.subtle || {};
+const randomUUID = () => {
+  return nodeCrypto.randomUUID();
+};
+const getRandomValues = (array) => {
+  return nodeCrypto.webcrypto.getRandomValues(array);
+};
+const _crypto = {
+  randomUUID,
+  getRandomValues,
+  subtle
+};
+
+// src/utils.ts
+var alphabetByEncoding = {};
+var alphabetByValue = Array.from({ length: 64 });
+for (let i = 0, start = "A".charCodeAt(0), limit = "Z".charCodeAt(0); i + start <= limit; i++) {
+  const char = String.fromCharCode(i + start);
+  alphabetByEncoding[char] = i;
+  alphabetByValue[i] = char;
+}
+for (let i = 0, start = "a".charCodeAt(0), limit = "z".charCodeAt(0); i + start <= limit; i++) {
+  const char = String.fromCharCode(i + start);
+  const index = i + 26;
+  alphabetByEncoding[char] = index;
+  alphabetByValue[index] = char;
+}
+for (let i = 0; i < 10; i++) {
+  alphabetByEncoding[i.toString(10)] = i + 52;
+  const char = i.toString(10);
+  const index = i + 52;
+  alphabetByEncoding[char] = index;
+  alphabetByValue[index] = char;
+}
+alphabetByEncoding["-"] = 62;
+alphabetByValue[62] = "-";
+alphabetByEncoding["_"] = 63;
+alphabetByValue[63] = "_";
+var bitsPerLetter = 6;
+var bitsPerByte = 8;
+var maxLetterValue = 63;
+var stringToBuffer = (value) => {
+  return new TextEncoder().encode(value);
+};
+var bufferToString = (value) => {
+  return new TextDecoder().decode(value);
+};
+var base64urlDecode = (_input) => {
+  const input = _input + "=".repeat((4 - _input.length % 4) % 4);
+  let totalByteLength = input.length / 4 * 3;
+  if (input.endsWith("==")) {
+    totalByteLength -= 2;
+  } else if (input.endsWith("=")) {
+    totalByteLength--;
+  }
+  const out = new ArrayBuffer(totalByteLength);
+  const dataView = new DataView(out);
+  for (let i = 0; i < input.length; i += 4) {
+    let bits = 0;
+    let bitLength = 0;
+    for (let j = i, limit = i + 3; j <= limit; j++) {
+      if (input[j] === "=") {
+        bits >>= bitsPerLetter;
+      } else {
+        if (!(input[j] in alphabetByEncoding)) {
+          throw new TypeError(`Invalid character ${input[j]} in base64 string.`);
+        }
+        bits |= alphabetByEncoding[input[j]] << (limit - j) * bitsPerLetter;
+        bitLength += bitsPerLetter;
+      }
+    }
+    const chunkOffset = i / 4 * 3;
+    bits >>= bitLength % bitsPerByte;
+    const byteLength = Math.floor(bitLength / bitsPerByte);
+    for (let k = 0; k < byteLength; k++) {
+      const offset = (byteLength - k - 1) * bitsPerByte;
+      dataView.setUint8(chunkOffset + k, (bits & 255 << offset) >> offset);
+    }
+  }
+  return new Uint8Array(out);
+};
+var base64urlEncode = (_input) => {
+  const input = typeof _input === "string" ? stringToBuffer(_input) : _input;
+  let str = "";
+  for (let i = 0; i < input.length; i += 3) {
+    let bits = 0;
+    let bitLength = 0;
+    for (let j = i, limit = Math.min(i + 3, input.length); j < limit; j++) {
+      bits |= input[j] << (limit - j - 1) * bitsPerByte;
+      bitLength += bitsPerByte;
+    }
+    const bitClusterCount = Math.ceil(bitLength / bitsPerLetter);
+    bits <<= bitClusterCount * bitsPerLetter - bitLength;
+    for (let k = 1; k <= bitClusterCount; k++) {
+      const offset = (bitClusterCount - k) * bitsPerLetter;
+      str += alphabetByValue[(bits & maxLetterValue << offset) >> offset];
+    }
+  }
+  return str;
+};
+
+// src/index.ts
+var defaults = {
+  encryption: { saltBits: 256, algorithm: "aes-256-cbc", iterations: 1, minPasswordlength: 32 },
+  integrity: { saltBits: 256, algorithm: "sha256", iterations: 1, minPasswordlength: 32 },
+  ttl: 0,
+  timestampSkewSec: 60,
+  localtimeOffsetMsec: 0
+};
+var clone = (options) => ({
+  ...options,
+  encryption: { ...options.encryption },
+  integrity: { ...options.integrity }
+});
+var algorithms = {
+  "aes-128-ctr": { keyBits: 128, ivBits: 128, name: "AES-CTR" },
+  "aes-256-cbc": { keyBits: 256, ivBits: 128, name: "AES-CBC" },
+  sha256: { keyBits: 256, name: "SHA-256" }
+};
+var macPrefix = "Fe26.2";
+var randomBytes = (_crypto, size) => {
+  const bytes = new Uint8Array(size);
+  _crypto.getRandomValues(bytes);
+  return bytes;
+};
+var randomBits = (_crypto, bits) => {
+  if (bits < 1)
+    throw new Error("Invalid random bits count");
+  const bytes = Math.ceil(bits / 8);
+  return randomBytes(_crypto, bytes);
+};
+var pbkdf2 = async (_crypto, password, salt, iterations, keyLength, hash) => {
+  const passwordBuffer = stringToBuffer(password);
+  const importedKey = await _crypto.subtle.importKey(
+    "raw",
+    passwordBuffer,
+    { name: "PBKDF2" },
+    false,
+    ["deriveBits"]
+  );
+  const saltBuffer = stringToBuffer(salt);
+  const params = { name: "PBKDF2", hash, salt: saltBuffer, iterations };
+  const derivation = await _crypto.subtle.deriveBits(params, importedKey, keyLength * 8);
+  return derivation;
+};
+var generateKey = async (_crypto, password, options) => {
+  var _a;
+  if (!(password == null ? void 0 : password.length))
+    throw new Error("Empty password");
+  if (options == null || typeof options !== "object")
+    throw new Error("Bad options");
+  if (!(options.algorithm in algorithms))
+    throw new Error(`Unknown algorithm: ${options.algorithm}`);
+  const algorithm = algorithms[options.algorithm];
+  const result = {};
+  const hmac = (_a = options.hmac) != null ? _a : false;
+  const id = hmac ? { name: "HMAC", hash: algorithm.name } : { name: algorithm.name };
+  const usage = hmac ? ["sign", "verify"] : ["encrypt", "decrypt"];
+  if (typeof password === "string") {
+    if (password.length < options.minPasswordlength)
+      throw new Error(
+        `Password string too short (min ${options.minPasswordlength} characters required)`
+      );
+    let { salt = "" } = options;
+    if (!salt) {
+      const { saltBits = 0 } = options;
+      if (!saltBits)
+        throw new Error("Missing salt and saltBits options");
+      const randomSalt = randomBits(_crypto, saltBits);
+      salt = [...new Uint8Array(randomSalt)].map((x) => x.toString(16).padStart(2, "0")).join("");
+    }
+    const derivedKey = await pbkdf2(
+      _crypto,
+      password,
+      salt,
+      options.iterations,
+      algorithm.keyBits / 8,
+      "SHA-1"
+    );
+    const importedEncryptionKey = await _crypto.subtle.importKey(
+      "raw",
+      derivedKey,
+      id,
+      false,
+      usage
+    );
+    result.key = importedEncryptionKey;
+    result.salt = salt;
+  } else {
+    if (password.length < algorithm.keyBits / 8)
+      throw new Error("Key buffer (password) too small");
+    result.key = await _crypto.subtle.importKey("raw", password, id, false, usage);
+    result.salt = "";
+  }
+  if (options.iv)
+    result.iv = options.iv;
+  else if ("ivBits" in algorithm)
+    result.iv = randomBits(_crypto, algorithm.ivBits);
+  return result;
+};
+var getEncryptParams = (algorithm, key, data) => {
+  return [
+    algorithm === "aes-128-ctr" ? { name: "AES-CTR", counter: key.iv, length: 128 } : { name: "AES-CBC", iv: key.iv },
+    key.key,
+    typeof data === "string" ? stringToBuffer(data) : data
+  ];
+};
+var encrypt = async (_crypto, password, options, data) => {
+  const key = await generateKey(_crypto, password, options);
+  const encrypted = await _crypto.subtle.encrypt(...getEncryptParams(options.algorithm, key, data));
+  return { encrypted: new Uint8Array(encrypted), key };
+};
+var decrypt = async (_crypto, password, options, data) => {
+  const key = await generateKey(_crypto, password, options);
+  const decrypted = await _crypto.subtle.decrypt(...getEncryptParams(options.algorithm, key, data));
+  return bufferToString(new Uint8Array(decrypted));
+};
+var hmacWithPassword = async (_crypto, password, options, data) => {
+  const key = await generateKey(_crypto, password, { ...options, hmac: true });
+  const textBuffer = stringToBuffer(data);
+  const signed = await _crypto.subtle.sign({ name: "HMAC" }, key.key, textBuffer);
+  const digest = base64urlEncode(new Uint8Array(signed));
+  return { digest, salt: key.salt };
+};
+var normalizePassword = (password) => {
+  if (typeof password === "string" || password instanceof Uint8Array)
+    return { encryption: password, integrity: password };
+  if ("secret" in password)
+    return { id: password.id, encryption: password.secret, integrity: password.secret };
+  return { id: password.id, encryption: password.encryption, integrity: password.integrity };
+};
+var seal = async (_crypto, object, password, options) => {
+  if (!password)
+    throw new Error("Empty password");
+  const opts = clone(options);
+  const now = Date.now() + (opts.localtimeOffsetMsec || 0);
+  const objectString = JSON.stringify(object);
+  const pass = normalizePassword(password);
+  const { id = "", encryption, integrity } = pass;
+  if (id && !/^\w+$/.test(id))
+    throw new Error("Invalid password id");
+  const { encrypted, key } = await encrypt(_crypto, encryption, opts.encryption, objectString);
+  const encryptedB64 = base64urlEncode(new Uint8Array(encrypted));
+  const iv = base64urlEncode(key.iv);
+  const expiration = opts.ttl ? now + opts.ttl : "";
+  const macBaseString = `${macPrefix}*${id}*${key.salt}*${iv}*${encryptedB64}*${expiration}`;
+  const mac = await hmacWithPassword(_crypto, integrity, opts.integrity, macBaseString);
+  const sealed = `${macBaseString}*${mac.salt}*${mac.digest}`;
+  return sealed;
+};
+var fixedTimeComparison = (a, b) => {
+  let mismatch = a.length === b.length ? 0 : 1;
+  if (mismatch)
+    b = a;
+  for (let i = 0; i < a.length; i += 1)
+    mismatch |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return mismatch === 0;
+};
+var unseal = async (_crypto, sealed, password, options) => {
+  if (!password)
+    throw new Error("Empty password");
+  const opts = clone(options);
+  const now = Date.now() + (opts.localtimeOffsetMsec || 0);
+  const parts = sealed.split("*");
+  if (parts.length !== 8)
+    throw new Error("Incorrect number of sealed components");
+  const prefix = parts[0];
+  let passwordId = parts[1];
+  const encryptionSalt = parts[2];
+  const encryptionIv = parts[3];
+  const encryptedB64 = parts[4];
+  const expiration = parts[5];
+  const hmacSalt = parts[6];
+  const hmac = parts[7];
+  const macBaseString = `${prefix}*${passwordId}*${encryptionSalt}*${encryptionIv}*${encryptedB64}*${expiration}`;
+  if (macPrefix !== prefix)
+    throw new Error("Wrong mac prefix");
+  if (expiration) {
+    if (!/^\d+$/.test(expiration))
+      throw new Error("Invalid expiration");
+    const exp = Number.parseInt(expiration, 10);
+    if (exp <= now - opts.timestampSkewSec * 1e3)
+      throw new Error("Expired seal");
+  }
+  let pass = "";
+  passwordId = passwordId || "default";
+  if (typeof password === "string" || password instanceof Uint8Array)
+    pass = password;
+  else if (passwordId in password) {
+    pass = password[passwordId];
+  } else {
+    throw new Error(`Cannot find password: ${passwordId}`);
+  }
+  pass = normalizePassword(pass);
+  const macOptions = opts.integrity;
+  macOptions.salt = hmacSalt;
+  const mac = await hmacWithPassword(_crypto, pass.integrity, macOptions, macBaseString);
+  if (!fixedTimeComparison(mac.digest, hmac))
+    throw new Error("Bad hmac value");
+  const encrypted = base64urlDecode(encryptedB64);
+  const decryptOptions = opts.encryption;
+  decryptOptions.salt = encryptionSalt;
+  decryptOptions.iv = base64urlDecode(encryptionIv);
+  const decrypted = await decrypt(_crypto, pass.encryption, decryptOptions, encrypted);
+  if (decrypted)
+    return JSON.parse(decrypted);
+  return null;
+};
+
 function o(n){throw new Error(`${n} is not implemented yet!`)}let i$1 = class i extends EventEmitter{__unenv__={};readableEncoding=null;readableEnded=true;readableFlowing=false;readableHighWaterMark=0;readableLength=0;readableObjectMode=false;readableAborted=false;readableDidRead=false;closed=false;errored=null;readable=false;destroyed=false;static from(e,t){return new i(t)}constructor(e){super();}_read(e){}read(e){}setEncoding(e){return this}pause(){return this}resume(){return this}isPaused(){return  true}unpipe(e){return this}unshift(e,t){}wrap(e){return this}push(e,t){return  false}_destroy(e,t){this.removeAllListeners();}destroy(e){return this.destroyed=true,this._destroy(e),this}pipe(e,t){return {}}compose(e,t){throw new Error("Method not implemented.")}[Symbol.asyncDispose](){return this.destroy(),Promise.resolve()}async*[Symbol.asyncIterator](){throw o("Readable.asyncIterator")}iterator(e){throw o("Readable.iterator")}map(e,t){throw o("Readable.map")}filter(e,t){throw o("Readable.filter")}forEach(e,t){throw o("Readable.forEach")}reduce(e,t,r){throw o("Readable.reduce")}find(e,t){throw o("Readable.find")}findIndex(e,t){throw o("Readable.findIndex")}some(e,t){throw o("Readable.some")}toArray(e){throw o("Readable.toArray")}every(e,t){throw o("Readable.every")}flatMap(e,t){throw o("Readable.flatMap")}drop(e,t){throw o("Readable.drop")}take(e,t){throw o("Readable.take")}asIndexedPairs(e){throw o("Readable.asIndexedPairs")}};let l$1 = class l extends EventEmitter{__unenv__={};writable=true;writableEnded=false;writableFinished=false;writableHighWaterMark=0;writableLength=0;writableObjectMode=false;writableCorked=0;closed=false;errored=null;writableNeedDrain=false;writableAborted=false;destroyed=false;_data;_encoding="utf8";constructor(e){super();}pipe(e,t){return {}}_write(e,t,r){if(this.writableEnded){r&&r();return}if(this._data===void 0)this._data=e;else {const s=typeof this._data=="string"?Buffer$1.from(this._data,this._encoding||t||"utf8"):this._data,a=typeof e=="string"?Buffer$1.from(e,t||this._encoding||"utf8"):e;this._data=Buffer$1.concat([s,a]);}this._encoding=t,r&&r();}_writev(e,t){}_destroy(e,t){}_final(e){}write(e,t,r){const s=typeof t=="string"?this._encoding:"utf8",a=typeof t=="function"?t:typeof r=="function"?r:void 0;return this._write(e,s,a),true}setDefaultEncoding(e){return this}end(e,t,r){const s=typeof e=="function"?e:typeof t=="function"?t:typeof r=="function"?r:void 0;if(this.writableEnded)return s&&s(),this;const a=e===s?void 0:e;if(a){const u=t===s?void 0:t;this.write(a,u,s);}return this.writableEnded=true,this.writableFinished=true,this.emit("close"),this.emit("finish"),this}cork(){}uncork(){}destroy(e){return this.destroyed=true,delete this._data,this.removeAllListeners(),this}compose(e,t){throw new Error("Method not implemented.")}};const c=class{allowHalfOpen=true;_destroy;constructor(e=new i$1,t=new l$1){Object.assign(this,e),Object.assign(this,t),this._destroy=g(e._destroy,t._destroy);}};function _(){return Object.assign(c.prototype,i$1.prototype),Object.assign(c.prototype,l$1.prototype),c}function g(...n){return function(...e){for(const t of n)t(...e);}}const m=_();class A extends m{__unenv__={};bufferSize=0;bytesRead=0;bytesWritten=0;connecting=false;destroyed=false;pending=false;localAddress="";localPort=0;remoteAddress="";remoteFamily="";remotePort=0;autoSelectFamilyAttemptedAddresses=[];readyState="readOnly";constructor(e){super();}write(e,t,r){return  false}connect(e,t,r){return this}end(e,t,r){return this}setEncoding(e){return this}pause(){return this}resume(){return this}setTimeout(e,t){return this}setNoDelay(e){return this}setKeepAlive(e,t){return this}address(){return {}}unref(){return this}ref(){return this}destroySoon(){this.destroy();}resetAndDestroy(){const e=new Error("ERR_SOCKET_CLOSED");return e.code="ERR_SOCKET_CLOSED",this.destroy(e),this}}class y extends i$1{aborted=false;httpVersion="1.1";httpVersionMajor=1;httpVersionMinor=1;complete=true;connection;socket;headers={};trailers={};method="GET";url="/";statusCode=200;statusMessage="";closed=false;errored=null;readable=false;constructor(e){super(),this.socket=this.connection=e||new A;}get rawHeaders(){const e=this.headers,t=[];for(const r in e)if(Array.isArray(e[r]))for(const s of e[r])t.push(r,s);else t.push(r,e[r]);return t}get rawTrailers(){return []}setTimeout(e,t){return this}get headersDistinct(){return p(this.headers)}get trailersDistinct(){return p(this.trailers)}}function p(n){const e={};for(const[t,r]of Object.entries(n))t&&(e[t]=(Array.isArray(r)?r:[r]).filter(Boolean));return e}class w extends l$1{statusCode=200;statusMessage="";upgrading=false;chunkedEncoding=false;shouldKeepAlive=false;useChunkedEncodingByDefault=false;sendDate=false;finished=false;headersSent=false;strictContentLength=false;connection=null;socket=null;req;_headers={};constructor(e){super(),this.req=e;}assignSocket(e){e._httpMessage=this,this.socket=e,this.connection=e,this.emit("socket",e),this._flush();}_flush(){this.flushHeaders();}detachSocket(e){}writeContinue(e){}writeHead(e,t,r){e&&(this.statusCode=e),typeof t=="string"&&(this.statusMessage=t,t=void 0);const s=r||t;if(s&&!Array.isArray(s))for(const a in s)this.setHeader(a,s[a]);return this.headersSent=true,this}writeProcessing(){}setTimeout(e,t){return this}appendHeader(e,t){e=e.toLowerCase();const r=this._headers[e],s=[...Array.isArray(r)?r:[r],...Array.isArray(t)?t:[t]].filter(Boolean);return this._headers[e]=s.length>1?s:s[0],this}setHeader(e,t){return this._headers[e.toLowerCase()]=t,this}setHeaders(e){for(const[t,r]of Object.entries(e))this.setHeader(t,r);return this}getHeader(e){return this._headers[e.toLowerCase()]}getHeaders(){return this._headers}getHeaderNames(){return Object.keys(this._headers)}hasHeader(e){return e.toLowerCase()in this._headers}removeHeader(e){delete this._headers[e.toLowerCase()];}addTrailers(e){}flushHeaders(){}writeEarlyHints(e,t){typeof t=="function"&&t();}}const E=(()=>{const n=function(){};return n.prototype=Object.create(null),n})();function R(n={}){const e=new E,t=Array.isArray(n)||H(n)?n:Object.entries(n);for(const[r,s]of t)if(s){if(e[r]===void 0){e[r]=s;continue}e[r]=[...Array.isArray(e[r])?e[r]:[e[r]],...Array.isArray(s)?s:[s]];}return e}function H(n){return typeof n?.entries=="function"}function v(n={}){if(n instanceof Headers)return n;const e=new Headers;for(const[t,r]of Object.entries(n))if(r!==void 0){if(Array.isArray(r)){for(const s of r)e.append(t,String(s));continue}e.set(t,String(r));}return e}const S=new Set([101,204,205,304]);async function b(n,e){const t=new y,r=new w(t);t.url=e.url?.toString()||"/";let s;if(!t.url.startsWith("/")){const d=new URL(t.url);s=d.host,t.url=d.pathname+d.search+d.hash;}t.method=e.method||"GET",t.headers=R(e.headers||{}),t.headers.host||(t.headers.host=e.host||s||"localhost"),t.connection.encrypted=t.connection.encrypted||e.protocol==="https",t.body=e.body||null,t.__unenv__=e.context,await n(t,r);let a=r._data;(S.has(r.statusCode)||t.method.toUpperCase()==="HEAD")&&(a=null,delete r._headers["content-length"]);const u={status:r.statusCode,statusText:r.statusMessage,headers:r._headers,body:a};return t.destroy(),r.destroy(),u}async function C(n,e,t={}){try{const r=await b(n,{url:e,...t});return new Response(r.body,{status:r.status,statusText:r.statusText,headers:v(r.headers)})}catch(r){return new Response(r.toString(),{status:Number.parseInt(r.statusCode||r.code)||500,statusText:r.statusText})}}
 
 function hasProp(obj, prop) {
@@ -978,6 +1288,7 @@ function getRequestHeader(event, name) {
   const value = headers[name.toLowerCase()];
   return value;
 }
+const getHeader = getRequestHeader;
 function getRequestHost(event, opts = {}) {
   if (opts.xForwardedHost) {
     const xForwardedHost = event.node.req.headers["x-forwarded-host"];
@@ -1395,6 +1706,18 @@ const setHeaders = setResponseHeaders;
 function setResponseHeader(event, name, value) {
   event.node.res.setHeader(name, value);
 }
+function appendResponseHeader(event, name, value) {
+  let current = event.node.res.getHeader(name);
+  if (!current) {
+    event.node.res.setHeader(name, value);
+    return;
+  }
+  if (!Array.isArray(current)) {
+    current = [current.toString()];
+  }
+  event.node.res.setHeader(name, [...current, value]);
+}
+const appendHeader = appendResponseHeader;
 function isStream(data) {
   if (!data || typeof data !== "object") {
     return false;
@@ -1664,6 +1987,162 @@ function mergeHeaders$1(defaults, ...inputs) {
     }
   }
   return merged;
+}
+
+const getSessionPromise = Symbol("getSession");
+const DEFAULT_NAME = "h3";
+const DEFAULT_COOKIE = {
+  path: "/",
+  secure: true,
+  httpOnly: true
+};
+async function useSession(event, config) {
+  const sessionName = config.name || DEFAULT_NAME;
+  await getSession(event, config);
+  const sessionManager = {
+    get id() {
+      return event.context.sessions?.[sessionName]?.id;
+    },
+    get data() {
+      return event.context.sessions?.[sessionName]?.data || {};
+    },
+    update: async (update) => {
+      if (!isEvent(event)) {
+        throw new Error("[h3] Cannot update read-only session.");
+      }
+      await updateSession(event, config, update);
+      return sessionManager;
+    },
+    clear: () => {
+      if (!isEvent(event)) {
+        throw new Error("[h3] Cannot clear read-only session.");
+      }
+      clearSession(event, config);
+      return Promise.resolve(sessionManager);
+    }
+  };
+  return sessionManager;
+}
+async function getSession(event, config) {
+  const sessionName = config.name || DEFAULT_NAME;
+  if (!event.context.sessions) {
+    event.context.sessions = /* @__PURE__ */ Object.create(null);
+  }
+  const existingSession = event.context.sessions[sessionName];
+  if (existingSession) {
+    return existingSession[getSessionPromise] || existingSession;
+  }
+  const session = {
+    id: "",
+    createdAt: 0,
+    data: /* @__PURE__ */ Object.create(null)
+  };
+  event.context.sessions[sessionName] = session;
+  let sealedSession;
+  if (config.sessionHeader !== false) {
+    const headerName = typeof config.sessionHeader === "string" ? config.sessionHeader.toLowerCase() : `x-${sessionName.toLowerCase()}-session`;
+    const headerValue = _getReqHeader(event, headerName);
+    if (typeof headerValue === "string") {
+      sealedSession = headerValue;
+    }
+  }
+  if (!sealedSession) {
+    const cookieHeader = _getReqHeader(event, "cookie");
+    if (cookieHeader) {
+      sealedSession = parse(cookieHeader + "")[sessionName];
+    }
+  }
+  if (sealedSession) {
+    const promise = unsealSession(event, config, sealedSession).catch(() => {
+    }).then((unsealed) => {
+      Object.assign(session, unsealed);
+      delete event.context.sessions[sessionName][getSessionPromise];
+      return session;
+    });
+    event.context.sessions[sessionName][getSessionPromise] = promise;
+    await promise;
+  }
+  if (!session.id) {
+    if (!isEvent(event)) {
+      throw new Error(
+        "Cannot initialize a new session. Make sure using `useSession(event)` in main handler."
+      );
+    }
+    session.id = config.generateId?.() ?? (config.crypto || _crypto).randomUUID();
+    session.createdAt = Date.now();
+    await updateSession(event, config);
+  }
+  return session;
+}
+function _getReqHeader(event, name) {
+  if (event.node) {
+    return event.node?.req.headers[name];
+  }
+  if (event.request) {
+    return event.request.headers?.get(name);
+  }
+  if (event.headers) {
+    return event.headers.get(name);
+  }
+}
+async function updateSession(event, config, update) {
+  const sessionName = config.name || DEFAULT_NAME;
+  const session = event.context.sessions?.[sessionName] || await getSession(event, config);
+  if (typeof update === "function") {
+    update = update(session.data);
+  }
+  if (update) {
+    Object.assign(session.data, update);
+  }
+  if (config.cookie !== false) {
+    const sealed = await sealSession(event, config);
+    setCookie(event, sessionName, sealed, {
+      ...DEFAULT_COOKIE,
+      expires: config.maxAge ? new Date(session.createdAt + config.maxAge * 1e3) : void 0,
+      ...config.cookie
+    });
+  }
+  return session;
+}
+async function sealSession(event, config) {
+  const sessionName = config.name || DEFAULT_NAME;
+  const session = event.context.sessions?.[sessionName] || await getSession(event, config);
+  const sealed = await seal(config.crypto || _crypto, session, config.password, {
+    ...defaults,
+    ttl: config.maxAge ? config.maxAge * 1e3 : 0,
+    ...config.seal
+  });
+  return sealed;
+}
+async function unsealSession(_event, config, sealed) {
+  const unsealed = await unseal(
+    config.crypto || _crypto,
+    sealed,
+    config.password,
+    {
+      ...defaults,
+      ttl: config.maxAge ? config.maxAge * 1e3 : 0,
+      ...config.seal
+    }
+  );
+  if (config.maxAge) {
+    const age = Date.now() - (unsealed.createdAt || Number.NEGATIVE_INFINITY);
+    if (age > config.maxAge * 1e3) {
+      throw new Error("Session expired!");
+    }
+  }
+  return unsealed;
+}
+function clearSession(event, config) {
+  const sessionName = config.name || DEFAULT_NAME;
+  if (event.context.sessions?.[sessionName]) {
+    delete event.context.sessions[sessionName];
+  }
+  setCookie(event, sessionName, "", {
+    ...DEFAULT_COOKIE,
+    ...config.cookie
+  });
+  return Promise.resolve();
 }
 
 class H3Event {
@@ -4246,7 +4725,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "0bdebdbc-5e14-414f-a006-b41bfb7f0cd1",
+    "buildId": "d9e6c768-72e5-4675-91ec-3e31e3f56c0a",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -4278,6 +4757,29 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
+    "auth": {
+      "isEnabled": true,
+      "baseURL": "/api/auth",
+      "disableInternalRouting": false,
+      "disableServerSideAuth": false,
+      "originEnvKey": "AUTH_ORIGIN",
+      "sessionRefresh": {
+        "enablePeriodically": false,
+        "enableOnWindowFocus": true,
+        "handler": ""
+      },
+      "globalAppMiddleware": {
+        "isEnabled": false,
+        "allow404WithoutAuth": true,
+        "addDefaultCallbackUrl": true
+      },
+      "provider": {
+        "type": "authjs",
+        "trustHost": false,
+        "defaultProvider": "",
+        "addDefaultCallbackUrl": true
+      }
+    },
     "i18n": {
       "baseUrl": "",
       "defaultLocale": "en",
@@ -4701,11 +5203,239 @@ async function errorHandler(error, event) {
   // H3 will handle fallback
 }
 
-function defineNitroPlugin(def) {
+const ERROR_MESSAGES = {
+  NO_ORIGIN: "AUTH_NO_ORIGIN: No `origin` - this is an error in production, see https://sidebase.io/nuxt-auth/resources/errors. You can ignore this during development"
+};
+
+const isProduction = "production" === "production";
+function useTypedBackendConfig(runtimeConfig, type) {
+  const provider = runtimeConfig.public.auth.provider;
+  if (provider.type === type) {
+    return provider;
+  }
+  throw new Error("RuntimeError: Type must match at this point");
+}
+
+function resolveApiBaseURL(runtimeConfig, returnOnlyPathname) {
+  const authRuntimeConfig = runtimeConfig.public.auth;
+  let baseURL = authRuntimeConfig.baseURL;
+  if (authRuntimeConfig.originEnvKey) {
+    const envBaseURL = process.env[authRuntimeConfig.originEnvKey];
+    if (envBaseURL) {
+      baseURL = envBaseURL;
+    }
+  }
+  return baseURL;
+}
+
+function getServerBaseUrl(runtimeConfig, includePath, trustHostUserPreference, isProduction, event) {
+  const baseURL = resolveApiBaseURL(runtimeConfig);
+  const parsed = parseURL(baseURL);
+  if (parsed.protocol && parsed.host) {
+    const base = `${parsed.protocol}//${parsed.host}`;
+    return base;
+  }
+  throw new Error(ERROR_MESSAGES.NO_ORIGIN);
+}
+
+function defineNitroPlugin$1(def) {
   return def;
 }
 
-const _2gyzIUP3BIqnnqE2cWez4QPt3NWd22krngbtHFcRW0 = defineNitroPlugin((nitroApp) => {
+function defineRenderHandler(render) {
+  const runtimeConfig = useRuntimeConfig();
+  return eventHandler(async (event) => {
+    const nitroApp = useNitroApp();
+    const ctx = { event, render, response: void 0 };
+    await nitroApp.hooks.callHook("render:before", ctx);
+    if (!ctx.response) {
+      if (event.path === `${runtimeConfig.app.baseURL}favicon.ico`) {
+        setResponseHeader(event, "Content-Type", "image/x-icon");
+        return send(
+          event,
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        );
+      }
+      ctx.response = await ctx.render(event);
+      if (!ctx.response) {
+        const _currentStatus = getResponseStatus(event);
+        setResponseStatus(event, _currentStatus === 200 ? 500 : _currentStatus);
+        return send(
+          event,
+          "No response returned from render handler: " + event.path
+        );
+      }
+    }
+    await nitroApp.hooks.callHook("render:response", ctx.response, ctx);
+    if (ctx.response.headers) {
+      setResponseHeaders(event, ctx.response.headers);
+    }
+    if (ctx.response.statusCode || ctx.response.statusMessage) {
+      setResponseStatus(
+        event,
+        ctx.response.statusCode,
+        ctx.response.statusMessage
+      );
+    }
+    return ctx.response.body;
+  });
+}
+
+function baseURL() {
+  return useRuntimeConfig().app.baseURL;
+}
+function buildAssetsDir() {
+  return useRuntimeConfig().app.buildAssetsDir;
+}
+function buildAssetsURL(...path) {
+  return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
+}
+function publicAssetsURL(...path) {
+  const app = useRuntimeConfig().app;
+  const publicBase = app.cdnURL || app.baseURL;
+  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
+}
+
+async function checkAuth(event) {
+  const authHeader = getHeader(event, "authorization");
+  const token = authHeader == null ? void 0 : authHeader.replace("Bearer ", "");
+  if (!token) {
+    throw createError$1({
+      statusCode: 401,
+      statusMessage: "Missing token"
+    });
+  }
+  try {
+    const payload = jwt.verify(token, "socal-secret");
+    event.context.user = payload;
+    return payload;
+  } catch (error) {
+    throw createError$1({
+      statusCode: 401,
+      statusMessage: "Invalid token"
+    });
+  }
+}
+
+function requireAuth(event) {
+  const authHeader = getHeader(event, "authorization");
+  const token = authHeader == null ? void 0 : authHeader.replace("Bearer ", "");
+  if (!token) {
+    throw createError$1({
+      statusCode: 401,
+      statusMessage: "Authentication required"
+    });
+  }
+  try {
+    const payload = jwt.verify(token, "socal-secret");
+    event.context.user = payload;
+    return payload;
+  } catch (error) {
+    throw createError$1({
+      statusCode: 401,
+      statusMessage: "Invalid or expired token"
+    });
+  }
+}
+
+const _virtual__imports = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  __buildAssetsURL: buildAssetsURL,
+  __publicAssetsURL: publicAssetsURL,
+  appendHeader: appendHeader,
+  appendResponseHeader: appendResponseHeader,
+  assertMethod: assertMethod,
+  cachedEventHandler: cachedEventHandler,
+  cachedFunction: cachedFunction,
+  checkAuth: checkAuth,
+  clearSession: clearSession,
+  createApp: createApp,
+  createAppEventHandler: createAppEventHandler,
+  createError: createError$1,
+  createEvent: createEvent,
+  createRouter: createRouter,
+  defaultContentType: defaultContentType,
+  defineCachedEventHandler: defineCachedEventHandler,
+  defineCachedFunction: defineCachedFunction,
+  defineEventHandler: defineEventHandler,
+  defineLazyEventHandler: defineLazyEventHandler,
+  defineNitroErrorHandler: defineNitroErrorHandler,
+  defineNitroPlugin: defineNitroPlugin$1,
+  defineRenderHandler: defineRenderHandler,
+  deleteCookie: deleteCookie,
+  eventHandler: eventHandler,
+  fetchWithEvent: fetchWithEvent,
+  getCookie: getCookie,
+  getHeader: getHeader,
+  getProxyRequestHeaders: getProxyRequestHeaders,
+  getQuery: getQuery,
+  getRequestHeader: getRequestHeader,
+  getRequestHeaders: getRequestHeaders,
+  getRequestHost: getRequestHost,
+  getRequestIP: getRequestIP,
+  getRequestProtocol: getRequestProtocol,
+  getRequestURL: getRequestURL,
+  getRequestWebStream: getRequestWebStream,
+  getResponseHeader: getResponseHeader,
+  getResponseStatus: getResponseStatus,
+  getResponseStatusText: getResponseStatusText,
+  getRouteRules: getRouteRules,
+  getSession: getSession,
+  handleCacheHeaders: handleCacheHeaders,
+  isError: isError,
+  isEvent: isEvent,
+  isEventHandler: isEventHandler,
+  isMethod: isMethod,
+  isStream: isStream,
+  isWebResponse: isWebResponse,
+  lazyEventHandler: lazyEventHandler,
+  parseCookies: parseCookies,
+  proxyRequest: proxyRequest,
+  readBody: readBody,
+  readRawBody: readRawBody,
+  requireAuth: requireAuth,
+  sanitizeStatusCode: sanitizeStatusCode,
+  sanitizeStatusMessage: sanitizeStatusMessage,
+  sealSession: sealSession,
+  send: send,
+  sendError: sendError,
+  sendNoContent: sendNoContent,
+  sendProxy: sendProxy,
+  sendRedirect: sendRedirect,
+  sendStream: sendStream,
+  sendWebResponse: sendWebResponse,
+  setCookie: setCookie,
+  setHeaders: setHeaders,
+  setResponseHeader: setResponseHeader,
+  setResponseHeaders: setResponseHeaders,
+  setResponseStatus: setResponseStatus,
+  splitCookiesString: splitCookiesString,
+  toEventHandler: toEventHandler,
+  toNodeListener: toNodeListener,
+  unsealSession: unsealSession,
+  updateSession: updateSession,
+  useNitroApp: useNitroApp,
+  useRuntimeConfig: useRuntimeConfig,
+  useSession: useSession,
+  useStorage: useStorage
+});
+
+function defineNitroPlugin(def) {
+  return def;
+}
+const _EWd9VIo1Z2AaZU9uhtVVaInhl_YeYVlGnFDnuX3A = defineNitroPlugin(() => {
+  try {
+    const runtimeConfig = useRuntimeConfig();
+    const trustHostUserPreference = useTypedBackendConfig(runtimeConfig, "authjs").trustHost;
+    getServerBaseUrl(runtimeConfig, false, trustHostUserPreference, isProduction);
+  } catch (error) {
+    {
+      throw error;
+    }
+  }
+});
+
+const _2gyzIUP3BIqnnqE2cWez4QPt3NWd22krngbtHFcRW0 = defineNitroPlugin$1((nitroApp) => {
   nitroApp.hooks.hook("request", async (event) => {
     var _a, _b;
     const url = event.path;
@@ -4717,8 +5447,7 @@ const _2gyzIUP3BIqnnqE2cWez4QPt3NWd22krngbtHFcRW0 = defineNitroPlugin((nitroApp)
       cookies
     });
     try {
-      const { useNuxtApp, useI18n, useRoute } = await import('../virtual/_virtual_imports.mjs');
-      const nuxtApp = useNuxtApp();
+      const { useI18n, useRoute } = await Promise.resolve().then(function () { return _virtual__imports; });
       let locale = null;
       let route = null;
       try {
@@ -4742,21 +5471,9 @@ const _2gyzIUP3BIqnnqE2cWez4QPt3NWd22krngbtHFcRW0 = defineNitroPlugin((nitroApp)
 });
 
 const plugins = [
-  _2gyzIUP3BIqnnqE2cWez4QPt3NWd22krngbtHFcRW0
+  _EWd9VIo1Z2AaZU9uhtVVaInhl_YeYVlGnFDnuX3A,
+_2gyzIUP3BIqnnqE2cWez4QPt3NWd22krngbtHFcRW0
 ];
-
-const _j0TRzS = defineEventHandler((event) => {
-  const cookie = getCookie(event, "auth_token");
-  if (!cookie) {
-    throw createError$1({ statusCode: 401, statusMessage: "Not authenticated" });
-  }
-  try {
-    const user = JSON.parse(cookie);
-    event.context.user = user;
-  } catch {
-    throw createError$1({ statusCode: 401, statusMessage: "Invalid session" });
-  }
-});
 
 const _SxA8c9 = defineEventHandler(() => {});
 
@@ -4771,8 +5488,6 @@ const _lazy_4e2K9c = () => import('../routes/api/admin/save-section.post.mjs');
 const _lazy_EarS23 = () => import('../routes/api/admin/translate-challenge.post.mjs');
 const _lazy_GPBC1v = () => import('../routes/api/analytics/summary.mjs');
 const _lazy_xdEZEw = () => import('../routes/api/approve.post.mjs');
-const _lazy_ElSr0U = () => import('../routes/api/auth/login.post.mjs');
-const _lazy_cVOWaQ = () => import('../routes/api/auth/me.get.mjs');
 const _lazy_xl3io_ = () => import('../routes/api/builder/generate.post.mjs');
 const _lazy_IAVVOn = () => import('../routes/api/builder/save.post.mjs');
 const _lazy_GEhJOV = () => import('../routes/api/challenge/complete.post.mjs');
@@ -4788,7 +5503,6 @@ const _lazy_UigGVA = () => import('../routes/sitemap.xml.mjs');
 const _lazy_S6jqZO = () => import('../routes/renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
-  { route: '', handler: _j0TRzS, lazy: false, middleware: true, method: undefined },
   { route: '/api/__i18n-warmup__', handler: _lazy_YnTiFv, lazy: true, middleware: false, method: undefined },
   { route: '/api/admin/analytics', handler: _lazy_ps7GBW, lazy: true, middleware: false, method: "get" },
   { route: '/api/admin/generate-edu', handler: _lazy_376OiF, lazy: true, middleware: false, method: "post" },
@@ -4800,8 +5514,6 @@ const handlers = [
   { route: '/api/admin/translate-challenge', handler: _lazy_EarS23, lazy: true, middleware: false, method: "post" },
   { route: '/api/analytics/summary', handler: _lazy_GPBC1v, lazy: true, middleware: false, method: undefined },
   { route: '/api/approve', handler: _lazy_xdEZEw, lazy: true, middleware: false, method: "post" },
-  { route: '/api/auth/login', handler: _lazy_ElSr0U, lazy: true, middleware: false, method: "post" },
-  { route: '/api/auth/me', handler: _lazy_cVOWaQ, lazy: true, middleware: false, method: "get" },
   { route: '/api/builder/generate', handler: _lazy_xl3io_, lazy: true, middleware: false, method: "post" },
   { route: '/api/builder/save', handler: _lazy_IAVVOn, lazy: true, middleware: false, method: "post" },
   { route: '/api/challenge/complete', handler: _lazy_GEhJOV, lazy: true, middleware: false, method: "post" },
@@ -4957,45 +5669,6 @@ function useNitroApp() {
 }
 runNitroPlugins(nitroApp$1);
 
-function defineRenderHandler(render) {
-  const runtimeConfig = useRuntimeConfig();
-  return eventHandler(async (event) => {
-    const nitroApp = useNitroApp();
-    const ctx = { event, render, response: void 0 };
-    await nitroApp.hooks.callHook("render:before", ctx);
-    if (!ctx.response) {
-      if (event.path === `${runtimeConfig.app.baseURL}favicon.ico`) {
-        setResponseHeader(event, "Content-Type", "image/x-icon");
-        return send(
-          event,
-          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        );
-      }
-      ctx.response = await ctx.render(event);
-      if (!ctx.response) {
-        const _currentStatus = getResponseStatus(event);
-        setResponseStatus(event, _currentStatus === 200 ? 500 : _currentStatus);
-        return send(
-          event,
-          "No response returned from render handler: " + event.path
-        );
-      }
-    }
-    await nitroApp.hooks.callHook("render:response", ctx.response, ctx);
-    if (ctx.response.headers) {
-      setResponseHeaders(event, ctx.response.headers);
-    }
-    if (ctx.response.statusCode || ctx.response.statusMessage) {
-      setResponseStatus(
-        event,
-        ctx.response.statusCode,
-        ctx.response.statusMessage
-      );
-    }
-    return ctx.response.body;
-  });
-}
-
 const nitroApp = useNitroApp();
 const handler = toNodeListener(nitroApp.h3App);
 const listener = function(req, res) {
@@ -5009,5 +5682,5 @@ const listener = function(req, res) {
   return handler(req, res);
 };
 
-export { sendProxy as $, getRequestHeader as A, getRequestHeaders as B, getRequestHost as C, getRequestIP as D, getRequestProtocol as E, getRequestURL as F, getRequestWebStream as G, getResponseHeader as H, getResponseStatus as I, getResponseStatusText as J, handleCacheHeaders as K, isError as L, isEvent as M, isEventHandler as N, isMethod as O, isStream as P, isWebResponse as Q, lazyEventHandler as R, parseCookies as S, proxyRequest as T, readBody as U, readRawBody as V, sanitizeStatusCode as W, sanitizeStatusMessage as X, send as Y, sendError as Z, sendNoContent as _, useRuntimeConfig as a, sendRedirect as a0, sendStream as a1, sendWebResponse as a2, setCookie as a3, setHeaders as a4, setResponseHeader as a5, setResponseHeaders as a6, setResponseStatus as a7, splitCookiesString as a8, toEventHandler as a9, toNodeListener as aa, joinRelativeURL as ab, getContext as ac, $fetch as ad, createHooks as ae, executeAsync as af, toRouteMatcher as ag, createRouter$1 as ah, defu as ai, destr as aj, klona as ak, listener as al, defineCachedFunction as b, defineCachedEventHandler as c, defineNitroPlugin as d, cachedFunction as e, cachedEventHandler as f, useStorage as g, defineRenderHandler as h, getRouteRules as i, defineNitroErrorHandler as j, assertMethod as k, createApp as l, createAppEventHandler as m, createError$1 as n, createEvent as o, createRouter as p, defaultContentType as q, defineEventHandler as r, defineLazyEventHandler as s, deleteCookie as t, useNitroApp as u, eventHandler as v, fetchWithEvent as w, getCookie as x, getProxyRequestHeaders as y, getQuery as z };
+export { $fetch as $, getRequestHost as A, getRequestProtocol as B, destr as C, klona as D, getRequestHeader as E, setCookie as F, getCookie as G, deleteCookie as H, useSession as I, listener as J, createError$1 as a, getRequestIP as b, checkAuth as c, defineEventHandler as d, requireAuth as e, buildAssetsURL as f, getQuery as g, getResponseStatusText as h, getResponseStatus as i, defineRenderHandler as j, getRouteRules as k, useNitroApp as l, defu as m, getContext as n, getRequestHeaders as o, publicAssetsURL as p, baseURL as q, readBody as r, sanitizeStatusCode as s, appendHeader as t, useRuntimeConfig as u, createHooks as v, executeAsync as w, getHeader as x, toRouteMatcher as y, createRouter$1 as z };
 //# sourceMappingURL=nitro.mjs.map

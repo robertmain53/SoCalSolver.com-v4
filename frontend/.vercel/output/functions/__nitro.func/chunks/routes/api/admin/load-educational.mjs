@@ -1,13 +1,14 @@
-import { r as defineEventHandler, z as getQuery } from '../../../nitro/nitro.mjs';
+import { d as defineEventHandler, g as getQuery } from '../../../nitro/nitro.mjs';
 import { readFile } from 'fs/promises';
 import path from 'path';
+import 'jsonwebtoken';
+import 'node:crypto';
 import 'node:http';
 import 'node:https';
 import 'node:events';
 import 'node:buffer';
 import 'node:fs';
 import 'node:path';
-import 'node:crypto';
 
 const loadEducational = defineEventHandler(async (event) => {
   const slug = getQuery(event).slug;

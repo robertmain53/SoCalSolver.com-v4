@@ -1,14 +1,15 @@
-import { r as defineEventHandler, U as readBody, n as createError } from '../../../nitro/nitro.mjs';
+import { d as defineEventHandler, r as readBody, a as createError } from '../../../nitro/nitro.mjs';
 import { readFile } from 'fs/promises';
 import { join } from 'path';
 import { OpenAI } from 'openai';
+import 'jsonwebtoken';
+import 'node:crypto';
 import 'node:http';
 import 'node:https';
 import 'node:events';
 import 'node:buffer';
 import 'node:fs';
 import 'node:path';
-import 'node:crypto';
 
 const generateEdu_post = defineEventHandler(async (event) => {
   const body = await readBody(event);
@@ -20,13 +21,12 @@ const generateEdu_post = defineEventHandler(async (event) => {
   const learnPrompt = await readFile(join(process.cwd(), "utils", "ai", "prompts", "edu-learn.txt"), "utf-8");
   const challengePrompt = await readFile(join(process.cwd(), "utils", "ai", "prompts", "edu-challenge.txt"), "utf-8");
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-  await readFile(join(process.cwd(), "utils", "ai", "prompts", "explain-deep.txt"), "utf-8");
+  const explainDeepPrompt = await readFile(join(process.cwd(), "utils", "ai", "prompts", "explain-deep.txt"), "utf-8");
   const [explain, learn, challenge, deep] = await Promise.all([
     openai.chat.completions.create({ messages: [{ role: "user", content: explainPrompt + md }], model: "gpt-4" }),
-    ,
     openai.chat.completions.create({ messages: [{ role: "user", content: learnPrompt + md }], model: "gpt-4" }),
-    ,
-    openai.chat.completions.create({ messages: [{ role: "user", content: challengePrompt + md }], model: "gpt-4" })
+    openai.chat.completions.create({ messages: [{ role: "user", content: challengePrompt + md }], model: "gpt-4" }),
+    openai.chat.completions.create({ messages: [{ role: "user", content: explainDeepPrompt + md }], model: "gpt-4" })
   ]);
   return {
     deepExplain: deep.choices[0].message.content,

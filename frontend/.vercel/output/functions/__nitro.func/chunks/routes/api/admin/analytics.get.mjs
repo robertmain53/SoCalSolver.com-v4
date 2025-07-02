@@ -1,12 +1,12 @@
-import { r as defineEventHandler } from '../../../nitro/nitro.mjs';
-import { c as checkAuth } from '../../../_/checkAuth.mjs';
+import { d as defineEventHandler, c as checkAuth } from '../../../nitro/nitro.mjs';
+import 'jsonwebtoken';
+import 'node:crypto';
 import 'node:http';
 import 'node:https';
 import 'node:events';
 import 'node:buffer';
 import 'node:fs';
 import 'node:path';
-import 'node:crypto';
 
 const analytics_get = defineEventHandler(async (event) => {
   await checkAuth(event);

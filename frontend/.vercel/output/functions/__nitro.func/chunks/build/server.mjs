@@ -1,8 +1,8 @@
-import { defineComponent, shallowRef, h, resolveComponent, getCurrentInstance, provide, cloneVNode, createElementBlock, hasInjectionContext, inject, computed, ref, Suspense, Fragment, createApp, createVNode, Text, shallowReactive, toRef, onErrorCaptured, onServerPrefetch, unref, resolveDynamicComponent, reactive, effectScope, isReadonly, isRef, isShallow, isReactive, toRaw, defineAsyncComponent, mergeProps, withCtx, getCurrentScope, createTextVNode, toDisplayString as toDisplayString$1, useSSRContext } from 'vue';
-import { n as createError$1, ac as getContext, W as sanitizeStatusCode, ad as $fetch$1, ae as createHooks, af as executeAsync, ag as toRouteMatcher, ah as createRouter$1, ai as defu, C as getRequestHost, E as getRequestProtocol, aj as destr, ak as klona, A as getRequestHeader, a3 as setCookie, x as getCookie, t as deleteCookie } from '../nitro/nitro.mjs';
-import { a as baseURL } from '../_/paths.mjs';
+import { defineComponent, shallowRef, h, resolveComponent, readonly, getCurrentInstance, provide, cloneVNode, createElementBlock, hasInjectionContext, inject, computed, toRef, isRef, ref, Suspense, Fragment, createApp, createVNode, Text, shallowReactive, onErrorCaptured, onServerPrefetch, unref, resolveDynamicComponent, reactive, effectScope, isReadonly, isShallow, isReactive, toRaw, defineAsyncComponent, mergeProps, withCtx, getCurrentScope, createTextVNode, toDisplayString as toDisplayString$1, useSSRContext } from 'vue';
+import { a as createError$1, m as defu, s as sanitizeStatusCode, n as getContext, o as getRequestHeaders, $ as $fetch$1, q as baseURL, t as appendHeader, v as createHooks, w as executeAsync, x as getHeader, y as toRouteMatcher, z as createRouter$1, A as getRequestHost, B as getRequestProtocol, C as destr, D as klona, E as getRequestHeader, F as setCookie, G as getCookie, H as deleteCookie } from '../nitro/nitro.mjs';
 import { createPinia, setActivePinia, shouldHydrate } from 'pinia';
 import { RouterView, createMemoryHistory, createRouter, START_LOCATION, useRouter as useRouter$1 } from 'vue-router';
+import getURL from 'requrl';
 import container from 'markdown-it-container';
 import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode, ssrRenderAttrs, ssrInterpolate, ssrRenderAttr, ssrRenderList } from 'vue/server-renderer';
 import { u as useHead$1, h as headSymbol } from '../routes/renderer.mjs';
@@ -66,6 +66,9 @@ function isEqual$1(object1, object2) {
   return false;
 }
 
+var __defProp = Object.defineProperty;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
 if (!globalThis.$fetch) {
   globalThis.$fetch = $fetch$1.create({
     baseURL: baseURL()
@@ -258,7 +261,7 @@ function defineNuxtPlugin(plugin2) {
 }
 const definePayloadPlugin = defineNuxtPlugin;
 function callWithNuxt(nuxt, setup, args) {
-  const fn = () => setup();
+  const fn = () => args ? setup(...args) : setup();
   const nuxtAppCtx = getNuxtAppCtx(nuxt._id);
   {
     return nuxt.vueApp.runWithContext(() => nuxtAppCtx.callAsync(nuxt, fn));
@@ -430,11 +433,25 @@ function hasLeadingSlash(input = "") {
 function withLeadingSlash(input = "") {
   return hasLeadingSlash(input) ? input : "/" + input;
 }
+function withoutBase(input, base) {
+  if (isEmptyURL(base)) {
+    return input;
+  }
+  const _base = withoutTrailingSlash(base);
+  if (!input.startsWith(_base)) {
+    return input;
+  }
+  const trimmed = input.slice(_base.length);
+  return trimmed[0] === "/" ? trimmed : "/" + trimmed;
+}
 function withQuery(input, query) {
   const parsed = parseURL(input);
   const mergedQuery = { ...parseQuery(parsed.search), ...query };
   parsed.search = stringifyQuery(mergedQuery);
   return stringifyParsedURL(parsed);
+}
+function isEmptyURL(url) {
+  return !url || url === "/";
 }
 function isNonEmptyURL(url) {
   return url && url !== "/";
@@ -538,7 +555,7 @@ function defineNuxtRouteMiddleware(middleware) {
 const addRouteMiddleware = (name, middleware, options = {}) => {
   const nuxtApp = useNuxtApp();
   const global2 = options.global || typeof name !== "string";
-  const mw = middleware;
+  const mw = typeof name !== "string" ? name : middleware;
   if (!mw) {
     console.warn("[nuxt] No route middleware passed to `addRouteMiddleware`.", name);
     return;
@@ -559,7 +576,7 @@ const isProcessingMiddleware = () => {
   }
   return false;
 };
-const URL_QUOTE_RE = /"/g;
+const URL_QUOTE_RE$1 = /"/g;
 const navigateTo = (to, options) => {
   to || (to = "/");
   const toPath = typeof to === "string" ? to : "path" in to ? resolveRouteObject(to) : useRouter().resolve(to).href;
@@ -583,8 +600,8 @@ const navigateTo = (to, options) => {
       const location2 = isExternal ? toPath : joinURL((/* @__PURE__ */ useRuntimeConfig()).app.baseURL, fullPath);
       const redirect = async function(response) {
         await nuxtApp.callHook("app:redirected");
-        const encodedLoc = location2.replace(URL_QUOTE_RE, "%22");
-        const encodedHeader = encodeURL(location2, isExternalHost);
+        const encodedLoc = location2.replace(URL_QUOTE_RE$1, "%22");
+        const encodedHeader = encodeURL$1(location2, isExternalHost);
         nuxtApp.ssrContext._renderResponse = {
           statusCode: sanitizeStatusCode((options == null ? void 0 : options.redirectCode) || 302, 302),
           body: `<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=${encodedLoc}"></head></html>`,
@@ -623,7 +640,7 @@ const navigateTo = (to, options) => {
 function resolveRouteObject(to) {
   return withQuery(to.path || "", to.query || {}) + (to.hash || "");
 }
-function encodeURL(location2, isExternalHost = false) {
+function encodeURL$1(location2, isExternalHost = false) {
   const url = new URL(location2, "http://localhost");
   if (!isExternalHost) {
     return url.pathname + url.search + url.hash;
@@ -709,52 +726,52 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BrcY1cjh.mjs')
+    component: () => import('./index-DjQkSV6L.mjs')
   },
   {
     name: "test___en",
     path: "/en/test",
-    component: () => import('./test-jdA1P-62.mjs')
+    component: () => import('./test-AxpMKL1B.mjs')
   },
   {
     name: "test___it",
     path: "/it/test",
-    component: () => import('./test-jdA1P-62.mjs')
+    component: () => import('./test-AxpMKL1B.mjs')
   },
   {
     name: "test___fr",
     path: "/fr/test",
-    component: () => import('./test-jdA1P-62.mjs')
+    component: () => import('./test-AxpMKL1B.mjs')
   },
   {
     name: "index___en",
     path: "/en",
-    component: () => import('./index-BrcY1cjh.mjs')
+    component: () => import('./index-DjQkSV6L.mjs')
   },
   {
     name: "index___it",
     path: "/it",
-    component: () => import('./index-BrcY1cjh.mjs')
+    component: () => import('./index-DjQkSV6L.mjs')
   },
   {
     name: "index___fr",
     path: "/fr",
-    component: () => import('./index-BrcY1cjh.mjs')
+    component: () => import('./index-DjQkSV6L.mjs')
   },
   {
     name: "login___en",
     path: "/en/login",
-    component: () => import('./login-UDMCWuTh.mjs')
+    component: () => import('./login-W9co3l0L.mjs')
   },
   {
     name: "login___it",
     path: "/it/login",
-    component: () => import('./login-UDMCWuTh.mjs')
+    component: () => import('./login-W9co3l0L.mjs')
   },
   {
     name: "login___fr",
     path: "/fr/login",
-    component: () => import('./login-UDMCWuTh.mjs')
+    component: () => import('./login-W9co3l0L.mjs')
   },
   {
     name: "builder___en",
@@ -774,197 +791,209 @@ const _routes = [
   {
     name: "contact___en",
     path: "/en/contact",
-    component: () => import('./contact-CoNhOUgn.mjs')
+    component: () => import('./contact-srU9qCE8.mjs')
   },
   {
     name: "contact___it",
     path: "/it/contact",
-    component: () => import('./contact-CoNhOUgn.mjs')
+    component: () => import('./contact-srU9qCE8.mjs')
   },
   {
     name: "contact___fr",
     path: "/fr/contact",
-    component: () => import('./contact-CoNhOUgn.mjs')
+    component: () => import('./contact-srU9qCE8.mjs')
   },
   {
     name: "admin___en",
     path: "/en/admin",
-    component: () => import('./index-D8APznPQ.mjs')
+    component: () => import('./index-By5Jd_m1.mjs')
   },
   {
     name: "admin___it",
     path: "/it/admin",
-    component: () => import('./index-D8APznPQ.mjs')
+    component: () => import('./index-By5Jd_m1.mjs')
   },
   {
     name: "admin___fr",
     path: "/fr/admin",
-    component: () => import('./index-D8APznPQ.mjs')
+    component: () => import('./index-By5Jd_m1.mjs')
   },
   {
     name: "admin-login___en",
     path: "/en/admin/login",
-    component: () => import('./login-D-45dMX5.mjs')
+    component: () => import('./login-Aow9WGR1.mjs')
   },
   {
     name: "admin-login___it",
     path: "/it/admin/login",
-    component: () => import('./login-D-45dMX5.mjs')
+    component: () => import('./login-Aow9WGR1.mjs')
   },
   {
     name: "admin-login___fr",
     path: "/fr/admin/login",
-    component: () => import('./login-D-45dMX5.mjs')
+    component: () => import('./login-Aow9WGR1.mjs')
   },
   {
     name: "embed-slug___en",
     path: "/en/embed/:slug()",
-    component: () => import('./_slug_-DQi4qg1b.mjs')
+    component: () => import('./_slug_-BrtzZpEc.mjs')
   },
   {
     name: "embed-slug___it",
     path: "/it/embed/:slug()",
-    component: () => import('./_slug_-DQi4qg1b.mjs')
+    component: () => import('./_slug_-BrtzZpEc.mjs')
   },
   {
     name: "embed-slug___fr",
     path: "/fr/embed/:slug()",
-    component: () => import('./_slug_-DQi4qg1b.mjs')
+    component: () => import('./_slug_-BrtzZpEc.mjs')
   },
   {
     name: "lang-slug___en",
     path: "/en/:lang()/:slug()",
-    component: () => import('./_slug_-DQE4vojP.mjs')
+    component: () => import('./_slug_-0-uYHC82.mjs')
   },
   {
     name: "lang-slug___it",
     path: "/it/:lang()/:slug()",
-    component: () => import('./_slug_-DQE4vojP.mjs')
+    component: () => import('./_slug_-0-uYHC82.mjs')
   },
   {
     name: "lang-slug___fr",
     path: "/fr/:lang()/:slug()",
-    component: () => import('./_slug_-DQE4vojP.mjs')
+    component: () => import('./_slug_-0-uYHC82.mjs')
   },
   {
     name: "admin-feedback___en",
     path: "/en/admin/feedback",
-    component: () => import('./feedback-CjiLMSMq.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./feedback-BYWLMyt1.mjs')
   },
   {
     name: "admin-feedback___it",
     path: "/it/admin/feedback",
-    component: () => import('./feedback-CjiLMSMq.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./feedback-BYWLMyt1.mjs')
   },
   {
     name: "admin-feedback___fr",
     path: "/fr/admin/feedback",
-    component: () => import('./feedback-CjiLMSMq.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./feedback-BYWLMyt1.mjs')
   },
   {
     name: "admin-analytics___en",
     path: "/en/admin/analytics",
-    component: () => import('./analytics-MfAkAPEQ.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./analytics-B6od59Uh.mjs')
   },
   {
     name: "admin-analytics___it",
     path: "/it/admin/analytics",
-    component: () => import('./analytics-MfAkAPEQ.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./analytics-B6od59Uh.mjs')
   },
   {
     name: "admin-analytics___fr",
     path: "/fr/admin/analytics",
-    component: () => import('./analytics-MfAkAPEQ.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./analytics-B6od59Uh.mjs')
   },
   {
     name: "admin-generator___en",
     path: "/en/admin/generator",
-    component: () => import('./generator-CSx7jXQZ.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./generator-ktvBqI6C.mjs')
   },
   {
     name: "admin-generator___it",
     path: "/it/admin/generator",
-    component: () => import('./generator-CSx7jXQZ.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./generator-ktvBqI6C.mjs')
   },
   {
     name: "admin-generator___fr",
     path: "/fr/admin/generator",
-    component: () => import('./generator-CSx7jXQZ.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./generator-ktvBqI6C.mjs')
   },
   {
     name: "category-slug___en",
     path: "/en/category/:slug()",
-    component: () => import('./_slug_-D98lMxmN.mjs')
+    component: () => import('./_slug_-CbyF11MK.mjs')
   },
   {
     name: "category-slug___it",
     path: "/it/category/:slug()",
-    component: () => import('./_slug_-D98lMxmN.mjs')
+    component: () => import('./_slug_-CbyF11MK.mjs')
   },
   {
     name: "category-slug___fr",
     path: "/fr/category/:slug()",
-    component: () => import('./_slug_-D98lMxmN.mjs')
+    component: () => import('./_slug_-CbyF11MK.mjs')
   },
   {
     name: "admin-calc-slug___en",
     path: "/en/admin/calc/:slug()",
-    component: () => import('./_slug_-BHg3rVc3.mjs')
+    component: () => import('./_slug_-B3if3C9F.mjs')
   },
   {
     name: "admin-calc-slug___it",
     path: "/it/admin/calc/:slug()",
-    component: () => import('./_slug_-BHg3rVc3.mjs')
+    component: () => import('./_slug_-B3if3C9F.mjs')
   },
   {
     name: "admin-calc-slug___fr",
     path: "/fr/admin/calc/:slug()",
-    component: () => import('./_slug_-BHg3rVc3.mjs')
+    component: () => import('./_slug_-B3if3C9F.mjs')
   },
   {
     name: "admin-edit-slug___en",
     path: "/en/admin/edit/:slug()",
-    component: () => import('./_slug_-DbL1Np9j.mjs')
+    component: () => import('./_slug_-DGaQHYg1.mjs')
   },
   {
     name: "admin-edit-slug___it",
     path: "/it/admin/edit/:slug()",
-    component: () => import('./_slug_-DbL1Np9j.mjs')
+    component: () => import('./_slug_-DGaQHYg1.mjs')
   },
   {
     name: "admin-edit-slug___fr",
     path: "/fr/admin/edit/:slug()",
-    component: () => import('./_slug_-DbL1Np9j.mjs')
+    component: () => import('./_slug_-DGaQHYg1.mjs')
   },
   {
     name: "admin-translations___en",
     path: "/en/admin/translations",
-    component: () => import('./translations-CUHUdUwX.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./translations-Bbm0-w59.mjs')
   },
   {
     name: "admin-translations___it",
     path: "/it/admin/translations",
-    component: () => import('./translations-CUHUdUwX.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./translations-Bbm0-w59.mjs')
   },
   {
     name: "admin-translations___fr",
     path: "/fr/admin/translations",
-    component: () => import('./translations-CUHUdUwX.mjs')
+    meta: { "middleware": "checkAuth" },
+    component: () => import('./translations-Bbm0-w59.mjs')
   },
   {
     name: "calculators-slug___en",
     path: "/en/calculators/:slug()",
-    component: () => import('./_slug_-C4rvQMpV.mjs')
+    component: () => import('./_slug_-LPJxDet2.mjs')
   },
   {
     name: "calculators-slug___it",
     path: "/it/calculators/:slug()",
-    component: () => import('./_slug_-C4rvQMpV.mjs')
+    component: () => import('./_slug_-LPJxDet2.mjs')
   },
   {
     name: "calculators-slug___fr",
     path: "/fr/calculators/:slug()",
-    component: () => import('./_slug_-C4rvQMpV.mjs')
+    component: () => import('./_slug_-LPJxDet2.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
@@ -1083,6 +1112,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to, from) => {
 const auth_45global = /* @__PURE__ */ defineNuxtRouteMiddleware((to, from) => {
 });
 const locale_45redirect_45global = /* @__PURE__ */ defineNuxtRouteMiddleware((to) => {
+  if (to.path.startsWith("/api/") || to.path.startsWith("/admin/")) return;
   return;
 });
 const manifest_45route_45rule = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
@@ -1096,7 +1126,10 @@ const globalMiddleware = [
   locale_45redirect_45global,
   manifest_45route_45rule
 ];
-const namedMiddleware = {};
+const namedMiddleware = {
+  "protected-auth": () => import('./protectedAuth-BNxw7v7R.mjs'),
+  "sidebase-auth": () => Promise.resolve().then(() => sidebaseAuth)
+};
 const plugin$1 = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:router",
   enforce: "pre",
@@ -1350,10 +1383,52 @@ const __nuxt_component_0$2 = defineComponent({
     };
   }
 });
+const useStateKeyPrefix = "$s";
+function useState(...args) {
+  const autoKey = typeof args[args.length - 1] === "string" ? args.pop() : void 0;
+  if (typeof args[0] !== "string") {
+    args.unshift(autoKey);
+  }
+  const [_key, init] = args;
+  if (!_key || typeof _key !== "string") {
+    throw new TypeError("[nuxt] [useState] key must be a string: " + _key);
+  }
+  if (init !== void 0 && typeof init !== "function") {
+    throw new Error("[nuxt] [useState] init must be a function: " + init);
+  }
+  const key = useStateKeyPrefix + _key;
+  const nuxtApp = useNuxtApp();
+  const state = toRef(nuxtApp.payload.state, key);
+  if (state.value === void 0 && init) {
+    const initialValue = init();
+    if (isRef(initialValue)) {
+      nuxtApp.payload.state[key] = initialValue;
+      return initialValue;
+    }
+    state.value = initialValue;
+  }
+  return state;
+}
 function useRequestEvent(nuxtApp) {
   var _a;
   nuxtApp || (nuxtApp = useNuxtApp());
   return (_a = nuxtApp.ssrContext) == null ? void 0 : _a.event;
+}
+function useRequestHeaders(include) {
+  const event = useRequestEvent();
+  const _headers = event ? getRequestHeaders(event) : {};
+  if (!include || !event) {
+    return _headers;
+  }
+  const headers = /* @__PURE__ */ Object.create(null);
+  for (const _key of include) {
+    const key = _key.toLowerCase();
+    const header = _headers[key];
+    if (header) {
+      headers[key] = header;
+    }
+  }
+  return headers;
 }
 function useRequestHeader(header) {
   const event = useRequestEvent();
@@ -1708,6 +1783,604 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
 });
 const components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4 = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:global-components"
+});
+function resolveApiUrlPath(endpointPath, runtimeConfig) {
+  if (isExternalUrl(endpointPath)) {
+    return endpointPath;
+  }
+  const baseURL2 = resolveApiBaseURL(runtimeConfig);
+  return joinURL(baseURL2, endpointPath);
+}
+function resolveApiBaseURL(runtimeConfig, returnOnlyPathname) {
+  const authRuntimeConfig = runtimeConfig.public.auth;
+  if (returnOnlyPathname === void 0) {
+    returnOnlyPathname = !runtimeConfig.public.auth.disableInternalRouting;
+  }
+  let baseURL2 = authRuntimeConfig.baseURL;
+  if (authRuntimeConfig.originEnvKey) {
+    const envBaseURL = process.env[authRuntimeConfig.originEnvKey];
+    if (envBaseURL) {
+      baseURL2 = envBaseURL;
+    }
+  }
+  if (returnOnlyPathname) {
+    baseURL2 = withLeadingSlash(parseURL(baseURL2).pathname);
+  }
+  return baseURL2;
+}
+function isExternalUrl(url) {
+  return url.startsWith("http://") || url.startsWith("https://");
+}
+function useTypedBackendConfig(runtimeConfig, type) {
+  const provider = runtimeConfig.public.auth.provider;
+  if (provider.type === type) {
+    return provider;
+  }
+  throw new Error("RuntimeError: Type must match at this point");
+}
+const ERROR_PREFIX = "[@sidebase/nuxt-auth]";
+function getRequestURL(includePath = true) {
+  var _a;
+  return getURL((_a = useRequestEvent()) == null ? void 0 : _a.node.req, includePath);
+}
+function getRequestURLWN(nuxt) {
+  return callWithNuxt(nuxt, getRequestURL);
+}
+async function determineCallbackUrl(authConfig, userCallbackUrl, inferFromRequest) {
+  if (userCallbackUrl) {
+    return await normalizeCallbackUrl(userCallbackUrl);
+  }
+  const authConfigCallbackUrl = typeof authConfig.globalAppMiddleware === "object" ? authConfig.globalAppMiddleware.addDefaultCallbackUrl : void 0;
+  if (typeof authConfigCallbackUrl === "string") {
+    return await normalizeCallbackUrl(authConfigCallbackUrl);
+  }
+  const shouldInferFromRequest = inferFromRequest !== false && (inferFromRequest === true || authConfigCallbackUrl === true || authConfigCallbackUrl === void 0 && authConfig.globalAppMiddleware === true);
+  if (shouldInferFromRequest) {
+    const nuxt = useNuxtApp();
+    return getRequestURLWN(nuxt);
+  }
+}
+function determineCallbackUrlForRouteMiddleware(authConfig, middlewareTo) {
+  const authConfigCallbackUrl = typeof authConfig.globalAppMiddleware === "object" ? authConfig.globalAppMiddleware.addDefaultCallbackUrl : void 0;
+  if (typeof authConfigCallbackUrl === "string") {
+    return authConfigCallbackUrl;
+  }
+  if (authConfigCallbackUrl === true || authConfigCallbackUrl === void 0 && authConfig.globalAppMiddleware === true) {
+    return middlewareTo.fullPath;
+  }
+}
+async function normalizeCallbackUrl(rawCallbackUrl) {
+  if (isExternalUrl(rawCallbackUrl)) {
+    return rawCallbackUrl;
+  }
+  const nuxt = useNuxtApp();
+  const router = await callWithNuxt(nuxt, useRouter);
+  const resolvedUserRoute = router.options.history.createHref(rawCallbackUrl);
+  return resolvedUserRoute;
+}
+async function _fetch(nuxt, path, fetchOptions) {
+  var _a, _b;
+  const runtimeConfigOrPromise = callWithNuxt(nuxt, useRuntimeConfig);
+  const runtimeConfig = "public" in runtimeConfigOrPromise ? runtimeConfigOrPromise : await runtimeConfigOrPromise;
+  const joinedPath = resolveApiUrlPath(path, runtimeConfig);
+  if (runtimeConfig.public.auth.disableInternalRouting === false) {
+    const currentPath = (_b = (_a = nuxt.ssrContext) == null ? void 0 : _a.event) == null ? void 0 : _b.path;
+    if (currentPath == null ? void 0 : currentPath.startsWith(joinedPath)) {
+      console.error(`${ERROR_PREFIX} Recursion detected at ${joinedPath}. Have you set the correct \`auth.baseURL\`?`);
+      throw new FetchConfigurationError("Server configuration error");
+    }
+  }
+  try {
+    return $fetch(joinedPath, fetchOptions);
+  } catch (error) {
+    let errorMessage = `${ERROR_PREFIX} Error while requesting ${joinedPath}.`;
+    if (runtimeConfig.public.auth.provider.type === "authjs") {
+      errorMessage += " Have you added the authentication handler server-endpoint `[...].ts`? Have you added the authentication handler in a non-default location (default is `~/server/api/auth/[...].ts`) and not updated the module-setting `auth.basePath`?";
+    }
+    errorMessage += " Error is:";
+    console.error(errorMessage);
+    console.error(error);
+    throw new FetchConfigurationError(
+      "Runtime error, check the console logs to debug, open an issue at https://github.com/sidebase/nuxt-auth/issues/new/choose if you continue to have this problem"
+    );
+  }
+}
+class FetchConfigurationError extends Error {
+}
+const isNonEmptyObject = (obj) => typeof obj === "object" && obj !== null && Object.keys(obj).length > 0;
+function navigateToAuthPageWN(nuxt, href, isInternalRouting) {
+  return callWithNuxt(nuxt, navigateToAuthPage, [nuxt, href, isInternalRouting]);
+}
+const URL_QUOTE_RE = /"/g;
+function navigateToAuthPage(nuxt, href, isInternalRouting = false) {
+  const router = useRouter();
+  {
+    if (nuxt.ssrContext) {
+      const isExternalHost = hasProtocol(href, { acceptRelative: true });
+      if (isExternalHost) {
+        const { protocol } = new URL(href, "http://localhost");
+        if (protocol && isScriptProtocol(protocol)) {
+          throw new Error(`Cannot navigate to a URL with '${protocol}' protocol.`);
+        }
+      }
+      const location = isExternalHost || isInternalRouting ? href : router.resolve(href).fullPath || "/";
+      return nuxt.callHook("app:redirected").then(() => {
+        const encodedLoc = location.replace(URL_QUOTE_RE, "%22");
+        const encodedHeader = encodeURL(location, isExternalHost);
+        nuxt.ssrContext._renderResponse = {
+          statusCode: 302,
+          body: `<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=${encodedLoc}"></head></html>`,
+          headers: { location: encodedHeader }
+        };
+      });
+    }
+  }
+  (void 0).location.href = href;
+  if (href.includes("#")) {
+    (void 0).location.reload();
+  }
+  const waitForNavigationWithFallbackToRouter = new Promise((resolve) => setTimeout(resolve, 60 * 1e3)).then(() => router.push(href));
+  return waitForNavigationWithFallbackToRouter;
+}
+function encodeURL(location, isExternalHost = false) {
+  const url = new URL(location, "http://localhost");
+  if (!isExternalHost) {
+    return url.pathname + url.search + url.hash;
+  }
+  if (location.startsWith("//")) {
+    return url.toString().replace(url.protocol, "");
+  }
+  return url.toString();
+}
+function makeCommonAuthState() {
+  const data = useState("auth:data", () => void 0);
+  const hasInitialSession = computed(() => !!data.value);
+  const lastRefreshedAt = useState("auth:lastRefreshedAt", () => {
+    if (hasInitialSession.value) {
+      return /* @__PURE__ */ new Date();
+    }
+    return void 0;
+  });
+  const loading = useState("auth:loading", () => false);
+  const status = computed(() => {
+    if (loading.value) {
+      return "loading";
+    }
+    if (data.value) {
+      return "authenticated";
+    }
+    return "unauthenticated";
+  });
+  return {
+    data,
+    loading,
+    lastRefreshedAt,
+    status
+  };
+}
+const useAuthState = () => makeCommonAuthState();
+function useAuth() {
+  const nuxt = useNuxtApp();
+  const runtimeConfig = /* @__PURE__ */ useRuntimeConfig();
+  const backendConfig = useTypedBackendConfig(runtimeConfig, "authjs");
+  const {
+    data,
+    loading,
+    status,
+    lastRefreshedAt
+  } = useAuthState();
+  async function signIn(provider, options, authorizationParams) {
+    const configuredProviders = await getProviders();
+    if (!configuredProviders) {
+      const errorUrl = resolveApiUrlPath("error", runtimeConfig);
+      await navigateToAuthPageWN(nuxt, errorUrl, true);
+      return {
+        // Future AuthJS compat here and in other places
+        // https://authjs.dev/reference/core/errors#invalidprovider
+        error: "InvalidProvider",
+        ok: false,
+        status: 500,
+        url: errorUrl
+      };
+    }
+    if (typeof provider === "undefined") {
+      provider = backendConfig.defaultProvider;
+    }
+    const { redirect = true } = options ?? {};
+    const callbackUrl = await callWithNuxt(nuxt, () => determineCallbackUrl(runtimeConfig.public.auth, options == null ? void 0 : options.callbackUrl));
+    const signinUrl = resolveApiUrlPath("signin", runtimeConfig);
+    const queryParams = callbackUrl ? `?${new URLSearchParams({ callbackUrl })}` : "";
+    const hrefSignInAllProviderPage = `${signinUrl}${queryParams}`;
+    const selectedProvider = provider && configuredProviders[provider];
+    if (!selectedProvider) {
+      await navigateToAuthPageWN(nuxt, hrefSignInAllProviderPage, true);
+      return {
+        // https://authjs.dev/reference/core/errors#invalidprovider
+        error: "InvalidProvider",
+        ok: false,
+        status: 400,
+        url: hrefSignInAllProviderPage
+      };
+    }
+    const isCredentials = selectedProvider.type === "credentials";
+    const isEmail = selectedProvider.type === "email";
+    const isSupportingReturn = isCredentials || isEmail;
+    const action = isCredentials ? "callback" : "signin";
+    const csrfToken = await getCsrfTokenWithNuxt(nuxt);
+    const headers = {
+      "Content-Type": "application/x-www-form-urlencoded",
+      ...await getRequestHeaders2(nuxt)
+    };
+    const body = new URLSearchParams({
+      ...options,
+      csrfToken,
+      callbackUrl,
+      json: true
+    });
+    const fetchSignIn = () => _fetch(nuxt, `/${action}/${provider}`, {
+      method: "post",
+      params: authorizationParams,
+      headers,
+      body
+    }).catch((error2) => error2.data);
+    const data2 = await callWithNuxt(nuxt, fetchSignIn);
+    if (redirect || !isSupportingReturn) {
+      const href = data2.url ?? callbackUrl;
+      await navigateToAuthPageWN(nuxt, href);
+      const error2 = new URL(href, "http://_").searchParams.get("error");
+      return {
+        error: error2,
+        ok: true,
+        status: 302,
+        url: href
+      };
+    }
+    const error = new URL(data2.url).searchParams.get("error");
+    await getSessionWithNuxt(nuxt);
+    return {
+      error,
+      status: 200,
+      ok: true,
+      url: error ? null : data2.url
+    };
+  }
+  async function getProviders() {
+    const headers = await getRequestHeaders2(nuxt, false);
+    return _fetch(
+      nuxt,
+      "/providers",
+      { headers }
+    );
+  }
+  async function getSession(getSessionOptions) {
+    const callbackUrlFallback = await getRequestURLWN(nuxt);
+    const { required, callbackUrl, onUnauthenticated } = defu(getSessionOptions || {}, {
+      required: false,
+      callbackUrl: void 0,
+      onUnauthenticated: () => signIn(void 0, {
+        callbackUrl: (getSessionOptions == null ? void 0 : getSessionOptions.callbackUrl) || callbackUrlFallback
+      })
+    });
+    function onError() {
+      loading.value = false;
+    }
+    const headers = await getRequestHeaders2(nuxt);
+    return _fetch(nuxt, "/session", {
+      onResponse: ({ response }) => {
+        const sessionData = response._data;
+        {
+          const setCookieValues = response.headers.getSetCookie ? response.headers.getSetCookie() : [response.headers.get("set-cookie")];
+          if (setCookieValues && nuxt.ssrContext) {
+            for (const value of setCookieValues) {
+              if (!value) {
+                continue;
+              }
+              appendHeader(nuxt.ssrContext.event, "set-cookie", value);
+            }
+          }
+        }
+        data.value = isNonEmptyObject(sessionData) ? sessionData : null;
+        loading.value = false;
+        if (required && status.value === "unauthenticated") {
+          return onUnauthenticated();
+        }
+        return sessionData;
+      },
+      onRequest: ({ options }) => {
+        lastRefreshedAt.value = /* @__PURE__ */ new Date();
+        options.params = {
+          ...options.params,
+          callbackUrl: callbackUrl || callbackUrlFallback
+        };
+      },
+      onRequestError: onError,
+      onResponseError: onError,
+      headers
+    });
+  }
+  function getSessionWithNuxt(nuxt2) {
+    return callWithNuxt(nuxt2, getSession);
+  }
+  async function signOut(options) {
+    const { callbackUrl: userCallbackUrl, redirect = true } = options ?? {};
+    const csrfToken = await getCsrfTokenWithNuxt(nuxt);
+    const callbackUrl = await determineCallbackUrl(
+      runtimeConfig.public.auth,
+      userCallbackUrl,
+      true
+    );
+    if (!csrfToken) {
+      throw createError({ statusCode: 400, statusMessage: "Could not fetch CSRF Token for signing out" });
+    }
+    const signoutData = await _fetch(nuxt, "/signout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        ...await getRequestHeaders2(nuxt)
+      },
+      onRequest: ({ options: options2 }) => {
+        options2.body = new URLSearchParams({
+          csrfToken,
+          callbackUrl,
+          json: "true"
+        });
+      }
+    }).catch((error) => error.data);
+    if (redirect) {
+      const url = signoutData.url ?? callbackUrl;
+      return navigateToAuthPageWN(nuxt, url);
+    }
+    await getSessionWithNuxt(nuxt);
+    return signoutData;
+  }
+  async function getRequestHeaders2(nuxt2, includeCookie = true) {
+    const headers = await callWithNuxt(nuxt2, () => useRequestHeaders(["cookie", "host"]));
+    if (includeCookie && headers.cookie) {
+      return headers;
+    }
+    return { host: headers.host };
+  }
+  async function getCsrfToken() {
+    const headers = await getRequestHeaders2(nuxt);
+    return _fetch(nuxt, "/csrf", { headers }).then((response) => response.csrfToken);
+  }
+  function getCsrfTokenWithNuxt(nuxt2) {
+    return callWithNuxt(nuxt2, getCsrfToken);
+  }
+  return {
+    status,
+    data: readonly(data),
+    lastRefreshedAt: readonly(lastRefreshedAt),
+    getSession,
+    getCsrfToken,
+    getProviders,
+    signIn,
+    signOut,
+    refresh: getSession
+  };
+}
+const authMiddleware = /* @__PURE__ */ defineNuxtRouteMiddleware((to) => {
+  const options = normalizeUserOptions(to.meta.auth);
+  if (!options) {
+    return;
+  }
+  const authConfig = (/* @__PURE__ */ useRuntimeConfig()).public.auth;
+  const { status, signIn } = useAuth();
+  const isGuestMode = options.unauthenticatedOnly;
+  const isAuthenticated = status.value === "authenticated";
+  if (isGuestMode && status.value === "unauthenticated") {
+    return;
+  } else if (isGuestMode && isAuthenticated) {
+    return navigateTo(options.navigateAuthenticatedTo);
+  } else if (isAuthenticated) {
+    return;
+  }
+  if (authConfig.provider.type === "local") {
+    const loginRoute = authConfig.provider.pages.login;
+    if (loginRoute && loginRoute === to.path) {
+      return;
+    }
+  }
+  const globalAppMiddleware = authConfig.globalAppMiddleware;
+  if (globalAppMiddleware === true || typeof globalAppMiddleware === "object" && globalAppMiddleware.allow404WithoutAuth) {
+    const matchedRoute = to.matched.length > 0;
+    if (!matchedRoute) {
+      return;
+    }
+  }
+  if (authConfig.provider.type === "authjs") {
+    const callbackUrl = determineCallbackUrlForRouteMiddleware(authConfig, to);
+    const signInOptions = {
+      error: "SessionRequired",
+      callbackUrl
+    };
+    return signIn(void 0, signInOptions);
+  }
+  if (options.navigateUnauthenticatedTo) {
+    return navigateTo(options.navigateUnauthenticatedTo);
+  }
+  const loginPage = authConfig.provider.pages.login;
+  if (typeof loginPage !== "string") {
+    console.warn(`${ERROR_PREFIX} provider.pages.login is misconfigured`);
+    return;
+  }
+  const external = isExternalUrl(loginPage);
+  if (typeof globalAppMiddleware === "object" && globalAppMiddleware.addDefaultCallbackUrl) {
+    let redirectUrl = to.fullPath;
+    if (typeof globalAppMiddleware.addDefaultCallbackUrl === "string") {
+      redirectUrl = globalAppMiddleware.addDefaultCallbackUrl;
+    }
+    return navigateTo({
+      path: loginPage,
+      query: {
+        redirect: redirectUrl
+      }
+    }, { external });
+  }
+  return navigateTo(loginPage, { external });
+});
+function normalizeUserOptions(userOptions) {
+  if (typeof userOptions === "boolean" || userOptions === void 0) {
+    return userOptions !== false ? {
+      // Guest Mode off if `auth: true`
+      unauthenticatedOnly: false,
+      navigateAuthenticatedTo: "/",
+      navigateUnauthenticatedTo: void 0
+    } : void 0;
+  }
+  if (typeof userOptions === "object") {
+    if (userOptions.unauthenticatedOnly === void 0) {
+      userOptions.unauthenticatedOnly = true;
+    }
+    return {
+      unauthenticatedOnly: userOptions.unauthenticatedOnly,
+      navigateAuthenticatedTo: userOptions.navigateAuthenticatedTo ?? "/",
+      navigateUnauthenticatedTo: userOptions.navigateUnauthenticatedTo
+    };
+  }
+}
+const sidebaseAuth = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: authMiddleware
+}, Symbol.toStringTag, { value: "Module" }));
+function withoutQuery(path) {
+  return path.split("?")[0];
+}
+let routeMatcher;
+function getNitroRouteRules(path) {
+  var _a;
+  const { nitro, app } = /* @__PURE__ */ useRuntimeConfig();
+  if (!routeMatcher) {
+    routeMatcher = toRouteMatcher(
+      createRouter$1({
+        routes: Object.fromEntries(
+          Object.entries((nitro == null ? void 0 : nitro.routeRules) || {}).map(([path2, rules]) => [withoutTrailingSlash(path2), rules])
+        )
+      })
+    );
+  }
+  const options = {};
+  const matches = routeMatcher.matchAll(
+    withoutBase(withoutTrailingSlash(withoutQuery(path)), app.baseURL)
+  ).reverse();
+  for (const match of matches) {
+    options.disableServerSideAuth ?? (options.disableServerSideAuth = (_a = match.auth) == null ? void 0 : _a.disableServerSideAuth);
+  }
+  return options;
+}
+class DefaultRefreshHandler {
+  constructor(config) {
+    /** Result of `useAuth` composable, mostly used for session data/refreshing */
+    __publicField(this, "auth");
+    /** Runtime config is mostly used for getting provider data */
+    __publicField(this, "runtimeConfig");
+    /** Refetch interval */
+    __publicField(this, "refetchIntervalTimer");
+    // TODO: find more Generic method to start a Timer for the Refresh Token
+    /** Refetch interval for local/refresh schema */
+    __publicField(this, "refreshTokenIntervalTimer");
+    /** Because passing `this.visibilityHandler` to `document.addEventHandler` loses `this` context */
+    __publicField(this, "boundVisibilityHandler");
+    this.config = config;
+    this.boundVisibilityHandler = this.visibilityHandler.bind(this);
+  }
+  init() {
+    var _a;
+    this.runtimeConfig = (/* @__PURE__ */ useRuntimeConfig()).public.auth;
+    this.auth = useAuth();
+    (void 0).addEventListener("visibilitychange", this.boundVisibilityHandler, false);
+    const { enablePeriodically } = this.config;
+    if (enablePeriodically !== false) {
+      const intervalTime = enablePeriodically === true ? 1e3 : enablePeriodically;
+      this.refetchIntervalTimer = setInterval(() => {
+        var _a2;
+        if ((_a2 = this.auth) == null ? void 0 : _a2.data.value) {
+          this.auth.refresh();
+        }
+      }, intervalTime);
+    }
+    const provider = this.runtimeConfig.provider;
+    if (provider.type === "local" && provider.refresh.isEnabled && ((_a = provider.refresh.token) == null ? void 0 : _a.maxAgeInSeconds)) {
+      const intervalTime = provider.refresh.token.maxAgeInSeconds * 1e3;
+      this.refreshTokenIntervalTimer = setInterval(() => {
+        var _a2;
+        if ((_a2 = this.auth) == null ? void 0 : _a2.refreshToken.value) {
+          this.auth.refresh();
+        }
+      }, intervalTime);
+    }
+  }
+  destroy() {
+    (void 0).removeEventListener("visibilitychange", this.boundVisibilityHandler, false);
+    clearInterval(this.refetchIntervalTimer);
+    if (this.refreshTokenIntervalTimer) {
+      clearInterval(this.refreshTokenIntervalTimer);
+    }
+    this.auth = void 0;
+    this.runtimeConfig = void 0;
+  }
+  visibilityHandler() {
+    var _a, _b;
+    if (((_a = this.config) == null ? void 0 : _a.enableOnWindowFocus) && (void 0).visibilityState === "visible" && ((_b = this.auth) == null ? void 0 : _b.data.value)) {
+      this.auth.refresh();
+    }
+  }
+}
+const _refreshHandler = new DefaultRefreshHandler({ "enablePeriodically": false, "enableOnWindowFocus": true });
+const plugin_xp_hzh2CmddJ3Myd_cL2a86QZnSMAE8MuLZ6iluDhtI = /* @__PURE__ */ defineNuxtPlugin(async (nuxtApp) => {
+  var _a;
+  let __temp, __restore;
+  const { data, lastRefreshedAt, loading } = useAuthState();
+  const { getSession } = useAuth();
+  const wholeRuntimeConfig = /* @__PURE__ */ useRuntimeConfig();
+  const runtimeConfig = wholeRuntimeConfig.public.auth;
+  const globalAppMiddleware = runtimeConfig.globalAppMiddleware;
+  const routeRules = getNitroRouteRules(nuxtApp._route.path);
+  {
+    runtimeConfig.baseURL = resolveApiBaseURL(wholeRuntimeConfig);
+  }
+  let nitroPrerender = false;
+  if (nuxtApp.ssrContext) {
+    nitroPrerender = getHeader(nuxtApp.ssrContext.event, "x-nitro-prerender") !== void 0;
+  }
+  let disableServerSideAuth = routeRules.disableServerSideAuth;
+  disableServerSideAuth ?? (disableServerSideAuth = runtimeConfig == null ? void 0 : runtimeConfig.disableServerSideAuth);
+  disableServerSideAuth ?? (disableServerSideAuth = false);
+  if (disableServerSideAuth) {
+    loading.value = true;
+  }
+  const isErrorUrl = ((_a = nuxtApp.ssrContext) == null ? void 0 : _a.error) === true;
+  const requireAuthOnErrorPage = globalAppMiddleware === true || typeof globalAppMiddleware === "object" && globalAppMiddleware.allow404WithoutAuth;
+  const shouldFetchSession = typeof data.value === "undefined" && !nitroPrerender && !disableServerSideAuth && !(isErrorUrl && requireAuthOnErrorPage);
+  if (shouldFetchSession) {
+    try {
+      ;
+      [__temp, __restore] = executeAsync(() => getSession()), await __temp, __restore();
+      ;
+    } catch (e) {
+      if (!(e instanceof FetchConfigurationError)) {
+        throw e;
+      }
+    }
+  }
+  nuxtApp.hook("app:mounted", () => {
+    _refreshHandler.init();
+    if (disableServerSideAuth) {
+      getSession();
+    }
+  });
+  const _unmount = nuxtApp.vueApp.unmount;
+  nuxtApp.vueApp.unmount = function() {
+    _refreshHandler.destroy();
+    lastRefreshedAt.value = void 0;
+    data.value = void 0;
+    _unmount();
+  };
+  if (globalAppMiddleware === true || typeof globalAppMiddleware === "object" && globalAppMiddleware.isEnabled) {
+    addRouteMiddleware("auth", authMiddleware, {
+      global: true
+    });
+  }
 });
 const makeSymbol = (name, shareable = false) => !shareable ? Symbol(name) : Symbol.for(name);
 const generateFormatCacheKey = (locale, key, source) => friendlyJSONstringify({ l: locale, k: key, s: source });
@@ -6531,19 +7204,7 @@ const i18n_EI7LsD1KYQADczz5hrChviGQCdVM8yUkvFEZLJpmnvM = /* @__PURE__ */ defineN
     nuxt.provide("switchLocalePath", useSwitchLocalePath());
   }
 });
-const markdown_it_challenge_DXOI_Idopd0YDGYpvj7Hajb_j8G1bunaAWwPmIlz9nw = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
-  const md = useMarkdownIt();
-  md.use(container, "challenge", {
-    render(tokens, idx) {
-      const token = tokens[idx];
-      if (token.nesting === 1) {
-        token.info.trim().slice("challenge".length).trim();
-        return `<ChallengeBlock title="\${info}">`;
-      } else {
-        return "</ChallengeBlock>";
-      }
-    }
-  });
+const markdown_it_challenge_DXOI_Idopd0YDGYpvj7Hajb_j8G1bunaAWwPmIlz9nw = /* @__PURE__ */ defineNuxtPlugin(() => {
 });
 const markdown_it_explain_bFnrxYtVO4fmzkuyY2_B2JY5UW0pG5rzvAe18MKP6A8 = /* @__PURE__ */ defineNuxtPlugin(() => {
   const md = useMarkdownIt();
@@ -6741,6 +7402,7 @@ const plugins = [
   revive_payload_server_MVtmlZaQpj6ApFmshWfUWl5PehCebzaBf2NuRMiIbms,
   plugin,
   components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4,
+  plugin_xp_hzh2CmddJ3Myd_cL2a86QZnSMAE8MuLZ6iluDhtI,
   switch_locale_path_ssr_NflG9_QeVcJ1jVig0vCfxB_cZhpEMQ9U2ujRUiYbbVw,
   route_locale_detect__HPHJq3Jg7gwhwgKEI8tQavopSAjmrCSPXl9HgL2h9U,
   i18n_EI7LsD1KYQADczz5hrChviGQCdVM8yUkvFEZLJpmnvM,
@@ -7011,8 +7673,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-RLbG13KT.mjs'));
-    const _Error = defineAsyncComponent(() => import('./error-500-njgPOC1m.mjs'));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-CopvRgoV.mjs'));
+    const _Error = defineAsyncComponent(() => import('./error-500-lSfQOQZE.mjs'));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -7098,17 +7760,20 @@ const server = /*#__PURE__*/Object.freeze({
   __proto__: null,
   _: _export_sfc,
   a: __nuxt_component_0$1,
-  b: useI18n,
-  c: __nuxt_component_0$2,
-  d: useRoute,
+  b: useAuth,
+  c: useI18n,
+  d: __nuxt_component_0$2,
   default: entry$1,
-  e: useRequestFetch,
+  e: useRoute,
   f: fetchDefaults,
-  g: useNuxtApp,
-  h: asyncDataDefaults,
-  i: createError,
+  g: useRequestFetch,
+  h: useNuxtApp,
+  i: asyncDataDefaults,
+  j: createError,
+  k: defineNuxtRouteMiddleware,
+  n: navigateTo,
   u: useHead
 });
 
-export { _export_sfc as _, __nuxt_component_0$1 as a, __nuxt_component_0$2 as b, useRoute as c, useHead as d, useNuxtApp as e, asyncDataDefaults as f, createError as g, fetchDefaults as h, useRequestFetch as i, server as j, serialize as s, useI18n as u };
+export { _export_sfc as _, useI18n as a, __nuxt_component_0$2 as b, useRoute as c, useHead as d, __nuxt_component_0$1 as e, useNuxtApp as f, asyncDataDefaults as g, createError as h, fetchDefaults as i, useRequestFetch as j, defineNuxtRouteMiddleware as k, server as l, navigateTo as n, serialize as s, useAuth as u };
 //# sourceMappingURL=server.mjs.map

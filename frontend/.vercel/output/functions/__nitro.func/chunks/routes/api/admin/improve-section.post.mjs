@@ -1,12 +1,13 @@
-import { r as defineEventHandler, U as readBody, n as createError } from '../../../nitro/nitro.mjs';
+import { d as defineEventHandler, r as readBody, a as createError } from '../../../nitro/nitro.mjs';
 import { OpenAI } from 'openai';
+import 'jsonwebtoken';
+import 'node:crypto';
 import 'node:http';
 import 'node:https';
 import 'node:events';
 import 'node:buffer';
 import 'node:fs';
 import 'node:path';
-import 'node:crypto';
 
 const improveSection_post = defineEventHandler(async (event) => {
   const body = await readBody(event);

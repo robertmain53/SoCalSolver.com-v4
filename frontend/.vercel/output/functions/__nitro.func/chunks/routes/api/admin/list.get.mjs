@@ -1,13 +1,14 @@
-import { r as defineEventHandler } from '../../../nitro/nitro.mjs';
+import { d as defineEventHandler } from '../../../nitro/nitro.mjs';
 import fs from 'fs-extra';
 import path from 'path';
+import 'jsonwebtoken';
+import 'node:crypto';
 import 'node:http';
 import 'node:https';
 import 'node:events';
 import 'node:buffer';
 import 'node:fs';
 import 'node:path';
-import 'node:crypto';
 
 const contentDir = path.resolve("content");
 const improvedDir = path.resolve("content-improved");

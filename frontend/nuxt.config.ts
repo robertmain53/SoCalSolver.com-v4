@@ -1,4 +1,10 @@
 export default defineNuxtConfig({
+
+  nitro: {
+    preset: 'vercel',
+    compatibilityDate: '2025-07-02'
+  },
+  
   plugins: [
     '~/plugins/markdown-it-challenge',
     '~/plugins/markdown-it-explain',
@@ -11,14 +17,12 @@ export default defineNuxtConfig({
   
   ssr: true,
 
-  nitro: {
-    preset: 'vercel',
-    compatibilityDate: '2025-06-27'
-  },
+ 
 
   modules: [
     '@nuxtjs/i18n',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    "@sidebase/nuxt-auth"
   ],
 
   i18n: {
