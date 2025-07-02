@@ -1,5 +1,5 @@
 
-import type MarkdownIt from 'markdown-it'
+import { useMarkdown } from '#imports'
 import container from 'markdown-it-container'
 
 export default defineNuxtPlugin(() => {

@@ -1,1 +1,0 @@
-function m(e,r,t,n){const o=encodeURIComponent(JSON.stringify(n));return`<iframe src="${`${e}/${r}/${t}?state=${o}`}" width="100%" height="600" frameborder="0" style="border:1px solid #ccc;"></iframe>`}export{m as generateEmbedIframe};

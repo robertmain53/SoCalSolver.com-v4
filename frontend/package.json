@@ -36,6 +36,7 @@
     "jsonwebtoken": "^9.0.2",
     "markdown-it-container": "^4.0.0",
     "nitro-cloudflare-dev": "^0.2.2",
+    "nitropack": "^2.11.13",
     "nuxt": "^3.17.6",
     "nuxt-security": "^2.2.0",
     "openai": "^5.8.2",

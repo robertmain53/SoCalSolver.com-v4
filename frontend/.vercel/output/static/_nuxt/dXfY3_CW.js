@@ -1,3 +1,0 @@
-import{h as c,r as s,c as n,o as l,g as v,a as u,i as p,v as m,t as d}from"./CGVLzoYz.js";const _={class:"builder-page"},f={key:0},b=c({__name:"builder",setup(x){const o=s(""),r=s("");function i(){try{const e=inputs.value.map(a=>`const ${a.name} = Number(values["${a.name}"] || 0);`).join(`
-`),t=formula.value.includes("=")?formula.value.split("=")[1]:formula.value;return Function("values",`${e}
-return ${t}`)(values.value)}catch(e){return console.error(e),"Error"}}return(e,t)=>(l(),n("div",_,[v(u("input",{"onUpdate:modelValue":t[0]||(t[0]=a=>o.value=a),placeholder:"Enter expression"},null,512),[[m,o.value]]),u("button",{onClick:i},"Evaluate"),r.value?(l(),n("div",f,"Result: "+d(r.value),1)):p("",!0)]))}});export{b as default};

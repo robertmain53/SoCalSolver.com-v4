@@ -1,1 +1,0 @@
-import{a4 as a,a5 as o,n}from"./CGVLzoYz.js";const c=a(async(i,r)=>{let t,e;const s=([t,e]=o(()=>useSession()),t=await t,e(),t);if(!s.status||s.status!=="authenticated")return n("/login")});export{c as default};
