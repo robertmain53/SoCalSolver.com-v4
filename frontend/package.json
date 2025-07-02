@@ -29,6 +29,7 @@
     "@nuxtjs/robots": "^5.2.10",
     "@nuxtjs/sitemap": "^7.3.0",
     "@pinia/nuxt": "^0.11.1",
+    "@sidebase/nuxt-auth": "^1.0.0",
     "chart.js": "^4.4.9",
     "diff-match-patch": "^1.0.5",
     "gray-matter": "^4.0.3",
