@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-
+ 
   nitro: {
     preset: 'vercel',
     compatibilityDate: '2025-07-02'
@@ -17,9 +17,13 @@ export default defineNuxtConfig({
   
   ssr: true,
 
- 
+  css: [
+    '~/assets/css/main.css'
+  ],
 
   modules: [
+   '@nuxt/ui',
+   '@nuxt/content',
     '@nuxtjs/i18n',
     '@pinia/nuxt',
     "@sidebase/nuxt-auth"

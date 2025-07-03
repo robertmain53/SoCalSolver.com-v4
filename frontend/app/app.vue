@@ -3,11 +3,13 @@
     <div class="flex flex-col min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       <!-- Header -->
       <AppHeader />
+      <NuxtLayout>
 
       <!-- Main content -->
       <main class="flex-1 px4 py6 md:px8 md:py10">
         <NuxtPage />
       </main>
+    </NuxtLayout>
 
       <!-- Footer -->
       <AppFooter />
